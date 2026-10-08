@@ -36,7 +36,9 @@
 | `identity-card/card-interactions.js` | Pointer and interaction behavior |
 | `identity-card/assets/images/tamanna-constellation.jpeg` | Original constellation image, stored locally |
 
-The separate `assets/animated-identity.svg` is only an SVG experiment; it is not used as a substitute for the interactive card.\n\n## Motion principles
+The separate `assets/animated-identity.svg` is only an SVG experiment; it is not used as a substitute for the interactive card.
+
+## Motion principles
 
 - **Animation first:** movement is part of the visual identity.
 - **Original implementation:** the exact card markup, original stylesheet and motion core, local image asset, and card-scoped interactions are included. GitHub Markdown cannot run JavaScript; open the live card above or run the standalone page.
@@ -9996,4 +9998,3 @@ Review the **source inspection** behavior in the documentation and qa layer of t
 
 Review the **test evidence** behavior in the documentation and qa layer of the identity card.
 ## End of the 10,000-line engineering reference
-
