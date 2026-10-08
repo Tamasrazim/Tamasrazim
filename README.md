@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://tamasrazim.github.io/#about">
-    <img src="./assets/animated-identity.svg" alt="Animated Tamasrazim identity with orbiting light trails, particles, and glowing wordmark" width="100%">
+    <img src="./assets/animated-identity.svg" alt="Animated version of the original Tamasrazim identity card with constellation stars and scanning light" width="100%">
   </a>
 </p>
 
@@ -26,7 +26,7 @@
 
 ---
 
-> **Not a plain-text wall anymore.** The animated hero is an SVG motion composition with rotating orbit paths, blinking particles, moving light, and a glowing wordmark. Click it to open the original interactive ID card.
+> **Not a plain-text wall anymore.** The animated hero now follows the original ID card design: registered-identity header, constellation field, name, TAMASRAZIM handle, active-status marker, and a moving scan light. Click it to open the interactive HTML card, which retains the original CSS and pointer-motion implementation.
 
 ## The identity-card source
 
