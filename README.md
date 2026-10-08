@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Tamasrazim/Tamasrazim/main/id-card.svg" alt="Tamasrazim Registered Identity" width="460">
+<a href="https://github.com/Tamasrazim/tamasrazim.github.io/blob/main/index.html">
+<img src="https://api.microlink.io/?url=https%3A%2F%2Ftamasrazim.github.io%2F%23about&amp;screenshot=true&amp;element=.id-card&amp;meta=false&amp;embed=screenshot.url" alt="Exact Tamasrazim identity card from the main site" width="460">
+</a>
 
 <br><br>
 **Robiul Rumman Razim**
@@ -15,22 +17,26 @@
 
 ## 01 / About
 
-More than a username.
+### More than a username.
 
-The GitHub profile is the public-facing software side of the same identity: projects, experiments, web work, motion, vector systems, and tools.
+The profile uses the **actual identity card from the main Tamasrazim site**, rather than a separate recreation.
+
+The source lives in [`index.html`](https://github.com/Tamasrazim/tamasrazim.github.io/blob/main/index.html) and its card styling is defined in [`assets/css/site.css`](https://github.com/Tamasrazim/tamasrazim.github.io/blob/main/assets/css/site.css).
 
 ## 02 / Selected work
 
 **TRILYVA** · Browser-based creative motion tooling
 
-**CODE → SVG** · Browser-native vector experiments
+**Code → SVG / EPS** · Procedural vector generation and export
 
-**CODE → EPS** · Vector-scene and export experiments
+**Stock Asset Vault** · Local-first stock workflow
 
-**Repository Token Meter** · Repository analysis tooling
+**Format Forge** · Browser-first file workstation
 
-**BNC Agro Care** · Practical web project
+**Repo Token Meter** · Repository measurement tooling
 
 [Browse the project index](https://tamasrazim.github.io/projects/)
+
+---
 
 <div align="center"><sub>RRMZ / TR · PERSONAL WEBSITE · T/R — 2026</sub></div>
