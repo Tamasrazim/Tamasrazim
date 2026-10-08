@@ -1,13 +1,13 @@
 # TAMASRAZIM — ANIMATION-FIRST
 
 <p align="center">
-  <a href="https://tamasrazim.github.io/#about">
-    <img src="./assets/animated-identity.svg" alt="Animated version of the original Tamasrazim identity card with constellation stars and scanning light" width="100%">
-  </a>
+  <a href="./identity-card/index.html"><strong>↗ OPEN THE ORIGINAL INTERACTIVE ID CARD</strong></a>
+  <br>
+  <sub>Exact card markup and styling, original constellation image, original motion engine, and card-scoped pointer interactions.</sub>
 </p>
 
 <p align="center">
-  <a href="https://tamasrazim.github.io/#about"><strong>↗ OPEN THE ORIGINAL LIVE ID CARD</strong></a>
+  <a href="./identity-card/index.html"><strong>↗ OPEN THE ORIGINAL INTERACTIVE ID CARD</strong></a>
   &nbsp; · &nbsp;
   <a href="./identity-card/index.html">HTML</a>
   &nbsp; · &nbsp;
@@ -26,7 +26,7 @@
 
 ---
 
-> **Not a plain-text wall anymore.** The animated hero now follows the original ID card design: registered-identity header, constellation field, name, TAMASRAZIM handle, active-status marker, and a moving scan light. Click it to open the interactive HTML card, which retains the original CSS and pointer-motion implementation.
+> **The interactive HTML card is the source of truth.** It uses the original card markup and site stylesheet, the original JavaScript motion core, and the original constellation image copied into this repository. GitHub does not execute this HTML/JavaScript inside the Markdown reader; open `identity-card/index.html` to run the actual card.
 
 ## The identity-card source
 
@@ -36,12 +36,12 @@
 | `identity-card/site.css` | Visual layers, layout, and styling |
 | `identity-card/motion-core.js` | Motion timing and coordination |
 | `identity-card/card-interactions.js` | Pointer and interaction behavior |
-| `assets/animated-identity.svg` | Animated README hero artwork |
+| `identity-card/assets/images/tamanna-constellation.jpeg` | Original constellation image, stored locally |\n| `assets/animated-identity.svg` | Separate animated SVG experiment; not the interactive card |
 
 ## Motion principles
 
 - **Animation first:** movement is part of the visual identity.
-- **Original card stays the destination:** the hero links to the live experience.
+- **Original implementation:** HTML, CSS, and JavaScript are copied from the main site and scoped to the card.\n- **README limitation:** GitHub Markdown cannot run JavaScript; open the standalone HTML page for the interactive animation.
 - **No false claims:** the reference checklist below is documentation, not a claim that every check has passed.
 - **Reduced motion matters:** the live card should respect user motion preferences.
 - **README limitation:** GitHub does not execute HTML/JavaScript in Markdown. SVG animation support can vary by renderer; if it appears still, open the SVG directly or use the live card link.

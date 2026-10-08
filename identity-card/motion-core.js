@@ -1,5 +1,3 @@
-/* Main Tamasrazim motion-core.js, trimmed before the unrelated scene-wide background engine.
-   The identity card's original motion-layer tracking is preserved. */
 (function(){
 'use strict';
     /* Site animation governor: keep continuous JS motion at a maximum of 60 updates/sec.
@@ -354,5 +352,88 @@ function frame(now){
   raf=requestAnimationFrame60(frame);
 }
 raf=requestAnimationFrame60(frame);
+/* ---------- Tamasrazim Scene Engine: continuous motion ---------- */
+(function(){
+  var sceneReduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(sceneReduced)return;
+  var style=document.createElement('style');
+  style.textContent=
+    ':root{--scene-cx:0;--scene-cy:0;--scene-vx:0;--scene-vy:0;--scene-energy:0;--scene-progress:0;--scene-tilt:0}' +
+    'body::before{content:"";position:fixed;inset:-18vmax;z-index:0;pointer-events:none;opacity:.22;background:radial-gradient(circle at calc(50% + var(--scene-cx)*8%) calc(50% + var(--scene-cy)*8%),rgba(243,243,239,.085),transparent 18%),repeating-linear-gradient(90deg,transparent 0 11vw,rgba(243,243,239,.018) 11vw 11.08vw),repeating-linear-gradient(0deg,transparent 0 15vh,rgba(243,243,239,.014) 15vh 15.08vh);transform:translate3d(calc(var(--scene-cx)*-10px),calc(var(--scene-cy)*-7px),0) rotate(calc(var(--scene-tilt)*.22deg));will-change:transform}' +
+    '.scene-bridge{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden;opacity:calc(.18 + var(--scene-energy)*.22);mix-blend-mode:screen}' +
+    '.scene-bridge:before,.scene-bridge:after{content:"";position:absolute;left:50%;top:50%;border:1px solid rgba(243,243,239,.09);border-radius:50%;transform:translate(-50%,-50%) scale(calc(1 + var(--scene-progress)*.85 + var(--scene-energy)*.2))}' +
+    '.scene-bridge:before{width:34vw;height:34vw}.scene-bridge:after{width:64vw;height:64vw;opacity:.42}' +
+    '.scene-mark{position:absolute;width:1px;height:42vh;left:calc(50% + var(--scene-cx)*18vw);top:29%;background:linear-gradient(transparent,rgba(243,243,239,.22),transparent);transform:rotate(calc(var(--scene-tilt)*2.2deg + var(--scene-progress)*22deg));transform-origin:50% 50%}' +
+    '.scene-reactive{--sr-x:0px;--sr-y:0px;--sr-r:0deg;position:relative;transform:translate3d(var(--sr-x),var(--sr-y),0) rotate(var(--sr-r));will-change:transform}' +
+    '@media(pointer:coarse){body:before,.scene-bridge{display:none}.scene-reactive{transform:none!important}}';
+  document.head.appendChild(style);
+  var bridge=document.createElement('div');bridge.className='scene-bridge';bridge.setAttribute('aria-hidden','true');
+  var mark=document.createElement('span');mark.className='scene-mark';bridge.appendChild(mark);document.body.appendChild(bridge);
+  var root=document.documentElement;
+  var sections=Array.prototype.slice.call(document.querySelectorAll('main > section'));
+  var cards=Array.prototype.slice.call(document.querySelectorAll('.project-card'));
+  var hero=document.querySelector('.hero-inner');
+  var about=document.querySelector('.about-grid');
+  var bands=Array.prototype.slice.call(document.querySelectorAll('.band-track'));
+  var state={x:innerWidth*.5,y:innerHeight*.5,vx:0,vy:0,scroll:(horizontal?pageX():pageY()),scrollV:0,lastScroll:(horizontal?pageX():pageY()),px:innerWidth*.5,py:innerHeight*.5};
+  var target={x:state.x,y:state.y,scroll:state.scroll},last=performance.now();
+  function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
+  function smooth(a,b,k){return a+(b-a)*k}
+  function ease(v){v=clamp(v,0,1);return v*v*(3-2*v)}
+  sections.forEach(function(el){el.classList.add('scene-reactive')});
+  if(hero)hero.classList.add('scene-reactive');
+  if(about)about.classList.add('scene-reactive');
+  cards.forEach(function(el){el.classList.add('scene-reactive')});
+  window.addEventListener('pointermove',function(e){target.x=e.clientX;target.y=e.clientY},{passive:true});
+  (horizontal?axisScroller:window).addEventListener('scroll',function(){target.scroll=horizontal?pageX():pageY()},{passive:true});
+  window.addEventListener('blur',function(){target.x=innerWidth*.5;target.y=innerHeight*.5},{passive:true});
+  function tick(now){
+    if(!pageVisible){requestAnimationFrame60(tick);return;}
+    var dt=Math.min(.033,Math.max(.008,(now-last)/1000));last=now;
+    var k=1-Math.exp(-dt*8.5);
+    state.x=smooth(state.x,target.x,k);state.y=smooth(state.y,target.y,k);
+    state.vx=smooth(state.vx,(state.x-state.px)/dt,.18);state.vy=smooth(state.vy,(state.y-state.py)/dt,.18);
+    state.px=state.x;state.py=state.y;state.scroll=smooth(state.scroll,target.scroll,1-Math.exp(-dt*12));
+    state.scrollV=smooth(state.scrollV,(state.scroll-state.lastScroll)/dt,.14);state.lastScroll=state.scroll;
+    var nx=(state.x/Math.max(1,innerWidth)-.5)*2,ny=(state.y/Math.max(1,innerHeight)-.5)*2;
+    var maxScroll=pageMax(),progress=clamp(state.scroll/maxScroll,0,1);
+    var energy=clamp(Math.hypot(state.vx,state.vy)*.0022+Math.abs(state.scrollV)*.00042,0,1);
+    root.style.setProperty('--scene-cx',nx.toFixed(4));root.style.setProperty('--scene-cy',ny.toFixed(4));
+    root.style.setProperty('--scene-vx',state.vx.toFixed(2));root.style.setProperty('--scene-vy',state.vy.toFixed(2));
+    root.style.setProperty('--scene-energy',energy.toFixed(4));root.style.setProperty('--scene-progress',progress.toFixed(4));
+    root.style.setProperty('--scene-tilt',(nx*2.2+state.vx*.004).toFixed(3));
+    sections.forEach(function(section){
+      var r=section.getBoundingClientRect();
+      var center=horizontal?(r.left+r.width*.5):(r.top+r.height*.5);
+      var axisSize=horizontal?innerWidth:innerHeight;
+      var axisExtent=horizontal?r.width:r.height;
+      var focus=ease(clamp(1-Math.abs(center-axisSize*.5)/(axisSize*.95),0,1));
+      var local=(center-axisSize*.5)/Math.max(axisSize,axisExtent);
+      if(horizontal){
+        section.style.setProperty('--sr-x',(-local*(1.2+focus*1.6)+nx*(1.5+focus*2.8)+state.vx*.0012*focus).toFixed(2)+'px');
+        section.style.setProperty('--sr-y',(ny*.55+state.vy*.0008*focus).toFixed(2)+'px');
+      }else{
+        section.style.setProperty('--sr-x',(nx*(1.5+focus*2.8)+state.vx*.0012*focus).toFixed(2)+'px');
+        section.style.setProperty('--sr-y',(-local*(1.2+focus*1.6)+state.vy*.0008*focus).toFixed(2)+'px');
+      }
+      section.style.setProperty('--sr-r',(nx*(.22+focus*.42)+state.vx*.0006).toFixed(3)+'deg');
+      section.style.setProperty('--scene-focus',focus.toFixed(3));
+    });
+    if(hero){var hr=hero.getBoundingClientRect(),heroCenter=horizontal?(hr.left+hr.width*.5):(hr.top+hr.height*.5),hf=ease(clamp(1-Math.abs(heroCenter-(horizontal?innerWidth*.5:innerHeight*.5))/((horizontal?innerWidth:innerHeight)*.9),0,1));hero.style.setProperty('--hero-scene-depth',(hf*14+energy*8).toFixed(2)+'px')}
+    if(about){var ar=about.getBoundingClientRect(),aboutCenter=horizontal?(ar.left+ar.width*.5):(ar.top+ar.height*.5),af=ease(clamp(1-Math.abs(aboutCenter-(horizontal?innerWidth*.5:innerHeight*.5))/((horizontal?innerWidth:innerHeight)*1.05),0,1));about.style.setProperty('--about-scene-progress',af.toFixed(3))}
+    cards.forEach(function(card,index){
+      var r=card.getBoundingClientRect(),cx=r.left+r.width*.5,cy=r.top+r.height*.5,dist=Math.hypot(state.x-cx,state.y-cy),near=ease(1-dist/Math.max(260,Math.min(760,Math.max(r.width,r.height)*1.8)));
+      card.style.setProperty('--sr-x',((state.x-cx)*.018*near+nx*(2.5+near*7)+state.vx*.0015*near).toFixed(2)+'px');
+      card.style.setProperty('--sr-y',((state.y-cy)*.012*near+state.vy*.001*near).toFixed(2)+'px');
+      card.style.setProperty('--sr-r',((state.x-cx)*.0035*near+nx*1.2).toFixed(3)+'deg');
+      card.style.setProperty('--scene-card-near',near.toFixed(3));card.style.setProperty('--scene-card-energy',energy.toFixed(3));
+    });
+    bands.forEach(function(track,index){track.style.setProperty('--scene-band-x',((index%2?-1:1)*(progress*120+nx*14)).toFixed(2)+'px');track.style.setProperty('--scene-band-skew',(nx*.7+state.vx*.0015).toFixed(3)+'deg')});
+    requestAnimationFrame60(tick);
+  }
+  requestAnimationFrame60(tick);
+})();
+/* Secondary 3D scene environment disabled for performance.
+   Core motion + the lighter scene engine provide the site's motion language. */
 
 })();

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" class="js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -31,12 +31,14 @@
   <script defer src="./card-interactions.js"></script>
 </head>
 <body>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"><span aria-hidden="true"></span></div>
   <main class="identity-stage">
     <div class="id-wrap">
       <article class="id-card tilt reveal" data-reveal style="--delay:3" aria-label="Tamasrazim identity card">
               <div class="id-grid" aria-hidden="true"></div>
               <div class="id-constellation-media" aria-hidden="true">
-                <img class="id-constellation" src="https://tamasrazim.github.io/assets/images/tamanna-constellation.jpeg" alt="" loading="lazy" decoding="async">
+                <img class="id-constellation" src="./assets/images/tamanna-constellation.jpeg" alt="" loading="lazy" decoding="async">
                 <span class="id-image-wash"></span>
                 <span class="id-image-cross"></span>
                 <span class="id-image-scan"></span>
