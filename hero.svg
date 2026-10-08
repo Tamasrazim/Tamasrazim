@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 420" role="img" aria-labelledby="title desc">
+  <title id="title">Tamasrazim — creative developer</title>
+  <desc id="desc">Minimal black and white identity panel for Robiul Rumman Razim, known as Tamasrazim.</desc>
+  <rect width="1400" height="420" fill="#050505"/>
+  <g fill="none" stroke="#2a2a2a" stroke-width="1">
+    <path d="M0 84H1400M0 168H1400M0 252H1400M0 336H1400"/>
+    <path d="M140 0V420M280 0V420M420 0V420M560 0V420M700 0V420M840 0V420M980 0V420M1120 0V420M1260 0V420"/>
+  </g>
+  <g fill="none" stroke="#f5f5f5" stroke-width="2" opacity=".55">
+    <path d="M80 350C210 300 225 100 360 70S500 260 625 205 760 55 890 105 1045 330 1185 270 1260 170 1360 120"/>
+    <path d="M40 390C180 320 300 355 415 305S635 115 760 170 1000 380 1125 325 1260 210 1390 235" opacity=".25"/>
+  </g>
+  <circle cx="1170" cy="105" r="42" fill="none" stroke="#f5f5f5" stroke-width="2" opacity=".35"/>
+  <circle cx="1170" cy="105" r="4" fill="#f5f5f5"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#f5f5f5">
+    <text x="72" y="120" font-size="18" opacity=".55" letter-spacing="5">ROB IUL RUMMAN RAZIM</text>
+    <text x="72" y="205" font-size="82" font-weight="700" letter-spacing="2">TAMASRAZIM</text>
+    <text x="76" y="246" font-size="17" opacity=".65" letter-spacing="3">CREATIVE SOFTWARE / MOTION / WEB</text>
+    <text x="76" y="338" font-size="14" opacity=".45">BROWSER-NATIVE TOOLS  ·  VECTOR SYSTEMS  ·  INTERACTIVE EXPERIENCES</text>
+  </g>
+  <g opacity=".5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#f5f5f5">
+    <text x="1100" y="360">BUILD / TEST / SHIP</text>
+    <text x="1100" y="380">01—∞</text>
+  </g>
+</svg>
