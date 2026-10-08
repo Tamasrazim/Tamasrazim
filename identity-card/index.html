@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050505">
+  <meta name="color-scheme" content="dark">
+  <title>Tamasrazim — Identity Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./site.css">
+  <style>
+    html, body { width:100%; min-height:100%; }
+    body {
+      min-height:100svh;
+      display:grid;
+      place-items:center;
+      padding:24px;
+      overflow:hidden;
+      background:#050505;
+    }
+    .identity-stage { width:min(100%,460px); margin:auto; }
+    .id-wrap { width:100%; }
+    @media (max-width:600px) {
+      body { padding:12px; }
+      .identity-stage { width:100%; }
+    }
+  </style>
+  <script defer src="./motion-core.js"></script>
+  <script defer src="./card-interactions.js"></script>
+</head>
+<body>
+  <main class="identity-stage">
+    <div class="id-wrap">
+      <article class="id-card tilt reveal" data-reveal style="--delay:3" aria-label="Tamasrazim identity card">
+              <div class="id-grid" aria-hidden="true"></div>
+              <div class="id-constellation-media" aria-hidden="true">
+                <img class="id-constellation" src="https://tamasrazim.github.io/assets/images/tamanna-constellation.jpeg" alt="" loading="lazy" decoding="async">
+                <span class="id-image-wash"></span>
+                <span class="id-image-cross"></span>
+                <span class="id-image-scan"></span>
+                <span class="id-star-field" aria-hidden="true">
+                <i class="id-star id-star-bright" style="--x:37.207%;--y:24.805%;--s:1.15%;--d:0.00s;--t:1.90s"></i>
+                <i class="id-star" style="--x:41.699%;--y:21.680%;--s:0.72%;--d:0.37s;--t:2.13s"></i>
+                <i class="id-star" style="--x:47.168%;--y:20.898%;--s:0.72%;--d:0.74s;--t:2.36s"></i>
+                <i class="id-star" style="--x:36.523%;--y:20.605%;--s:0.72%;--d:1.11s;--t:2.59s"></i>
+                <i class="id-star" style="--x:37.695%;--y:22.168%;--s:0.95%;--d:1.48s;--t:2.82s"></i>
+                <i class="id-star" style="--x:37.695%;--y:20.703%;--s:0.72%;--d:1.85s;--t:3.05s"></i>
+                <i class="id-star" style="--x:44.629%;--y:20.703%;--s:0.72%;--d:2.22s;--t:3.28s"></i>
+                <i class="id-star" style="--x:46.680%;--y:26.367%;--s:0.72%;--d:2.59s;--t:3.51s"></i>
+                <i class="id-star" style="--x:38.867%;--y:30.078%;--s:0.95%;--d:2.96s;--t:3.74s"></i>
+                <i class="id-star id-star-bright" style="--x:46.875%;--y:30.078%;--s:1.15%;--d:3.33s;--t:3.97s"></i>
+                <i class="id-star" style="--x:38.086%;--y:31.641%;--s:0.72%;--d:3.70s;--t:4.20s"></i>
+                <i class="id-star" style="--x:46.094%;--y:34.570%;--s:0.72%;--d:4.07s;--t:1.93s"></i>
+                <i class="id-star" style="--x:50.098%;--y:34.180%;--s:0.95%;--d:4.44s;--t:2.16s"></i>
+                <i class="id-star" style="--x:49.121%;--y:35.742%;--s:0.72%;--d:0.01s;--t:2.39s"></i>
+                <i class="id-star" style="--x:43.848%;--y:34.570%;--s:0.72%;--d:0.38s;--t:2.62s"></i>
+                <i class="id-star" style="--x:51.953%;--y:33.398%;--s:0.72%;--d:0.75s;--t:2.85s"></i>
+                <i class="id-star" style="--x:46.094%;--y:38.184%;--s:0.95%;--d:1.12s;--t:3.08s"></i>
+                <i class="id-star" style="--x:46.484%;--y:38.184%;--s:0.72%;--d:1.49s;--t:3.31s"></i>
+                <i class="id-star id-star-bright" style="--x:45.117%;--y:41.699%;--s:1.15%;--d:1.86s;--t:3.54s"></i>
+                <i class="id-star" style="--x:43.750%;--y:42.969%;--s:0.72%;--d:2.23s;--t:3.77s"></i>
+                <i class="id-star" style="--x:49.219%;--y:39.258%;--s:0.95%;--d:2.60s;--t:4.00s"></i>
+                <i class="id-star" style="--x:41.016%;--y:35.352%;--s:0.72%;--d:2.97s;--t:4.23s"></i>
+                <i class="id-star" style="--x:41.211%;--y:62.402%;--s:0.72%;--d:3.34s;--t:1.96s"></i>
+                <i class="id-star" style="--x:54.297%;--y:63.184%;--s:0.72%;--d:3.71s;--t:2.19s"></i>
+                <i class="id-star" style="--x:55.859%;--y:55.957%;--s:0.95%;--d:4.08s;--t:2.42s"></i>
+                <i class="id-star" style="--x:57.422%;--y:25.391%;--s:0.72%;--d:4.45s;--t:2.65s"></i>
+                <i class="id-star" style="--x:53.418%;--y:23.438%;--s:0.72%;--d:0.02s;--t:2.88s"></i>
+                <i class="id-star id-star-bright" style="--x:57.422%;--y:59.863%;--s:1.15%;--d:0.39s;--t:3.11s"></i>
+                <i class="id-star" style="--x:58.008%;--y:59.863%;--s:0.95%;--d:0.76s;--t:3.34s"></i>
+                <i class="id-star" style="--x:58.496%;--y:55.664%;--s:0.72%;--d:1.13s;--t:3.57s"></i>
+                <i class="id-star" style="--x:63.574%;--y:28.613%;--s:0.72%;--d:1.50s;--t:3.80s"></i>
+                <i class="id-star" style="--x:66.406%;--y:21.484%;--s:0.72%;--d:1.87s;--t:4.03s"></i>
+                <i class="id-star" style="--x:68.066%;--y:29.492%;--s:0.95%;--d:2.24s;--t:4.26s"></i>
+                <i class="id-star" style="--x:66.895%;--y:42.090%;--s:0.72%;--d:2.61s;--t:1.99s"></i>
+                <i class="id-star" style="--x:66.699%;--y:46.387%;--s:0.72%;--d:2.98s;--t:2.22s"></i>
+                <i class="id-star" style="--x:69.238%;--y:43.164%;--s:0.72%;--d:3.35s;--t:2.45s"></i>
+                <i class="id-star id-star-bright" style="--x:69.336%;--y:58.594%;--s:1.15%;--d:3.72s;--t:2.68s"></i>
+                <i class="id-star" style="--x:67.578%;--y:53.906%;--s:0.72%;--d:4.09s;--t:2.91s"></i>
+                <i class="id-star" style="--x:68.359%;--y:55.469%;--s:0.72%;--d:4.46s;--t:3.14s"></i>
+                <i class="id-star" style="--x:64.160%;--y:52.832%;--s:0.72%;--d:0.03s;--t:3.37s"></i>
+                <i class="id-star" style="--x:68.457%;--y:66.406%;--s:0.95%;--d:0.40s;--t:3.60s"></i>
+                <i class="id-star" style="--x:69.629%;--y:17.676%;--s:0.72%;--d:0.77s;--t:3.83s"></i>
+                <i class="id-star" style="--x:70.801%;--y:20.508%;--s:0.72%;--d:1.14s;--t:4.06s"></i>
+                <i class="id-star" style="--x:71.582%;--y:29.004%;--s:0.72%;--d:1.51s;--t:4.29s"></i>
+                <i class="id-star" style="--x:73.730%;--y:28.809%;--s:0.95%;--d:1.88s;--t:2.02s"></i>
+                <i class="id-star id-star-bright" style="--x:74.121%;--y:16.797%;--s:1.15%;--d:2.25s;--t:2.25s"></i>
+                <i class="id-star" style="--x:74.121%;--y:18.457%;--s:0.72%;--d:2.62s;--t:2.48s"></i>
+                <i class="id-star" style="--x:69.336%;--y:58.594%;--s:0.72%;--d:2.99s;--t:2.71s"></i>
+                </span>
+              </div>
+              <span class="card-corner tl" aria-hidden="true"></span><span class="card-corner tr" aria-hidden="true"></span>
+              <span class="card-corner bl" aria-hidden="true"></span><span class="card-corner br" aria-hidden="true"></span>
+
+              <div class="id-top">
+                <p class="id-kicker">REGISTERED IDENTITY</p>
+                <span class="card-chip" aria-hidden="true"></span>
+              </div>
+
+              <div class="id-middle">
+                <p class="id-name">Robiul Rumman Razim</p>
+                <div class="id-rule"></div>
+                <p class="id-online">ONLINE HANDLE</p>
+                <p class="id-alias" id="idAlias">TAMASRAZIM</p>
+                <div class="id-signal-row">
+                  <span>RRMZ / TR</span>
+                  <span>PERSONAL WEBSITE</span>
+                </div>
+                <div class="id-mobile-copy" aria-label="Personal description">
+                  <span>A man full of uncommonsense.</span>
+                  <span>IT Student · Web &amp; Software Developer.</span>
+                </div>
+              </div>
+
+              <div class="id-bottom">
+                <div class="status-box">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span class="id-status">Active</span>
+                </div>
+                <span class="id-code">T/R — 2026</span>
+              </div>
+            </article>
+    </div>
+  </main>
+</body>
+</html>
