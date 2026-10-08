@@ -1,5 +1,7 @@
 # About Me
 
+<img src="./assets/minimal-motion.svg" width="100%" alt="A subtle animated line" />
+
 I'm a developer and computer technology student from Bangladesh. I enjoy building software, creating web experiences, and experimenting with ideas that make technology more useful.
 
 I'm interested in how things work at every level—from thoughtful interfaces and animation to the systems underneath them. I learn by building, testing, and improving real projects.

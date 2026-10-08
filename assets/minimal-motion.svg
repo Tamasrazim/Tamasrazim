@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="24" viewBox="0 0 800 24" role="img" aria-label="A subtle moving point along a fine line">
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      .runner, .halo { display: none; }
+    }
+  </style>
+  <path d="M0 12H800" fill="none" stroke="#8b9098" stroke-opacity=".34" stroke-width="1"/>
+  <circle class="halo" cy="12" r="5" fill="#8b9098" opacity=".10">
+    <animate attributeName="cx" values="0;800" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle class="runner" cy="12" r="1.7" fill="#858b94" opacity=".8">
+    <animate attributeName="cx" values="0;800" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;.8;.8;0" keyTimes="0;.08;.92;1" dur="6s" repeatCount="indefinite"/>
+  </circle>
+</svg>
