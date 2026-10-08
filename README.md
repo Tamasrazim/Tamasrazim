@@ -34,9 +34,9 @@
 | `identity-card/site.css` | Visual layers, layout, and styling |
 | `identity-card/motion-core.js` | Motion timing and coordination |
 | `identity-card/card-interactions.js` | Pointer and interaction behavior |
-| `identity-card/assets/images/tamanna-constellation.jpeg` | Original constellation image, stored locally | `assets/animated-identity.svg` is a separate SVG experiment, not the interactive card.
+| `identity-card/assets/images/tamanna-constellation.jpeg` | Original constellation image, stored locally |
 
-## Motion principles
+The separate `assets/animated-identity.svg` is only an SVG experiment; it is not used as a substitute for the interactive card.\n\n## Motion principles
 
 - **Animation first:** movement is part of the visual identity.
 - **Original implementation:** the exact card markup, original stylesheet and motion core, local image asset, and card-scoped interactions are included. GitHub Markdown cannot run JavaScript; open the live card above or run the standalone page.
