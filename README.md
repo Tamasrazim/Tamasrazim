@@ -18,57 +18,76 @@
 
 ## 01 / ABOUT
 
-**Robiul Rumman Razim — Tamasrazim**
+### More than a username.
 
-I build software where **code becomes something you can see, move, control, and use**.
+**Tamasrazim is the online identity. Robiul Rumman Razim is the person behind it.**
 
-My work sits around browser-native creative tools, motion systems, vector workflows, interactive web experiences, and practical utilities.
+I am interested in technology from both sides — the software people interact with and the systems underneath it.
 
-> **I do not just build pages. I build the tools behind the work.**
+This profile is a personal space for projects, experiments, software, motion, web work, and the things being built and explored.
 
----
-
-## 02 / WHAT I BUILD
-
-| | |
-|---|---|
-| **CREATIVE SOFTWARE** | Browser-first tools for creating, previewing, rendering, and exporting visual work. |
-| **MOTION SYSTEMS** | Procedural animation, interactive motion, visual experiments, and render pipelines. |
-| **VECTOR WORKFLOWS** | SVG tooling, scene structures, export experiments, and stock-ready asset workflows. |
-| **WEB EXPERIENCES** | Interactive interfaces, installable web apps, utilities, and experimental projects. |
+> **A man full of uncommonsense.**
 
 ---
 
-## 03 / SELECTED WORK
+## 02 / CURRENT FOCUS
 
-### `TRILYVA`
-Creative motion tooling focused on a complete **CODE → PREVIEW → RENDER → EXPORT** workflow.
+**IT Student · Web & Software Developer**
+
+The work moves between:
+
+`SOFTWARE` · `WEB` · `MOTION` · `VECTOR` · `TOOLS` · `EXPERIMENTS`
+
+I like building things from the interface down to the underlying logic, especially when a project can turn an idea into an actual usable tool.
+
+---
+
+## 03 / SELECTED PROJECTS
+
+### TRILYVA
+Browser-based creative tooling built around a visual workflow from code to preview, rendering, and export.
 
 → [Open project](https://tamasrazim.github.io/projects/code-motion/renderer/)
 
-### `CODE → SVG`
-A browser-native direction for turning code and visual logic into reusable vector output.
+### CODE → SVG
+Experiments around procedural/vector graphics and browser-native SVG workflows.
 
 → [Open project](https://tamasrazim.github.io/projects/code-to-svg/)
 
-### `CODE → EPS`
-Vector-scene experiments aimed at bridging browser graphics with traditional Illustrator/EPS workflows.
+### CODE → EPS
+Vector-scene and export experiments connecting browser graphics with traditional vector workflows.
 
-### `REPOSITORY TOKEN METER`
-A repository analysis experiment built around measuring large codebases and repository data.
+### REPOSITORY TOKEN METER
+A repository analysis tool for exploring codebase size and token measurements.
 
 → [Open project](https://tamasrazim.github.io/projects/repo-token-meter/)
 
-### `BNC AGRO CARE`
-A real-world web project combining business information, presentation, and a usable digital presence.
+### BNC AGRO CARE
+A practical web project built for a real-world digital presence.
 
 → [Open project](https://tamasrazim.github.io/projects/bncagrocare)
 
-**More:** [tamasrazim.github.io/projects](https://tamasrazim.github.io/projects/)
+→ [Browse the full project index](https://tamasrazim.github.io/projects/)
 
 ---
 
-## 04 / STACK
+## 04 / HOW I BUILD
+
+**01 — Understand the interface.**
+What should the user see, feel, and control?
+
+**02 — Understand the system.**
+What is actually happening underneath the interface?
+
+**03 — Make it usable.**
+Prefer clear workflows, direct feedback, and practical controls.
+
+**04 — Push the experiment.**
+Build the unusual version when it teaches something useful.
+
+---
+
+## 05 / STACK
 
 <p>
 <img src="https://img.shields.io/badge/HTML5-050505?style=for-the-badge&logo=html5&logoColor=ffffff" alt="HTML5">
@@ -82,33 +101,21 @@ A real-world web project combining business information, presentation, and a usa
 
 ---
 
-## 05 / PRINCIPLES
-
-**01 — Animation is part of the interface.**  
-Motion should communicate, react, and give an interface character.
-
-**02 — Browser first.**  
-When a tool can run directly in the browser, I prefer keeping the workflow close to the user.
-
-**03 — Less dependency, more control.**  
-Self-contained systems are easier to inspect, move, test, and maintain.
-
-**04 — Build the weird thing.**  
-Experiments are useful when they push the next project forward.
-
----
-
 ## 06 / ELSEWHERE
 
-**Website** — [tamasrazim.github.io](https://tamasrazim.github.io)  
-**GitHub** — [@Tamasrazim](https://github.com/Tamasrazim)  
-**LinkedIn** — [Tamasrazim](https://www.linkedin.com/in/Tamasrazim/)  
+**Website** — [tamasrazim.github.io](https://tamasrazim.github.io)
+
+**GitHub** — [@Tamasrazim](https://github.com/Tamasrazim)
+
+**LinkedIn** — [Tamasrazim](https://www.linkedin.com/in/Tamasrazim/)
+
 **Shutterstock** — [Tamasrazim](https://www.shutterstock.com/g/Tamasrazim)
 
 <div align="center">
+
 <br>
 
 <code>ROBIUL RUMMAN RAZIM</code><br>
-<sub>Tamasrazim · building things that move</sub>
+<sub>TAMASRAZIM / PERSONAL IDENTITY / 2026</sub>
 
 </div>
