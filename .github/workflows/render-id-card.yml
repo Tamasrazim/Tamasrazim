@@ -1,0 +1,87 @@
+name: Render exact ID card from main site
+
+on:
+  push:
+    paths-ignore:
+      - id-card.png
+      - id-card.svg
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Checkout main site source
+        uses: actions/checkout@v4
+        with:
+          repository: Tamasrazim/tamasrazim.github.io
+          ref: main
+          path: site-source
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Start source site
+        run: |
+          python -m http.server 4173 --directory site-source >/tmp/tamas-site.log 2>&1 &
+          echo $! >/tmp/tamas-site.pid
+          for i in {1..30}; do
+            curl -fsS http://127.0.0.1:4173/ >/dev/null && break
+            sleep 1
+          done
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Playwright
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0 >/dev/null 2>&1
+          npx playwright install --with-deps chromium
+
+      - name: Capture the real ID card
+        run: |
+          cat > /tmp/render-id.mjs <<'EOF'
+          import { chromium } from 'playwright';
+
+          const browser = await chromium.launch({ headless: true });
+          const page = await browser.newPage({
+            viewport: { width: 1440, height: 1000 },
+            deviceScaleFactor: 2
+          });
+
+          await page.goto('http://127.0.0.1:4173/#about', { waitUntil: 'networkidle' });
+          await page.locator('.id-card').waitFor({ state: 'visible' });
+          await page.evaluate(() => window.scrollTo(0, document.querySelector('#about').offsetTop));
+
+          const card = page.locator('.id-card');
+          await card.screenshot({
+            path: 'id-card.png',
+            animations: 'disabled',
+            caret: 'hide',
+            scale: 'device'
+          });
+
+          await browser.close();
+          EOF
+
+          node /tmp/render-id.mjs
+
+      - name: Commit exact card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add id-card.png
+          git rm -f id-card.svg 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Render exact ID card from main site source"
+          git push
