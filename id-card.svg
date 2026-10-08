@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="t d">
+<title id="t">Tamasrazim Registered Identity</title>
+<desc id="d">Robiul Rumman Razim, online handle Tamasrazim, personal identity card.</desc>
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#080808"/><stop offset=".55" stop-color="#111"/><stop offset="1" stop-color="#050505"/></linearGradient>
+  <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#222" stroke-width="1"/></pattern>
+  <filter id="glow"><feGaussianBlur stdDeviation="8"/></filter>
+</defs>
+<rect x="30" y="30" width="1340" height="760" rx="34" fill="url(#g)" stroke="#e8e8e8" stroke-width="2"/>
+<rect x="30" y="30" width="1340" height="760" rx="34" fill="url(#grid)" opacity=".55"/>
+<path d="M60 590C240 510 270 230 440 180S620 430 790 330 980 120 1150 250 1220 520 1340 410" fill="none" stroke="#fff" stroke-width="2" opacity=".18"/>
+<circle cx="1080" cy="250" r="155" fill="none" stroke="#fff" stroke-width="2" opacity=".08"/>
+<circle cx="1080" cy="250" r="4" fill="#fff" opacity=".8"/>
+<g fill="#fff" opacity=".75">
+<circle cx="1015" cy="175" r="3"/><circle cx="1050" cy="160" r="2"/><circle cx="1120" cy="178" r="3"/><circle cx="1170" cy="214" r="2"/><circle cx="1110" cy="305" r="3"/><circle cx="1185" cy="300" r="2"/><circle cx="1030" cy="330" r="2"/><circle cx="985" cy="255" r="2"/>
+</g>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" fill="#f2f2f2">
+<text x="95" y="112" font-size="22" letter-spacing="4" opacity=".55">REGISTERED IDENTITY</text>
+<rect x="1235" y="78" width="65" height="42" rx="8" fill="none" stroke="#ddd" stroke-width="2" opacity=".7"/>
+<path d="M1250 90h35M1250 101h35M1250 112h20" stroke="#ddd" stroke-width="2" opacity=".65"/>
+<text x="95" y="230" font-size="54" font-weight="600">Robiul Rumman Razim</text>
+<path d="M95 260H790" stroke="#ddd" stroke-width="2" opacity=".35"/>
+<text x="95" y="310" font-size="18" letter-spacing="5" opacity=".55">ONLINE HANDLE</text>
+<text x="95" y="375" font-size="66" font-weight="700" letter-spacing="3">TAMASRAZIM</text>
+<text x="95" y="420" font-size="18" opacity=".6">RRMZ / TR</text>
+<text x="360" y="420" font-size="18" opacity=".6">PERSONAL WEBSITE</text>
+<rect x="95" y="492" width="300" height="74" rx="10" fill="#0b0b0b" stroke="#333"/>
+<circle cx="124" cy="529" r="8" fill="#dcdcdc"/>
+<text x="148" y="538" font-size="22">Active</text>
+<text x="95" y="650" font-size="20" opacity=".58">A man full of uncommonsense.</text>
+<text x="95" y="686" font-size="20" opacity=".58">IT Student · Web &amp; Software Developer.</text>
+<text x="1165" y="690" font-size="18" opacity=".5">T/R — 2026</text>
+<text x="95" y="748" font-size="14" letter-spacing="3" opacity=".32">TAMASRAZIM / PERSONAL IDENTITY</text>
+</g>
+<g stroke="#fff" stroke-width="2" opacity=".65">
+<path d="M60 95V150M60 95H115M1340 95V150M1340 95H1285M60 725V670M60 725H115M1340 725V670M1340 725H1285"/>
+</g>
+</svg>
