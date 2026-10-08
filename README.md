@@ -1,15 +1,13 @@
 # TAMASRAZIM — ANIMATION-FIRST
 
 <p align="center">
-  <a href="./identity-card/index.html"><strong>↗ OPEN THE ORIGINAL INTERACTIVE ID CARD</strong></a>
+  <a href="https://tamasrazim.github.io/#about"><strong>↗ OPEN THE LIVE ORIGINAL ID CARD</strong></a>
   <br>
-  <sub>Exact card markup and styling, original constellation image, original motion engine, and card-scoped pointer interactions.</sub>
+  <sub>The matching standalone HTML/CSS/JavaScript implementation is included in this repository.</sub>
 </p>
 
 <p align="center">
-  <a href="./identity-card/index.html"><strong>↗ OPEN THE ORIGINAL INTERACTIVE ID CARD</strong></a>
-  &nbsp; · &nbsp;
-  <a href="./identity-card/index.html">HTML</a>
+  <a href="./identity-card/index.html"><strong>STANDALONE HTML SOURCE</strong></a>
   &nbsp; · &nbsp;
   <a href="./identity-card/site.css">CSS</a>
   &nbsp; · &nbsp;
@@ -26,7 +24,7 @@
 
 ---
 
-> **The interactive HTML card is the source of truth.** It uses the original card markup and site stylesheet, the original JavaScript motion core, and the original constellation image copied into this repository. GitHub does not execute this HTML/JavaScript inside the Markdown reader; open `identity-card/index.html` to run the actual card.
+> **The standalone card implementation has been ported into this repository.** Its card markup matches the original exactly; the site stylesheet and motion core are copied byte-for-byte from the main site, and the original constellation image is included locally. The interactions file preserves the card-relevant behavior from the main site script. GitHub’s source view does not execute HTML/JavaScript, so the live original is linked above; the copied `identity-card/` folder can be run through a local static server or a configured Pages deployment.
 
 ## The identity-card source
 
@@ -36,15 +34,15 @@
 | `identity-card/site.css` | Visual layers, layout, and styling |
 | `identity-card/motion-core.js` | Motion timing and coordination |
 | `identity-card/card-interactions.js` | Pointer and interaction behavior |
-| `identity-card/assets/images/tamanna-constellation.jpeg` | Original constellation image, stored locally |\n| `assets/animated-identity.svg` | Separate animated SVG experiment; not the interactive card |
+| `identity-card/assets/images/tamanna-constellation.jpeg` | Original constellation image, stored locally | `assets/animated-identity.svg` is a separate SVG experiment, not the interactive card.
 
 ## Motion principles
 
 - **Animation first:** movement is part of the visual identity.
-- **Original implementation:** HTML, CSS, and JavaScript are copied from the main site and scoped to the card.\n- **README limitation:** GitHub Markdown cannot run JavaScript; open the standalone HTML page for the interactive animation.
+- **Original implementation:** the exact card markup, original stylesheet and motion core, local image asset, and card-scoped interactions are included. GitHub Markdown cannot run JavaScript; open the live card above or run the standalone page.
 - **No false claims:** the reference checklist below is documentation, not a claim that every check has passed.
 - **Reduced motion matters:** the live card should respect user motion preferences.
-- **README limitation:** GitHub does not execute HTML/JavaScript in Markdown. SVG animation support can vary by renderer; if it appears still, open the SVG directly or use the live card link.
+- **README limitation:** GitHub does not execute HTML/JavaScript in Markdown, so the interactive experience lives in the standalone HTML page or the linked live site.
 
 ## 10,000-line engineering reference
 
@@ -9998,3 +9996,4 @@ Review the **source inspection** behavior in the documentation and qa layer of t
 
 Review the **test evidence** behavior in the documentation and qa layer of the identity card.
 ## End of the 10,000-line engineering reference
+
