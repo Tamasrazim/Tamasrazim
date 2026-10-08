@@ -1,70 +1,114 @@
 <div align="center">
 
-# ROBIUL RUMMAN RAZIM
-### <code>tamasrazim</code>
+<img src="https://raw.githubusercontent.com/Tamasrazim/Tamasrazim/main/hero.svg" alt="Tamasrazim profile hero" width="100%">
 
-**Creative developer · Browser-native tools · Motion & graphics**
+<br>
 
-I build interactive web experiments, creative tooling, renderers, and practical projects that connect code with visual design.
-
-<p>
-  <a href="https://tamasrazim.github.io"><img src="https://img.shields.io/badge/Website-tamasrazim.github.io-111111?style=for-the-badge&logo=githubpages&logoColor=white" alt="Website"></a>
-  <a href="https://github.com/Tamasrazim"><img src="https://img.shields.io/badge/GitHub-Tamasrazim-111111?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-  <a href="https://www.linkedin.com/in/Tamasrazim/"><img src="https://img.shields.io/badge/LinkedIn-Connect-111111?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://www.shutterstock.com/g/Tamasrazim"><img src="https://img.shields.io/badge/Shutterstock-Portfolio-111111?style=for-the-badge&logo=shutterstock&logoColor=white" alt="Shutterstock"></a>
-</p>
+<a href="https://tamasrazim.github.io">WEBSITE</a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://github.com/Tamasrazim">GITHUB</a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/Tamasrazim/">LINKEDIN</a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://www.shutterstock.com/g/Tamasrazim">SHUTTERSTOCK</a>
 
 </div>
 
 ---
 
-## / WHAT I BUILD
+## 01 / ABOUT
 
-- **Creative tools** — browser-based workspaces for making, previewing, and exporting visual assets.
-- **Motion & graphics** — animation systems, vector artwork, procedural visuals, and rendering experiments.
-- **Web experiences** — interactive interfaces, small utilities, and installable web apps.
-- **Practical software** — tools designed around a clear workflow, usable controls, and maintainable code.
+**Robiul Rumman Razim — Tamasrazim**
 
-## / SELECTED PROJECTS
+I build software where **code becomes something you can see, move, control, and use**.
 
-| Project | Focus |
-| --- | --- |
-| **TRILYVA** | Creative motion and visual-asset workflow experiments |
-| **CODE → SVG** | Browser-based vector output and SVG tooling |
-| **CODE → EPS** | Exploring vector-scene export into EPS workflows |
-| **Repository Token Meter** | Repository-size and codebase measurement experiments |
-| **BNC Agro Care** | Website and digital presence project |
+My work sits around browser-native creative tools, motion systems, vector workflows, interactive web experiences, and practical utilities.
 
-Explore more on the **[project index](https://tamasrazim.github.io/projects/)**.
+> **I do not just build pages. I build the tools behind the work.**
 
-## / TOOLBOX
+---
+
+## 02 / WHAT I BUILD
+
+| | |
+|---|---|
+| **CREATIVE SOFTWARE** | Browser-first tools for creating, previewing, rendering, and exporting visual work. |
+| **MOTION SYSTEMS** | Procedural animation, interactive motion, visual experiments, and render pipelines. |
+| **VECTOR WORKFLOWS** | SVG tooling, scene structures, export experiments, and stock-ready asset workflows. |
+| **WEB EXPERIENCES** | Interactive interfaces, installable web apps, utilities, and experimental projects. |
+
+---
+
+## 03 / SELECTED WORK
+
+### `TRILYVA`
+Creative motion tooling focused on a complete **CODE → PREVIEW → RENDER → EXPORT** workflow.
+
+→ [Open project](https://tamasrazim.github.io/projects/code-motion/renderer/)
+
+### `CODE → SVG`
+A browser-native direction for turning code and visual logic into reusable vector output.
+
+→ [Open project](https://tamasrazim.github.io/projects/code-to-svg/)
+
+### `CODE → EPS`
+Vector-scene experiments aimed at bridging browser graphics with traditional Illustrator/EPS workflows.
+
+### `REPOSITORY TOKEN METER`
+A repository analysis experiment built around measuring large codebases and repository data.
+
+→ [Open project](https://tamasrazim.github.io/projects/repo-token-meter/)
+
+### `BNC AGRO CARE`
+A real-world web project combining business information, presentation, and a usable digital presence.
+
+→ [Open project](https://tamasrazim.github.io/projects/bncagrocare)
+
+**More:** [tamasrazim.github.io/projects](https://tamasrazim.github.io/projects/)
+
+---
+
+## 04 / STACK
 
 <p>
-  <img src="https://img.shields.io/badge/HTML5-111111?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-111111?style=flat-square&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-111111?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript">
-  <img src="https://img.shields.io/badge/SVG-111111?style=flat-square&logo=svg&logoColor=white" alt="SVG">
-  <img src="https://img.shields.io/badge/Canvas-111111?style=flat-square&logo=html5&logoColor=white" alt="Canvas">
-  <img src="https://img.shields.io/badge/PWA-111111?style=flat-square&logo=pwa&logoColor=white" alt="PWA">
-  <img src="https://img.shields.io/badge/GitHub_Actions-111111?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
+<img src="https://img.shields.io/badge/HTML5-050505?style=for-the-badge&logo=html5&logoColor=ffffff" alt="HTML5">
+<img src="https://img.shields.io/badge/CSS3-050505?style=for-the-badge&logo=css3&logoColor=ffffff" alt="CSS3">
+<img src="https://img.shields.io/badge/JavaScript-050505?style=for-the-badge&logo=javascript&logoColor=ffffff" alt="JavaScript">
+<img src="https://img.shields.io/badge/SVG-050505?style=for-the-badge&logo=svg&logoColor=ffffff" alt="SVG">
+<img src="https://img.shields.io/badge/Canvas-050505?style=for-the-badge&logo=html5&logoColor=ffffff" alt="Canvas">
+<img src="https://img.shields.io/badge/PWA-050505?style=for-the-badge&logo=pwa&logoColor=ffffff" alt="PWA">
+<img src="https://img.shields.io/badge/GitHub_Actions-050505?style=for-the-badge&logo=githubactions&logoColor=ffffff" alt="GitHub Actions">
 </p>
 
-## / PRINCIPLES
+---
 
-- **Animation with purpose** — motion should make an interface feel alive, not get in the way.
-- **Self-contained where practical** — reduce unnecessary dependencies and keep tools easy to run.
-- **Clear workflows** — make the path from input to preview to export understandable.
-- **Iterate, test, improve** — treat bugs and edge cases as part of the build, not an afterthought.
+## 05 / PRINCIPLES
 
-## / FIND ME
+**01 — Animation is part of the interface.**  
+Motion should communicate, react, and give an interface character.
 
-- **Website:** [tamasrazim.github.io](https://tamasrazim.github.io)
-- **GitHub:** [@Tamasrazim](https://github.com/Tamasrazim)
-- **LinkedIn:** [Tamasrazim](https://www.linkedin.com/in/Tamasrazim/)
-- **Stock portfolio:** [Shutterstock](https://www.shutterstock.com/g/Tamasrazim)
+**02 — Browser first.**  
+When a tool can run directly in the browser, I prefer keeping the workflow close to the user.
+
+**03 — Less dependency, more control.**  
+Self-contained systems are easier to inspect, move, test, and maintain.
+
+**04 — Build the weird thing.**  
+Experiments are useful when they push the next project forward.
+
+---
+
+## 06 / ELSEWHERE
+
+**Website** — [tamasrazim.github.io](https://tamasrazim.github.io)  
+**GitHub** — [@Tamasrazim](https://github.com/Tamasrazim)  
+**LinkedIn** — [Tamasrazim](https://www.linkedin.com/in/Tamasrazim/)  
+**Shutterstock** — [Tamasrazim](https://www.shutterstock.com/g/Tamasrazim)
 
 <div align="center">
+<br>
 
-<sub>Built by Robiul Rumman Razim · <code>Tamasrazim</code></sub>
+<code>ROBIUL RUMMAN RAZIM</code><br>
+<sub>Tamasrazim · building things that move</sub>
 
 </div>
