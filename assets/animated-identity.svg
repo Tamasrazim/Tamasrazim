@@ -1,42 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
-<title id="title">Tamasrazim — animated identity</title><desc id="desc">A black cinematic motion design with animated orbit rings, moving light trails, particles, and the Tamasrazim wordmark.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="756" viewBox="0 0 1200 756" role="img" aria-labelledby="title desc">
+<title id="title">Tamasrazim — animated original identity card</title>
+<desc id="desc">A motion-enhanced version of the original black Tamasrazim identity card: registered identity header, constellation stars, scanning light, name, online handle, and active status.</desc>
 <defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#030407"/><stop offset=".52" stop-color="#10131d"/><stop offset="1" stop-color="#030407"/></linearGradient>
- <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7df9ff" stop-opacity="0"/><stop offset=".28" stop-color="#7df9ff"/><stop offset=".62" stop-color="#b8a0ff"/><stop offset="1" stop-color="#b8a0ff" stop-opacity="0"/></linearGradient>
- <radialGradient id="core"><stop stop-color="#8ef8ff" stop-opacity=".25"/><stop offset="1" stop-color="#8ef8ff" stop-opacity="0"/></radialGradient>
- <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#a3b8ff" stroke-opacity=".08" stroke-width="1"/></pattern>
- <clipPath id="clip"><rect width="1200" height="560" rx="24"/></clipPath>
+  <linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050505"/><stop offset=".52" stop-color="#0b0c10"/><stop offset="1" stop-color="#020202"/></linearGradient>
+  <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f4f4ef" stop-opacity="0"/><stop offset=".5" stop-color="#f4f4ef" stop-opacity=".18"/><stop offset="1" stop-color="#f4f4ef" stop-opacity="0"/></linearGradient>
+  <radialGradient id="imageglow"><stop stop-color="#dfe7ff" stop-opacity=".22"/><stop offset="1" stop-color="#dfe7ff" stop-opacity="0"/></radialGradient>
+  <filter id="softglow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#fff" stroke-opacity=".055" stroke-width="1"/></pattern>
+  <clipPath id="cardclip"><rect x="28" y="28" width="1144" height="700" rx="25"/></clipPath>
+  <g id="star"><circle r="2.4" fill="#f4f4ef"/><circle r="7" fill="#f4f4ef" opacity=".12"/></g>
 </defs>
-<g clip-path="url(#clip)">
-<rect width="1200" height="560" rx="24" fill="url(#bg)"/><rect width="1200" height="560" fill="url(#grid)"/>
-<circle cx="600" cy="265" r="300" fill="url(#core)"/>
-<g fill="none" stroke-linecap="round" transform="translate(600 265)">
- <ellipse rx="410" ry="125" stroke="#7df9ff" stroke-opacity=".32" stroke-width="1.5" transform="rotate(-18)"/>
- <ellipse rx="365" ry="170" stroke="#a894ff" stroke-opacity=".38" stroke-width="1.5" transform="rotate(31)"/>
- <ellipse rx="290" ry="205" stroke="#fff" stroke-opacity=".15" stroke-width="1" transform="rotate(-49)"/>
- <ellipse rx="450" ry="235" stroke="#7df9ff" stroke-opacity=".12" stroke-width="1" transform="rotate(65)"/>
- <ellipse rx="410" ry="125" stroke="url(#shine)" stroke-width="3" stroke-dasharray="90 760"><animateTransform attributeName="transform" type="rotate" from="-18" to="342" dur="12s" repeatCount="indefinite"/></ellipse>
- <ellipse rx="365" ry="170" stroke="#b8a0ff" stroke-width="2" stroke-dasharray="45 720" stroke-opacity=".9"><animateTransform attributeName="transform" type="rotate" from="31" to="-329" dur="18s" repeatCount="indefinite"/></ellipse>
+<rect width="1200" height="756" fill="#050505"/>
+<g clip-path="url(#cardclip)">
+  <rect x="28" y="28" width="1144" height="700" rx="25" fill="url(#base)"/>
+  <rect x="28" y="28" width="1144" height="700" fill="url(#grid)"/>
+  <ellipse cx="850" cy="325" rx="430" ry="300" fill="url(#imageglow)"/>
+  <g opacity=".68" stroke="#dbe2f6" stroke-width="1.2" fill="none">
+    <path d="M390 245L444 218 501 232 542 201 590 227 631 211 678 249 731 222 779 248 821 215 867 235 910 201 958 230"/>
+    <path d="M390 245L421 300 474 326 509 378 566 393 603 443 660 414 705 451 759 420 802 447 849 399 901 414 941 361 988 339"/>
+    <path d="M421 300L501 232 509 378 590 227 603 443 678 249 660 414 779 248 759 420 867 235 849 399 958 230 988 339" stroke-opacity=".23"/>
+  </g>
+  <g fill="#f4f4ef">
+    <circle cx="390" cy="245" r="3.2"/><circle cx="444" cy="218" r="2.2"/><circle cx="501" cy="232" r="3.5"/><circle cx="542" cy="201" r="2"/><circle cx="590" cy="227" r="3"/><circle cx="631" cy="211" r="2"/><circle cx="678" cy="249" r="3.5"/><circle cx="731" cy="222" r="2"/><circle cx="779" cy="248" r="3"/><circle cx="821" cy="215" r="2.5"/><circle cx="867" cy="235" r="3.2"/><circle cx="910" cy="201" r="2"/><circle cx="958" cy="230" r="3.3"/>
+    <circle cx="421" cy="300" r="2.5"/><circle cx="474" cy="326" r="2"/><circle cx="509" cy="378" r="3.2"/><circle cx="566" cy="393" r="2.1"/><circle cx="603" cy="443" r="3.5"/><circle cx="660" cy="414" r="2.6"/><circle cx="705" cy="451" r="2"/><circle cx="759" cy="420" r="3.2"/><circle cx="802" cy="447" r="2.1"/><circle cx="849" cy="399" r="3.4"/><circle cx="901" cy="414" r="2.3"/><circle cx="941" cy="361" r="3"/><circle cx="988" cy="339" r="2.4"/>
+  </g>
+  <g filter="url(#softglow)">
+    <circle cx="501" cy="232" r="5" fill="#fff"><animate attributeName="opacity" values=".4;1;.45" dur="2.1s" repeatCount="indefinite"/></circle>
+    <circle cx="678" cy="249" r="5" fill="#fff"><animate attributeName="opacity" values="1;.3;1" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="603" cy="443" r="5" fill="#fff"><animate attributeName="opacity" values=".3;1;.3" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="849" cy="399" r="5" fill="#fff"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
+  </g>
+  <rect x="28" y="28" width="1144" height="700" fill="url(#scan)" opacity=".55">
+    <animate attributeName="y" values="-700;728;-700" dur="7s" repeatCount="indefinite"/>
+  </rect>
+  <path d="M45 90V45H90 M1110 45H1155V90 M45 666V711H90 M1110 711H1155V666" fill="none" stroke="#f4f4ef" stroke-opacity=".52" stroke-width="1.5"/>
+  <g font-family="'JetBrains Mono',monospace" fill="#f4f4ef">
+    <text x="78" y="105" font-size="18" letter-spacing="4" opacity=".8">REGISTERED IDENTITY</text>
+    <rect x="1060" y="75" width="56" height="38" rx="6" fill="none" stroke="#f4f4ef" stroke-opacity=".55"/>
+    <path d="M1071 87H1105M1071 94H1105M1071 101H1093" stroke="#f4f4ef" stroke-opacity=".55"/>
+    <text x="78" y="394" font-family="'Unbounded',sans-serif" font-size="47" font-weight="500" letter-spacing="-2">Robiul Rumman Razim</text>
+    <path d="M80 421H1120" stroke="#f4f4ef" stroke-opacity=".25"/>
+    <text x="80" y="463" font-size="16" letter-spacing="4" opacity=".6">ONLINE HANDLE</text>
+    <text x="78" y="535" font-family="'Unbounded',sans-serif" font-size="59" font-weight="700" letter-spacing="1">TAMASRAZIM</text>
+    <text x="80" y="574" font-size="14" letter-spacing="2" opacity=".7">RRMZ / TR</text>
+    <text x="1120" y="574" font-size="14" letter-spacing="2" text-anchor="end" opacity=".7">PERSONAL WEBSITE</text>
+  </g>
+  <g transform="translate(80 645)">
+    <rect width="105" height="36" rx="4" fill="#f4f4ef" fill-opacity=".055" stroke="#f4f4ef" stroke-opacity=".22"/>
+    <circle cx="19" cy="18" r="5" fill="#f4f4ef"><animate attributeName="opacity" values="1;.25;1" dur="1.6s" repeatCount="indefinite"/></circle>
+    <text x="34" y="23" font-family="monospace" font-size="14" fill="#f4f4ef">ACTIVE</text>
+    <text x="1120" y="23" font-family="monospace" font-size="15" fill="#f4f4ef" text-anchor="end" opacity=".7">T/R — 2026</text>
+  </g>
+  <rect x="28" y="28" width="1144" height="700" rx="25" fill="none" stroke="#fff" stroke-opacity=".22"/>
 </g>
-<g fill="#d9fcff" filter="url(#glow)">
- <circle cx="202" cy="180" r="2.8"><animate attributeName="cy" values="180;150;180" dur="4s" repeatCount="indefinite"/></circle>
- <circle cx="964" cy="172" r="3"><animate attributeName="cx" values="964;990;964" dur="5s" repeatCount="indefinite"/></circle>
- <circle cx="875" cy="392" r="2"><animate attributeName="cy" values="392;420;392" dur="3.6s" repeatCount="indefinite"/></circle>
- <circle cx="308" cy="401" r="2.5"><animate attributeName="cx" values="308;282;308" dur="4.8s" repeatCount="indefinite"/></circle>
+<g opacity=".45" fill="#f4f4ef">
+  <circle cx="132" cy="175" r="2"><animate attributeName="opacity" values=".15;.8;.15" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="1065" cy="590" r="2"><animate attributeName="opacity" values=".8;.15;.8" dur="2.3s" repeatCount="indefinite"/></circle>
+  <circle cx="105" cy="500" r="1.5"><animate attributeName="opacity" values=".1;.7;.1" dur="2.8s" repeatCount="indefinite"/></circle>
 </g>
-<g fill="#fff" opacity=".6">
- <circle cx="57" cy="48" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="2s" begin="-0s" repeatCount="indefinite"/></circle><circle cx="230" cy="145" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="3s" begin="-1s" repeatCount="indefinite"/></circle><circle cx="403" cy="242" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="4s" begin="-2s" repeatCount="indefinite"/></circle><circle cx="576" cy="339" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="5s" begin="-3s" repeatCount="indefinite"/></circle><circle cx="749" cy="436" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="6s" begin="-0s" repeatCount="indefinite"/></circle><circle cx="922" cy="533" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="2s" begin="-1s" repeatCount="indefinite"/></circle><circle cx="1095" cy="120" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="3s" begin="-2s" repeatCount="indefinite"/></circle><circle cx="108" cy="217" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="4s" begin="-3s" repeatCount="indefinite"/></circle><circle cx="281" cy="314" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="5s" begin="-0s" repeatCount="indefinite"/></circle><circle cx="454" cy="411" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="6s" begin="-1s" repeatCount="indefinite"/></circle><circle cx="627" cy="508" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="2s" begin="-2s" repeatCount="indefinite"/></circle><circle cx="800" cy="95" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="3s" begin="-3s" repeatCount="indefinite"/></circle><circle cx="973" cy="192" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="4s" begin="-0s" repeatCount="indefinite"/></circle><circle cx="1146" cy="289" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="5s" begin="-1s" repeatCount="indefinite"/></circle><circle cx="159" cy="386" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="6s" begin="-2s" repeatCount="indefinite"/></circle><circle cx="332" cy="483" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="2s" begin="-3s" repeatCount="indefinite"/></circle><circle cx="505" cy="70" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="3s" begin="-0s" repeatCount="indefinite"/></circle><circle cx="678" cy="167" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="4s" begin="-1s" repeatCount="indefinite"/></circle><circle cx="851" cy="264" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="5s" begin="-2s" repeatCount="indefinite"/></circle><circle cx="1024" cy="361" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="6s" begin="-3s" repeatCount="indefinite"/></circle><circle cx="37" cy="458" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="2s" begin="-0s" repeatCount="indefinite"/></circle><circle cx="210" cy="45" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="3s" begin="-1s" repeatCount="indefinite"/></circle><circle cx="383" cy="142" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="4s" begin="-2s" repeatCount="indefinite"/></circle><circle cx="556" cy="239" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="5s" begin="-3s" repeatCount="indefinite"/></circle><circle cx="729" cy="336" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="6s" begin="-0s" repeatCount="indefinite"/></circle><circle cx="902" cy="433" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="2s" begin="-1s" repeatCount="indefinite"/></circle><circle cx="1075" cy="530" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="3s" begin="-2s" repeatCount="indefinite"/></circle><circle cx="88" cy="117" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="4s" begin="-3s" repeatCount="indefinite"/></circle><circle cx="261" cy="214" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="5s" begin="-0s" repeatCount="indefinite"/></circle><circle cx="434" cy="311" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="6s" begin="-1s" repeatCount="indefinite"/></circle><circle cx="607" cy="408" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="2s" begin="-2s" repeatCount="indefinite"/></circle><circle cx="780" cy="505" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="3s" begin="-3s" repeatCount="indefinite"/></circle><circle cx="953" cy="92" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="4s" begin="-0s" repeatCount="indefinite"/></circle><circle cx="1126" cy="189" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="5s" begin="-1s" repeatCount="indefinite"/></circle><circle cx="139" cy="286" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="6s" begin="-2s" repeatCount="indefinite"/></circle><circle cx="312" cy="383" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="2s" begin="-3s" repeatCount="indefinite"/></circle><circle cx="485" cy="480" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="3s" begin="-0s" repeatCount="indefinite"/></circle><circle cx="658" cy="67" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="4s" begin="-1s" repeatCount="indefinite"/></circle><circle cx="831" cy="164" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="5s" begin="-2s" repeatCount="indefinite"/></circle><circle cx="1004" cy="261" r="0.6"><animate attributeName="opacity" values=".15;.9;.15" dur="6s" begin="-3s" repeatCount="indefinite"/></circle><circle cx="1177" cy="358" r="1.05"><animate attributeName="opacity" values=".15;.9;.15" dur="2s" begin="-0s" repeatCount="indefinite"/></circle><circle cx="190" cy="455" r="1.5"><animate attributeName="opacity" values=".15;.9;.15" dur="3s" begin="-1s" repeatCount="indefinite"/></circle>
-</g>
-<path d="M80 112H340 M860 112H1120 M80 448H340 M860 448H1120" stroke="url(#shine)" stroke-width="1.5" opacity=".75"/>
-<text x="600" y="239" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="18" letter-spacing="8" text-anchor="middle" opacity=".85">IDENTITY / MOTION SYSTEM</text>
-<text x="600" y="312" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="800" letter-spacing="3" text-anchor="middle" filter="url(#glow)">TAMASRAZIM</text>
-<rect x="292" y="336" width="616" height="2" rx="1" fill="#253040"/>
-<rect x="292" y="336" width="170" height="2" rx="1" fill="url(#shine)"><animate attributeName="x" values="292;738;292" dur="5s" repeatCount="indefinite"/></rect>
-<text x="600" y="374" fill="#a9b3c7" font-family="monospace" font-size="15" letter-spacing="5" text-anchor="middle">ANIMATION FIRST · BUILT TO MOVE</text>
-<text x="52" y="52" fill="#7df9ff" font-family="monospace" font-size="12" letter-spacing="3">TR / IDENTITY CORE</text>
-<text x="1148" y="52" fill="#a894ff" font-family="monospace" font-size="12" text-anchor="end">LIVE MOTION // 001</text>
-<text x="52" y="520" fill="#768095" font-family="monospace" font-size="11" letter-spacing="2">POINTER · DEPTH · ORBITS · LIGHT</text>
-<text x="1148" y="520" fill="#768095" font-family="monospace" font-size="11" text-anchor="end">SCROLL TO EXPLORE ↓</text>
-<rect x="1" y="1" width="1198" height="558" rx="24" fill="none" stroke="#7df9ff" stroke-opacity=".28"/>
-</g></svg>
+</svg>
