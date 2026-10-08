@@ -1,66 +1,36 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Tamasrazim/Tamasrazim/main/id-card.svg" alt="Tamasrazim Registered Identity" width="100%">
+<img src="https://raw.githubusercontent.com/Tamasrazim/Tamasrazim/main/id-card.svg" alt="Tamasrazim Registered Identity" width="460">
 
-<br>
+<br><br>
+**Robiul Rumman Razim**
 
-**Robiul Rumman Razim**  
 *Tamasrazim is the online identity. Robiul Rumman Razim is the person behind it.*
 
-<br>
-
-<a href="https://tamasrazim.github.io">WEBSITE</a>
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<a href="https://github.com/Tamasrazim">GITHUB</a>
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/Tamasrazim/">LINKEDIN</a>
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<a href="https://www.shutterstock.com/g/Tamasrazim">SHUTTERSTOCK</a>
+<a href="https://tamasrazim.github.io">Website</a> · <a href="https://github.com/Tamasrazim">GitHub</a> · <a href="https://www.linkedin.com/in/Tamasrazim/">LinkedIn</a> · <a href="https://www.shutterstock.com/g/Tamasrazim">Shutterstock</a>
 
 </div>
 
 ---
 
-## 01 / ABOUT
+## 01 / About
 
-**More than a username.**
+More than a username.
 
-The GitHub profile is an extension of the same identity used across the personal site: projects, experiments, software, web work, motion, and things being explored.
+The GitHub profile is the public-facing software side of the same identity: projects, experiments, web work, motion, vector systems, and tools.
 
-## 02 / WHAT'S HERE
+## 02 / Selected work
 
-`SOFTWARE` · `WEB` · `MOTION` · `VECTOR` · `TOOLS` · `EXPERIMENTS`
+**TRILYVA** · Browser-based creative motion tooling
 
-The work moves between what people interact with and what makes it work underneath.
+**CODE → SVG** · Browser-native vector experiments
 
-## 03 / SELECTED WORK
+**CODE → EPS** · Vector-scene and export experiments
 
-**TRILYVA** — browser-based creative tooling and rendering workflows.  
-[Open project](https://tamasrazim.github.io/projects/code-motion/renderer/)
+**Repository Token Meter** · Repository analysis tooling
 
-**CODE → SVG** — browser-native vector and procedural graphics experiments.  
-[Open project](https://tamasrazim.github.io/projects/code-to-svg/)
+**BNC Agro Care** · Practical web project
 
-**CODE → EPS** — vector-scene and export experiments.
+[Browse the project index](https://tamasrazim.github.io/projects/)
 
-**Repository Token Meter** — repository analysis and measurement tooling.  
-[Open project](https://tamasrazim.github.io/projects/repo-token-meter/)
-
-**BNC Agro Care** — practical web project.  
-[Open project](https://tamasrazim.github.io/projects/bncagrocare)
-
-[Browse the full project index](https://tamasrazim.github.io/projects/)
-
----
-
-## 04 / ELSEWHERE
-
-**Website** · [tamasrazim.github.io](https://tamasrazim.github.io)  
-**GitHub** · [@Tamasrazim](https://github.com/Tamasrazim)  
-**LinkedIn** · [Tamasrazim](https://www.linkedin.com/in/Tamasrazim/)  
-**Shutterstock** · [Tamasrazim](https://www.shutterstock.com/g/Tamasrazim)
-
-<div align="center">
-<br>
-<sub>RRMZ / TR · PERSONAL WEBSITE · T/R — 2026</sub>
-</div>
+<div align="center"><sub>RRMZ / TR · PERSONAL WEBSITE · T/R — 2026</sub></div>
