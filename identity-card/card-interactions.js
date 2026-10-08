@@ -53,7 +53,7 @@
         qa(spec[0]).forEach(function(el){
           var mode=spec[1],nx=spec[2],ny=spec[3],rxMax=spec[4],ryMax=spec[5];
           el.classList.add(mode==='drift'?'pointer-drift':'pointer-soft');
-          pointerNodes.push({el:el,nx:nx,ny:ny,rxMax:rxMax,ryMax:ry,x:0,y:0,rx:0,ry:0});
+          pointerNodes.push({el:el,nx:nx,ny:ny,rxMax:rxMax,ryMax:ryMax,x:0,y:0,rx:0,ry:0});
         });
       });
 
