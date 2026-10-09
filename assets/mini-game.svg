@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
   <title id="title">Velocity Run</title>
-  <desc id="desc">A fast, seamless, perspective tunnel animation with rushing grid lines and a small futuristic craft.</desc>
+  <desc id="desc">A seamless perspective tunnel with fast rushing grid lines and a futuristic craft. Every animation returns to the same visual phase every 2.4 seconds.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
       <stop stop-color="#07080a"/>
@@ -36,16 +36,17 @@
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <style>
+      /* Seamless master cycle: 2.4 seconds. All sub-loops divide this cycle. */
       .rail{fill:none;stroke:#d9e1ec;stroke-opacity:.22;stroke-width:1}
       .thinrail{fill:none;stroke:#cdd7e5;stroke-opacity:.10;stroke-width:.8}
-      .dashrail{fill:none;stroke:#dfe6f0;stroke-opacity:.34;stroke-width:1;stroke-dasharray:4 16;animation:dashflow .72s linear infinite}
-      .speedline{fill:none;stroke:url(#beam);stroke-width:1.1;stroke-linecap:round;stroke-dasharray:3 38;animation:dashflow .56s linear infinite}
-      .frame{fill:none;stroke:url(#frameStroke);stroke-width:1.25;transform-box:fill-box;transform-origin:center;animation:approach 1.48s linear infinite}
-      .frame-2{animation-delay:-.30s}
-      .frame-3{animation-delay:-.60s}
-      .frame-4{animation-delay:-.90s}
-      .frame-5{animation-delay:-1.20s}
-      .rung{fill:none;stroke:#dce4ef;stroke-opacity:.32;stroke-width:1;transform-box:fill-box;transform-origin:center;animation:rush 1.22s linear infinite}
+      .dashrail{fill:none;stroke:#dfe6f0;stroke-opacity:.34;stroke-width:1;stroke-dasharray:4 16;animation:dashflow .8s linear infinite}
+      .speedline{fill:none;stroke:url(#beam);stroke-width:1.1;stroke-linecap:round;stroke-dasharray:3 38;animation:dashflow .8s linear infinite}
+      .frame{fill:none;stroke:url(#frameStroke);stroke-width:1.25;transform-box:fill-box;transform-origin:center;animation:approach 1.2s linear infinite}
+      .frame-2{animation-delay:-.24s}
+      .frame-3{animation-delay:-.48s}
+      .frame-4{animation-delay:-.72s}
+      .frame-5{animation-delay:-.96s}
+      .rung{fill:none;stroke:#dce4ef;stroke-opacity:.32;stroke-width:1;transform-box:fill-box;transform-origin:center;animation:rush 1.2s linear infinite}
       .rung:nth-of-type(2){animation-delay:-.15s}
       .rung:nth-of-type(3){animation-delay:-.30s}
       .rung:nth-of-type(4){animation-delay:-.45s}
@@ -53,11 +54,11 @@
       .rung:nth-of-type(6){animation-delay:-.75s}
       .rung:nth-of-type(7){animation-delay:-.90s}
       .rung:nth-of-type(8){animation-delay:-1.05s}
-      .spark{fill:#f0f4fa;animation:spark 1.7s ease-in-out infinite}
-      .ship-glow{animation:engine 1s ease-in-out infinite}
-      .ship{transform-box:fill-box;transform-origin:center;animation:bank 1.65s ease-in-out infinite}
+      .spark{fill:#f0f4fa;animation:spark 1.2s ease-in-out infinite}
+      .ship-glow{animation:engine 1.2s ease-in-out infinite}
+      .ship{transform-box:fill-box;transform-origin:center;animation:bank 2.4s ease-in-out infinite}
       .hud{fill:none;stroke:#dfe6f0;stroke-opacity:.2;stroke-width:.8}
-      @keyframes dashflow{to{stroke-dashoffset:-164}}
+      @keyframes dashflow{to{stroke-dashoffset:-820}}
       @keyframes approach{
         0%{transform:scale(.035);opacity:0}
         10%{opacity:.38}
@@ -124,7 +125,7 @@
         fill="none" stroke="#e1e8f2" stroke-opacity=".2" stroke-width="1.2"/>
       <path d="M90 65H165V90H110V115H185V143H135V171H215V198H155V220"
         fill="none" stroke="url(#beam)" stroke-width="2" stroke-dasharray="32 240">
-        <animate attributeName="stroke-dashoffset" values="0;-272" dur=".82s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-dashoffset" values="0;-272" dur=".8s" repeatCount="indefinite"/>
       </path>
       <path d="M1110 65H1035V90H1090V115H1015V143H1065V171H985V198H1045V220"
         fill="none" stroke="url(#beam)" stroke-width="2" stroke-dasharray="32 240">
@@ -160,7 +161,7 @@
     <g transform="translate(1080 207)">
       <rect width="78" height="2" rx="1" fill="#dfe6f0" fill-opacity=".1"/>
       <rect width="78" height="2" rx="1" fill="#dfe6f0" fill-opacity=".35">
-        <animate attributeName="width" values="8;78;8" dur="1.48s" repeatCount="indefinite"/>
+        <animate attributeName="width" values="8;78;8" dur="1.2s" repeatCount="indefinite"/>
       </rect>
     </g>
   </g>
