@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
   <title id="title">Kinetic Type — Biography in Motion</title>
-  <desc id="desc">The biography is typeset gradually: one word at a time, one line at a time. Each word slides gently into its final position, then a thin rule traces beneath that line. The complete text reads: I&apos;m a developer and computer technology student from Bangladesh. I enjoy building software, creating web experiences, and experimenting with ideas that make technology more useful. I&apos;m interested in how things work at every level—from thoughtful interfaces and animation to the systems underneath them. I learn by building, testing, and improving real projects. This is a small space to share what I&apos;m making, what I&apos;m learning, and where I&apos;m heading next.</desc>
+  <desc id="desc">The biography appears with a restrained opacity reveal, one word at a time and one line at a time. Each word starts at 20 percent opacity and gently fades to full opacity without sliding or bouncing, while a thin rule traces beneath the line. The complete text reads: I&apos;m a developer and computer technology student from Bangladesh. I enjoy building software, creating web experiences, and experimenting with ideas that make technology more useful. I&apos;m interested in how things work at every level—from thoughtful interfaces and animation to the systems underneath them. I learn by building, testing, and improving real projects. This is a small space to share what I&apos;m making, what I&apos;m learning, and where I&apos;m heading next.</desc>
   <style>
     .eyebrow,.footer{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:currentColor}
     .eyebrow{font-size:11px;letter-spacing:2.6px;opacity:.45}
     .footer{font-size:10px;letter-spacing:1.8px;opacity:.42}
     .hairline{fill:none;stroke:currentColor;stroke-opacity:.14;stroke-width:1}
-    .word{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:22px;font-weight:480;letter-spacing:0;fill:currentColor;opacity:1;transform:translate(0,0);transform-box:fill-box;transform-origin:left center;animation-timing-function:cubic-bezier(.18,.78,.22,1);animation-fill-mode:both}
-    .from-left{animation-name:arrive-left}
-    .from-right{animation-name:arrive-right}
-    .from-below{animation-name:arrive-below}
-    @keyframes arrive-left{0%{opacity:0;transform:translate(-14px,6px)}72%{opacity:1;transform:translate(1px,-1px)}100%{opacity:1;transform:translate(0,0)}}
-    @keyframes arrive-right{0%{opacity:0;transform:translate(14px,6px)}72%{opacity:1;transform:translate(-1px,-1px)}100%{opacity:1;transform:translate(0,0)}}
-    @keyframes arrive-below{0%{opacity:0;transform:translate(0,12px) scale(.98)}72%{opacity:1;transform:translate(0,-1px) scale(1.005)}100%{opacity:1;transform:translate(0,0) scale(1)}}
+    .word{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:22px;font-weight:480;letter-spacing:0;fill:currentColor;opacity:.2;animation-name:fade-word;animation-timing-function:cubic-bezier(.4,0,.2,1);animation-fill-mode:both}
+    @keyframes fade-word{from{opacity:.2}to{opacity:1}}
     .line-track{fill:none;stroke:currentColor;stroke-opacity:.10;stroke-width:1.15}
     .line-progress{fill:none;stroke:currentColor;stroke-opacity:.58;stroke-width:1.15;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation-name:draw-line;animation-timing-function:linear;animation-fill-mode:both}
     @keyframes draw-line{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
     .progress-track{fill:none;stroke:currentColor;stroke-opacity:.12;stroke-width:1.5}
     .progress-fill{fill:none;stroke:currentColor;stroke-opacity:.72;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw-line 10.0000s linear both}
-    .ready-cursor{fill:currentColor;opacity:0;animation:ready-blink 0.1915s steps(2,end) 10.0000s infinite}
+    .ready-cursor{fill:currentColor;opacity:0;animation:ready-blink .9s steps(2,end) 10.0000s infinite}
     @keyframes ready-blink{0%,49%{opacity:.7}50%,100%{opacity:.08}}
     @media(prefers-reduced-motion:reduce){
-      .word{opacity:1;transform:none;animation:none}
+      .word{opacity:1;animation:none}
       .line-progress,.progress-fill{stroke-dashoffset:0;animation:none}
       .ready-cursor{opacity:.5;animation:none}
     }
