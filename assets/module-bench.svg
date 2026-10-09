@@ -1,32 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
-  <title id="title">Module Bench</title>
-  <desc id="desc">An isometric workbench showing separate modules connected into a larger system, with a moving signal tracing the route between them.</desc>
+  <title id="title">Timing Is Design — Motion Study 2.0</title>
+  <desc id="desc">A monochrome motion-study footer with an animated scan bar moving across an abstract waveform made from varied vertical strokes. No color accents.</desc>
   <defs>
-    <pattern id="bench-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width=".7"/></pattern>
-    <linearGradient id="bench-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111111"/><stop offset="1" stop-color="#202020"/></linearGradient>
-    <g id="iso-cube" stroke-linejoin="round" stroke-width="1.2"><path d="M0 0L24 -14L48 0L24 14Z" fill="#FFFFFF" stroke="#A8A8A8"/><path d="M0 0L24 14V42L0 28Z" fill="#D7D7D7" stroke="#A8A8A8"/><path d="M24 14L48 0V28L24 42Z" fill="#888888" stroke="#A8A8A8"/></g>
+    <pattern id="signal-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#FFFFFF" stroke-opacity=".055" stroke-width=".7"/></pattern>
+    <clipPath id="signal-frame"><rect width="1200" height="220" rx="12"/></clipPath>
   </defs>
   <style>
-    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace}
-    .path-signal{stroke-dasharray:42 660;animation:route 4s linear infinite}
-    @keyframes route{from{stroke-dashoffset:702}to{stroke-dashoffset:0}}
-    @media(prefers-reduced-motion:reduce){.path-signal{animation:none;stroke-dashoffset:0}}
+    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:#FFFFFF}
+    .scan{animation:scan 7s linear infinite}
+    .pulse{animation:pulse 2.8s ease-in-out infinite}
+    @keyframes scan{from{transform:translateX(0)}to{transform:translateX(660px)}}
+    @keyframes pulse{0%,100%{opacity:.25}50%{opacity:.9}}
+    @media(prefers-reduced-motion:reduce){.scan,.pulse{animation:none}.scan{transform:translateX(330px)}.pulse{opacity:.7}}
   </style>
-  <rect width="1200" height="220" rx="14" fill="url(#bench-bg)"/><rect width="1200" height="220" rx="14" fill="url(#bench-grid)"/>
-  <text x="38" y="35" class="mono" font-size="10" letter-spacing="2.2" fill="#E5E5E5" opacity=".72">MODULE BENCH / STUDY 03</text>
-  <text x="38" y="80" font-family="Inter,'Segoe UI',Arial,sans-serif" font-size="28" font-weight="520" letter-spacing="-.65" fill="#FFFFFF">Parts become a system.</text>
-  <text x="40" y="105" font-family="Inter,'Segoe UI',Arial,sans-serif" font-size="13" fill="#D0D0D0" opacity=".83">Structure is built one connection at a time.</text>
-  <path d="M40 135H260" stroke="#D0D0D0" stroke-opacity=".32"/><text x="40" y="158" class="mono" font-size="10" letter-spacing="1.5" fill="#D0D0D0" opacity=".7">CONNECT / CHECK / REPEAT</text>
-  <g transform="translate(390 66)">
-    <path d="M20 70L150 25L280 70L410 25L540 70" fill="none" stroke="#9A9A9A" stroke-opacity=".52" stroke-width="1.5" stroke-dasharray="4 7"/>
-    <path class="path-signal" d="M20 70L150 25L280 70L410 25L540 70" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
-    <g transform="translate(0 0)"><use href="#iso-cube" x="0" y="52"/><use href="#iso-cube" x="0" y="22" opacity=".88"/></g>
-    <g transform="translate(135 -30)"><use href="#iso-cube" x="0" y="52"/><use href="#iso-cube" x="24" y="24" opacity=".72"/></g>
-    <g transform="translate(270 0)"><use href="#iso-cube" x="0" y="52"/><use href="#iso-cube" x="24" y="24" opacity=".8"/></g>
-    <g transform="translate(405 -30)"><use href="#iso-cube" x="0" y="52"/><use href="#iso-cube" x="0" y="22" opacity=".88"/></g>
-    <circle cx="20" cy="122" r="3.5" fill="#FFFFFF" opacity=".9"/><circle cx="560" cy="122" r="3.5" fill="#FFFFFF" opacity=".9"/>
+  <g clip-path="url(#signal-frame)">
+    <rect width="1200" height="220" fill="#0A0A0A"/>
+    <rect width="1200" height="220" fill="url(#signal-grid)"/>
+    <path d="M0 30H1200M0 190H1200" stroke="#FFFFFF" stroke-opacity=".14"/>
+    <path d="M416 30V190" stroke="#FFFFFF" stroke-opacity=".22"/>
+    <text class="mono" x="36" y="27" font-size="9" letter-spacing="2">MOTION STUDY / 02.0</text>
+    <text x="34" y="82" font-family="Inter,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="740" letter-spacing="-1.1" fill="#FFFFFF">TIMING IS</text>
+    <text x="34" y="121" font-family="Inter,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="740" letter-spacing="-1.1" fill="#FFFFFF">DESIGN.</text>
+    <text class="mono" x="36" y="163" font-size="10" letter-spacing="1.6" opacity=".72">PATTERN / PACE / PRECISION</text>
+    <path d="M36 180H368" stroke="#FFFFFF" stroke-opacity=".32"/>
+    <text class="mono" x="36" y="202" font-size="8" letter-spacing="1.5" opacity=".5">FRAME BY FRAME, WITH INTENT.</text>
+    <g>
+      <path d="M450 147H1150" stroke="#8B8B8B" stroke-width="1"/>
+      <path d="M450 80V181M590 80V181M730 80V181M870 80V181M1010 80V181M1150 80V181" stroke="#FFFFFF" stroke-opacity=".11" stroke-dasharray="2 5"/>
+      <line x1="475.0" y1="135" x2="475.0" y2="159" stroke="#FFFFFF" stroke-opacity="0.48" stroke-width="3"/>
+    <line x1="487.3" y1="128" x2="487.3" y2="166" stroke="#FFFFFF" stroke-opacity="0.56" stroke-width="1.5"/>
+    <line x1="499.6" y1="121" x2="499.6" y2="173" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="1.5"/>
+    <line x1="511.9" y1="116" x2="511.9" y2="178" stroke="#FFFFFF" stroke-opacity="0.71" stroke-width="1.5"/>
+    <line x1="524.2" y1="115" x2="524.2" y2="179" stroke="#FFFFFF" stroke-opacity="0.72" stroke-width="1.5"/>
+    <line x1="536.5" y1="118" x2="536.5" y2="176" stroke="#FFFFFF" stroke-opacity="0.68" stroke-width="3"/>
+    <line x1="548.8" y1="125" x2="548.8" y2="169" stroke="#FFFFFF" stroke-opacity="0.60" stroke-width="1.5"/>
+    <line x1="561.1" y1="136" x2="561.1" y2="158" stroke="#FFFFFF" stroke-opacity="0.46" stroke-width="1.5"/>
+    <line x1="573.4" y1="131" x2="573.4" y2="163" stroke="#FFFFFF" stroke-opacity="0.52" stroke-width="1.5"/>
+    <line x1="585.7" y1="122" x2="585.7" y2="172" stroke="#FFFFFF" stroke-opacity="0.63" stroke-width="1.5"/>
+    <line x1="598.0" y1="116" x2="598.0" y2="178" stroke="#FFFFFF" stroke-opacity="0.71" stroke-width="3"/>
+    <line x1="610.3" y1="116" x2="610.3" y2="178" stroke="#FFFFFF" stroke-opacity="0.71" stroke-width="1.5"/>
+    <line x1="622.6" y1="121" x2="622.6" y2="173" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="1.5"/>
+    <line x1="634.9" y1="129" x2="634.9" y2="165" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="1.5"/>
+    <line x1="647.2" y1="138" x2="647.2" y2="156" stroke="#FFFFFF" stroke-opacity="0.44" stroke-width="1.5"/>
+    <line x1="659.5" y1="129" x2="659.5" y2="165" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3"/>
+    <line x1="671.8" y1="123" x2="671.8" y2="171" stroke="#FFFFFF" stroke-opacity="0.62" stroke-width="1.5"/>
+    <line x1="684.1" y1="123" x2="684.1" y2="171" stroke="#FFFFFF" stroke-opacity="0.62" stroke-width="1.5"/>
+    <line x1="696.4" y1="128" x2="696.4" y2="166" stroke="#FFFFFF" stroke-opacity="0.56" stroke-width="1.5"/>
+    <line x1="708.7" y1="139" x2="708.7" y2="155" stroke="#FFFFFF" stroke-opacity="0.43" stroke-width="1.5"/>
+    <line x1="721.0" y1="126" x2="721.0" y2="168" stroke="#FFFFFF" stroke-opacity="0.59" stroke-width="3"/>
+    <line x1="733.3" y1="112" x2="733.3" y2="182" stroke="#FFFFFF" stroke-opacity="0.76" stroke-width="1.5"/>
+    <line x1="745.6" y1="102" x2="745.6" y2="192" stroke="#FFFFFF" stroke-opacity="0.88" stroke-width="1.5"/>
+    <line x1="757.9" y1="97" x2="757.9" y2="197" stroke="#FFFFFF" stroke-opacity="0.94" stroke-width="1.5"/>
+    <line x1="770.2" y1="100" x2="770.2" y2="194" stroke="#FFFFFF" stroke-opacity="0.90" stroke-width="1.5"/>
+    <line x1="782.5" y1="109" x2="782.5" y2="185" stroke="#FFFFFF" stroke-opacity="0.79" stroke-width="3"/>
+    <line x1="794.8" y1="125" x2="794.8" y2="169" stroke="#FFFFFF" stroke-opacity="0.60" stroke-width="1.5"/>
+    <line x1="807.1" y1="136" x2="807.1" y2="158" stroke="#FFFFFF" stroke-opacity="0.46" stroke-width="1.5"/>
+    <line x1="819.4" y1="119" x2="819.4" y2="175" stroke="#FFFFFF" stroke-opacity="0.67" stroke-width="1.5"/>
+    <line x1="831.7" y1="106" x2="831.7" y2="188" stroke="#FFFFFF" stroke-opacity="0.83" stroke-width="1.5"/>
+    <line x1="844.0" y1="100" x2="844.0" y2="194" stroke="#FFFFFF" stroke-opacity="0.90" stroke-width="3"/>
+    <line x1="856.3" y1="101" x2="856.3" y2="193" stroke="#FFFFFF" stroke-opacity="0.89" stroke-width="1.5"/>
+    <line x1="868.6" y1="108" x2="868.6" y2="186" stroke="#FFFFFF" stroke-opacity="0.81" stroke-width="1.5"/>
+    <line x1="880.9" y1="120" x2="880.9" y2="174" stroke="#FFFFFF" stroke-opacity="0.66" stroke-width="1.5"/>
+    <line x1="893.2" y1="133" x2="893.2" y2="161" stroke="#FFFFFF" stroke-opacity="0.50" stroke-width="1.5"/>
+    <line x1="905.5" y1="133" x2="905.5" y2="161" stroke="#FFFFFF" stroke-opacity="0.50" stroke-width="3"/>
+    <line x1="917.8" y1="125" x2="917.8" y2="169" stroke="#FFFFFF" stroke-opacity="0.60" stroke-width="1.5"/>
+    <line x1="930.1" y1="123" x2="930.1" y2="171" stroke="#FFFFFF" stroke-opacity="0.62" stroke-width="1.5"/>
+    <line x1="942.4" y1="127" x2="942.4" y2="167" stroke="#FFFFFF" stroke-opacity="0.57" stroke-width="1.5"/>
+    <line x1="954.7" y1="136" x2="954.7" y2="158" stroke="#FFFFFF" stroke-opacity="0.46" stroke-width="1.5"/>
+    <line x1="967.0" y1="132" x2="967.0" y2="162" stroke="#FFFFFF" stroke-opacity="0.51" stroke-width="3"/>
+    <line x1="979.3" y1="122" x2="979.3" y2="172" stroke="#FFFFFF" stroke-opacity="0.63" stroke-width="1.5"/>
+    <line x1="991.6" y1="115" x2="991.6" y2="179" stroke="#FFFFFF" stroke-opacity="0.72" stroke-width="1.5"/>
+    <line x1="1003.9" y1="114" x2="1003.9" y2="180" stroke="#FFFFFF" stroke-opacity="0.73" stroke-width="1.5"/>
+    <line x1="1016.2" y1="117" x2="1016.2" y2="177" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1.5"/>
+    <line x1="1028.5" y1="125" x2="1028.5" y2="169" stroke="#FFFFFF" stroke-opacity="0.60" stroke-width="3"/>
+    <line x1="1040.8" y1="135" x2="1040.8" y2="159" stroke="#FFFFFF" stroke-opacity="0.48" stroke-width="1.5"/>
+    <line x1="1053.1" y1="132" x2="1053.1" y2="162" stroke="#FFFFFF" stroke-opacity="0.51" stroke-width="1.5"/>
+    <line x1="1065.4" y1="123" x2="1065.4" y2="171" stroke="#FFFFFF" stroke-opacity="0.62" stroke-width="1.5"/>
+    <line x1="1077.7" y1="117" x2="1077.7" y2="177" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1.5"/>
+    <line x1="1090.0" y1="116" x2="1090.0" y2="178" stroke="#FFFFFF" stroke-opacity="0.71" stroke-width="3"/>
+    <line x1="1102.3" y1="120" x2="1102.3" y2="174" stroke="#FFFFFF" stroke-opacity="0.66" stroke-width="1.5"/>
+    <line x1="1114.6" y1="126" x2="1114.6" y2="168" stroke="#FFFFFF" stroke-opacity="0.59" stroke-width="1.5"/>
+    <line x1="1126.9" y1="133" x2="1126.9" y2="161" stroke="#FFFFFF" stroke-opacity="0.50" stroke-width="1.5"/>
+      <path class="scan" d="M475 73V185" stroke="#FFFFFF" stroke-width="2"/>
+      <path class="scan" d="M475 73H490M475 185H490" stroke="#FFFFFF" stroke-width="2"/>
+      <circle class="pulse" cx="1150" cy="147" r="4" fill="#FFFFFF"/>
+      <text class="mono" x="450" y="57" font-size="8" letter-spacing="1.5" opacity=".58">SIGNAL / AMPLITUDE</text>
+      <text class="mono" x="1150" y="207" text-anchor="end" font-size="8" letter-spacing="1.5" opacity=".58">CYCLE 02:00</text>
+    </g>
   </g>
-  <path d="M385 198H1148" stroke="#D0D0D0" stroke-opacity=".16"/>
-  <text x="1148" y="187" text-anchor="end" class="mono" font-size="10" letter-spacing="1.5" fill="#D0D0D0" opacity=".55">ASSEMBLY / 03</text>
 </svg>

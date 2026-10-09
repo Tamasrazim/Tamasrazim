@@ -1,7 +1,7 @@
 # About Me
 
 <div align="center">
-  <img src="./assets/readme-hero.svg" width="100%" alt="Ideas into systems: a technical diagram tracing input through a model and testing toward an output." />
+  <img src="./assets/readme-hero.svg" width="100%" alt="Monochrome editorial banner: Build What Matters, with a rotating geometric form and a Design 2.0 label." />
 </div>
 
 <table>
@@ -13,11 +13,11 @@
       <p>This is a small space to share what I&apos;m making, what I&apos;m learning, and where I&apos;m heading next.</p>
     </td>
     <td width="42%" valign="top">
-      <img src="./assets/profile-03.svg" width="100%" alt="Three working principles: build, understand, and improve." />
+      <img src="./assets/profile-03.svg" width="100%" alt="Monochrome index of four focus areas: software, interfaces, motion, and systems." />
     </td>
   </tr>
 </table>
 
 <div align="center">
-  <img src="./assets/module-bench.svg" width="100%" alt="Isometric technical workbench showing modules connected into a larger system." />
+  <img src="./assets/module-bench.svg" width="100%" alt="Monochrome waveform motion study with an animated scan bar." />
 </div>
