@@ -8,4 +8,4 @@ I'm interested in how things work at every level—from thoughtful interfaces an
 
 This is a small space to share what I'm making, what I'm learning, and where I'm heading next.
 
-<img src="./assets/mini-game.svg" width="100%" alt="A minimal arcade animation of a small craft weaving between moving gates" />
+<img src="./assets/mini-game.svg" width="100%" alt="A fast seamless 3D-style tunnel runner animation with perspective rails and a small craft" />
