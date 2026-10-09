@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="360" viewBox="0 0 540 360" role="img" aria-labelledby="title desc">
+  <title id="title">Practice Index — Monochrome Design 4.0</title>
+  <desc id="desc">An open editorial index with four numbered disciplines, terse labels, and thin rules. Pure black and white typography, no cards or illustrations.</desc>
+  <style>
+    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:#111111}
+    .sans{font-family:Inter,"Helvetica Neue",Arial,sans-serif;fill:#111111}
+    .eyebrow{font-size:9px;letter-spacing:1.8px;opacity:.65}
+    .num{font-size:12px;letter-spacing:.7px}
+    .topic{font-size:20px;font-weight:750;letter-spacing:-.45px}
+    .note{font-size:10px;letter-spacing:.15px;opacity:.64}
+    .rule{stroke:#111111;stroke-width:1;stroke-opacity:.25}
+    .marker{animation:mark 3s steps(2,end) infinite}
+    @keyframes mark{0%,45%{opacity:.15}50%,100%{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.marker{animation:none;opacity:1}}
+  </style>
+  <rect width="540" height="360" rx="8" fill="#FFFFFF"/>
+  <text class="mono eyebrow" x="28" y="28">PRACTICE INDEX / 04</text>
+  <text class="sans" x="25" y="72" font-size="33" font-weight="800" letter-spacing="-1.5">THE WORK.</text>
+  <path class="rule" d="M28 88H512M28 151H512M28 214H512M28 277H512M28 320H512"/>
+  <g>
+    <text class="mono num" x="29" y="111">01</text>
+    <text class="sans topic" x="84" y="119">Software</text>
+    <text class="mono note" x="511" y="114" text-anchor="end">TOOLS THAT WORK</text>
+    <circle class="marker" cx="64" cy="111" r="2.5" fill="#111111"/>
+  </g>
+  <g>
+    <text class="mono num" x="29" y="174">02</text>
+    <text class="sans topic" x="84" y="182">Interfaces</text>
+    <text class="mono note" x="511" y="177" text-anchor="end">CLARITY BY DESIGN</text>
+    <circle class="marker" cx="64" cy="174" r="2.5" fill="#111111" style="animation-delay:.4s"/>
+  </g>
+  <g>
+    <text class="mono num" x="29" y="237">03</text>
+    <text class="sans topic" x="84" y="245">Motion</text>
+    <text class="mono note" x="511" y="240" text-anchor="end">MOVEMENT WITH PURPOSE</text>
+    <circle class="marker" cx="64" cy="237" r="2.5" fill="#111111" style="animation-delay:.8s"/>
+  </g>
+  <g>
+    <text class="mono num" x="29" y="300">04</text>
+    <text class="sans topic" x="84" y="308">Systems</text>
+    <text class="mono note" x="511" y="303" text-anchor="end">PARTS THAT CONNECT</text>
+    <circle class="marker" cx="64" cy="300" r="2.5" fill="#111111" style="animation-delay:1.2s"/>
+  </g>
+  <text class="mono eyebrow" x="28" y="343">LESS DECORATION / MORE INTENTION</text>
+  <text class="mono eyebrow" x="512" y="343" text-anchor="end">04.0</text>
+</svg>

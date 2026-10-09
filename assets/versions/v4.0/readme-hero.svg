@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Ideas Into Form — Monochrome Design 4.0</title>
+  <desc id="desc">A high-contrast typographic poster. Oversized black lettering fills a clean white field; a large outlined edition number and a moving underline provide the only graphic punctuation.</desc>
+  <defs><clipPath id="poster"><rect width="1200" height="260" rx="8"/></clipPath></defs>
+  <style>
+    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:#111111}
+    .headline{font-family:Inter,"Helvetica Neue",Arial,sans-serif;font-weight:800;letter-spacing:-4.5px;fill:#111111}
+    .hairline{stroke:#111111;stroke-opacity:.2;stroke-width:1}
+    .under{animation:underline 4.8s cubic-bezier(.65,0,.35,1) infinite}
+    .pulse{animation:pulse 3.6s ease-in-out infinite}
+    @keyframes underline{0%,8%{transform:scaleX(.05);transform-origin:left}48%,78%{transform:scaleX(1);transform-origin:left}100%{transform:scaleX(.05);transform-origin:right}}
+    @keyframes pulse{0%,100%{opacity:.25}50%{opacity:.8}}
+    @media(prefers-reduced-motion:reduce){.under,.pulse{animation:none}.under{transform:scaleX(1);transform-origin:left}.pulse{opacity:.6}}
+  </style>
+  <g clip-path="url(#poster)">
+    <rect width="1200" height="260" fill="#FFFFFF"/>
+    <path class="hairline" d="M34 43H1166M34 224H1166"/>
+    <text class="mono" x="36" y="27" font-size="9" letter-spacing="2">TAMASRAZIM / MAKER'S NOTES</text>
+    <text class="mono" x="1164" y="27" text-anchor="end" font-size="9" letter-spacing="1.8">DESIGN 04.0</text>
+    <text class="headline" x="29" y="112" font-size="76">IDEAS INTO</text>
+    <text class="headline" x="27" y="185" font-size="76">FORM.</text>
+    <path d="M34 199H717" stroke="#111111" stroke-width="2"/>
+    <path class="under" d="M34 199H717" stroke="#111111" stroke-width="5" fill="none"/>
+    <text class="mono" x="36" y="216" font-size="8.5" letter-spacing="1.6" opacity=".64">MAKE IT TANGIBLE. KEEP MAKING IT BETTER.</text>
+    <g>
+      <path d="M835 0V260" stroke="#111111" stroke-opacity=".18"/>
+      <text class="mono" x="870" y="64" font-size="9" letter-spacing="1.8" opacity=".7">EDITION</text>
+      <text x="856" y="197" font-family="Inter,'Helvetica Neue',Arial,sans-serif" font-size="158" font-weight="800" letter-spacing="-9" fill="none" stroke="#111111" stroke-width="1.5">04</text>
+      <path d="M868 212H1154" stroke="#111111" stroke-width="1"/>
+      <text class="mono" x="870" y="231" font-size="8.5" letter-spacing="1.5" opacity=".65">OBSERVE / MAKE / REVISE</text>
+      <circle class="pulse" cx="1150" cy="53" r="5" fill="#111111"/>
+    </g>
+  </g>
+</svg>

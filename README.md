@@ -1,7 +1,7 @@
 # About Me
 
 <div align="center">
-  <img src="./assets/readme-hero.svg" width="100%" alt="Monochrome typographic poster reading Ideas Into Form with an oversized outlined edition number 04, Design 4.0." />
+  <img src="./assets/readme-hero.svg" width="100%" alt="Monochrome technical banner tracing input through model and testing to output, titled Ideas into systems. Design 1.0." />
 </div>
 
 <table>
@@ -13,11 +13,11 @@
       <p>This is a small space to share what I&apos;m making, what I&apos;m learning, and where I&apos;m heading next.</p>
     </td>
     <td width="42%" valign="top">
-      <img src="./assets/profile-03.svg" width="100%" alt="Open monochrome practice index with four numbered disciplines and brief typographic descriptors." />
+      <img src="./assets/profile-03.svg" width="100%" alt="Three working principles: build, understand, and improve, on a clean monochrome panel. Design 1.0." />
     </td>
   </tr>
 </table>
 
 <div align="center">
-  <img src="./assets/module-bench.svg" width="100%" alt="Black typographic closing panel reading Keep Making with a moving process-word strip." />
+  <img src="./assets/module-bench.svg" width="100%" alt="Dark isometric workbench with monochrome modules connected by an animated route. Design 1.0." />
 </div>

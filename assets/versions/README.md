@@ -1,11 +1,14 @@
 # Profile artwork versions
 
-The active README artwork is **Design 4.0 — Ideas Into Form**, an editorial, typography-first monochrome system.
+**Active README artwork: Design 1.0 — Ideas into Systems.**
 
-## Version 1.0 — Monochrome technical system
-- [Hero banner](./v1.0/readme-hero.svg)
-- [Working method panel](./v1.0/profile-03.svg)
-- [Module bench](./v1.0/module-bench.svg)
+Version 1.0 is restored as the live profile design. It uses a quiet grid, a technical signal path, a three-step working-method panel, and a dark modular workbench. All artwork remains monochrome and respects `prefers-reduced-motion`.
+
+## Version 1.0 — Active
+- [Active hero banner](../readme-hero.svg)
+- [Active working-method panel](../profile-03.svg)
+- [Active module bench](../module-bench.svg)
+- [Archived snapshot of 1.0](./v1.0/)
 
 ## Version 2.0 — Editorial geometry and motion study
 - [Hero banner](./v2.0/readme-hero.svg)
@@ -18,9 +21,8 @@ The active README artwork is **Design 4.0 — Ideas Into Form**, an editorial, t
 - [Practice loop](./v3.0/module-bench.svg)
 
 ## Version 4.0 — Ideas Into Form
-Current artwork is in the parent `assets/` directory:
-- [Hero banner](../readme-hero.svg)
-- [Practice index](../profile-03.svg)
-- [Keep Making footer](../module-bench.svg)
+- [Hero banner](./v4.0/readme-hero.svg)
+- [Practice index](./v4.0/profile-03.svg)
+- [Keep Making footer](./v4.0/module-bench.svg)
 
-Design 4.0 drops the system diagrams and card-like components in favor of an asymmetrical typographic poster, an open editorial index, and a bold black motion strip. It remains strictly black, white, and grayscale, and its animation styles support `prefers-reduced-motion`.
+Versions 2.0–4.0 remain archived; switching back to 1.0 does not delete the newer work.

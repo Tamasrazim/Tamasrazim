@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
+  <title id="title">Keep Making — Monochrome Design 4.0</title>
+  <desc id="desc">A black typographic closing panel with large white text and a horizontally moving strip of repeated process words. The layout is poster-like rather than diagrammatic.</desc>
+  <defs><clipPath id="frame"><rect width="1200" height="220" rx="8"/></clipPath></defs>
+  <style>
+    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:#FFFFFF}
+    .display{font-family:Inter,"Helvetica Neue",Arial,sans-serif;font-weight:800;letter-spacing:-2px;fill:#FFFFFF}
+    .marquee{animation:marquee 18s linear infinite}
+    .cursor{animation:cursor 1.5s steps(2,end) infinite}
+    @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-600px)}}
+    @keyframes cursor{0%,49%{opacity:1}50%,100%{opacity:.15}}
+    @media(prefers-reduced-motion:reduce){.marquee,.cursor{animation:none}.marquee{transform:translateX(-120px)}.cursor{opacity:1}}
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="220" fill="#111111"/>
+    <path d="M0 36H1200M0 181H1200" stroke="#FFFFFF" stroke-opacity=".22"/>
+    <text class="mono" x="34" y="25" font-size="8.5" letter-spacing="2">FIELD NOTE / 04.0</text>
+    <text class="display" x="30" y="103" font-size="52">KEEP MAKING.</text>
+    <text class="mono" x="34" y="128" font-size="10" letter-spacing="1.5" opacity=".65">CURIOSITY IS THE START. ITERATION IS THE METHOD.</text>
+    <rect class="cursor" x="402" y="74" width="5" height="36" fill="#FFFFFF"/>
+    <g class="marquee">
+      <text class="mono" x="34" y="164" font-size="12" letter-spacing="2.1">OBSERVE   /   EXPERIMENT   /   BUILD   /   IMPROVE   /   SHARE   /</text>
+      <text class="mono" x="634" y="164" font-size="12" letter-spacing="2.1">OBSERVE   /   EXPERIMENT   /   BUILD   /   IMPROVE   /   SHARE   /</text>
+      <text class="mono" x="1234" y="164" font-size="12" letter-spacing="2.1">OBSERVE   /   EXPERIMENT   /   BUILD   /   IMPROVE   /   SHARE   /</text>
+    </g>
+    <text class="mono" x="34" y="203" font-size="8.5" letter-spacing="1.6" opacity=".5">BLACK / WHITE / NOTHING UNNECESSARY</text>
+    <text class="mono" x="1165" y="203" text-anchor="end" font-size="8.5" letter-spacing="1.6" opacity=".5">TAMASRAZIM — 04</text>
+  </g>
+</svg>
