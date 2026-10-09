@@ -129,7 +129,7 @@
       </path>
       <path d="M1110 65H1035V90H1090V115H1015V143H1065V171H985V198H1045V220"
         fill="none" stroke="url(#beam)" stroke-width="2" stroke-dasharray="32 240">
-        <animate attributeName="stroke-dashoffset" values="0;272" dur=".82s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-dashoffset" values="0;272" dur=".8s" repeatCount="indefinite"/>
       </path>
     </g>
 
