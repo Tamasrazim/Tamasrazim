@@ -1,16 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="24" viewBox="0 0 800 24" role="img" aria-label="A subtle moving point along a fine line">
-  <style>
-    @media (prefers-reduced-motion: reduce) {
-      .runner, .halo { display: none; }
-    }
-  </style>
-  <path d="M0 12H800" fill="none" stroke="#8b9098" stroke-opacity=".34" stroke-width="1"/>
-  <circle class="halo" cy="12" r="5" fill="#8b9098" opacity=".10">
-    <animate attributeName="cx" values="0;800" dur="6s" repeatCount="indefinite"/>
-  </circle>
-  <circle class="runner" cy="12" r="1.7" fill="#858b94" opacity=".8">
-    <animate attributeName="cx" values="0;800" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;.8;.8;0" keyTimes="0;.08;.92;1" dur="6s" repeatCount="indefinite"/>
-  </circle>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="136" viewBox="0 0 1200 136" role="img" aria-labelledby="title desc">
+  <title id="title">Quiet motion</title>
+  <desc id="desc">A minimal monochrome composition of fine flowing curves and softly moving light.</desc>
+  <defs>
+    <linearGradient id="back" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#090a0c"/>
+      <stop offset=".52" stop-color="#111317"/>
+      <stop offset="1" stop-color="#08090b"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#e6e9ef" stop-opacity="0"/>
+      <stop offset=".22" stop-color="#e6e9ef" stop-opacity=".20"/>
+      <stop offset=".76" stop-color="#e6e9ef" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#e6e9ef" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="mist">
+      <stop stop-color="#dce3ef" stop-opacity=".20"/>
+      <stop offset=".45" stop-color="#aab5c8" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#aab5c8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="thread" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#e7ebf2" stop-opacity="0"/>
+      <stop offset=".48" stop-color="#f2f4f8" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#e7ebf2" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grainGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#e7ebf2" stroke-opacity=".045" stroke-width=".6"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="136" rx="10"/></clipPath>
+    <filter id="blur"><feGaussianBlur stdDeviation="11"/></filter>
+    <style>
+      .curve{fill:none;stroke:#dfe4ee;stroke-width:1;stroke-opacity:.25}
+      .thread{fill:none;stroke:url(#thread);stroke-width:1.25;stroke-linecap:round;stroke-dasharray:150 1050;animation:flow 10s linear infinite}
+      .soft{transform-box:fill-box;transform-origin:center;animation:breathe 7s ease-in-out infinite}
+      .orbit{transform-origin:600px 68px;animation:turn 32s linear infinite}
+      .orbitSlow{transform-origin:600px 68px;animation:turnBack 46s linear infinite}
+      .glint{animation:glint 5.5s ease-in-out infinite}
+      @keyframes flow{to{stroke-dashoffset:-1200}}
+      @keyframes breathe{0%,100%{opacity:.32;transform:scale(.94)}50%{opacity:.8;transform:scale(1.06)}}
+      @keyframes turn{to{transform:rotate(360deg)}}
+      @keyframes turnBack{to{transform:rotate(-360deg)}}
+      @keyframes glint{0%,100%{opacity:.18}50%{opacity:.72}}
+      @media(prefers-reduced-motion:reduce){.thread,.soft,.orbit,.orbitSlow,.glint{animation:none!important}.thread{stroke-dasharray:none;stroke-opacity:.24}.soft,.glint{opacity:.35}}
+    </style>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="136" fill="url(#back)"/>
+    <rect width="1200" height="136" fill="url(#grainGrid)"/>
+    <rect width="1200" height="1" fill="url(#edge)"/>
+    <rect y="135" width="1200" height="1" fill="url(#edge)"/>
+    <ellipse class="soft" cx="600" cy="68" rx="300" ry="110" fill="url(#mist)" filter="url(#blur)"/>
+    <g class="orbit">
+      <ellipse class="curve" cx="600" cy="68" rx="188" ry="40" transform="rotate(-8 600 68)" stroke-dasharray="2 7"/>
+      <ellipse cx="600" cy="68" rx="144" ry="27" transform="rotate(12 600 68)" fill="none" stroke="#e5e9f0" stroke-opacity=".13"/>
+      <circle cx="787" cy="43" r="2.2" fill="#e9edf5" class="glint"/>
+    </g>
+    <g class="orbitSlow">
+      <ellipse cx="600" cy="68" rx="245" ry="53" transform="rotate(-4 600 68)" fill="none" stroke="#e5e9f0" stroke-opacity=".08" stroke-dasharray="1 9"/>
+      <circle cx="357" cy="81" r="1.7" fill="#dce2ec" opacity=".6"/>
+    </g>
+    <path class="curve" d="M-20 93C120 24 235 126 373 67S609 19 745 70 1016 112 1220 42"/>
+    <path class="curve" d="M-20 105C120 36 235 138 373 79S609 31 745 82 1016 124 1220 54" stroke-opacity=".10"/>
+    <path class="thread" d="M-20 93C120 24 235 126 373 67S609 19 745 70 1016 112 1220 42"/>
+    <path d="M0 68H1200" fill="none" stroke="#edf0f5" stroke-opacity=".045" stroke-width=".7"/>
+    <circle cx="600" cy="68" r="2.3" fill="#f0f2f6" class="glint"/>
+    <circle cx="600" cy="68" r="9" fill="none" stroke="#e4e9f2" stroke-opacity=".17"/>
+    <circle cx="600" cy="68" r="24" fill="none" stroke="#e4e9f2" stroke-opacity=".075" stroke-dasharray="1 5"/>
+    <path d="M28 23h24M28 23v10M1172 23h-24M1172 23v10M28 113h24M28 113v-10M1172 113h-24M1172 113v-10" fill="none" stroke="#dfe4ed" stroke-opacity=".28" stroke-width=".8"/>
+  </g>
 </svg>
