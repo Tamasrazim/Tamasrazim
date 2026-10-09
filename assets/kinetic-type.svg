@@ -18,8 +18,8 @@
     .line-progress{fill:none;stroke:currentColor;stroke-opacity:.58;stroke-width:1.15;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation-name:draw-line;animation-timing-function:linear;animation-fill-mode:both}
     @keyframes draw-line{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
     .progress-track{fill:none;stroke:currentColor;stroke-opacity:.12;stroke-width:1.5}
-    .progress-fill{fill:none;stroke:currentColor;stroke-opacity:.72;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw-line 23.504s linear both}
-    .ready-cursor{fill:currentColor;opacity:0;animation:ready-blink 0.450s steps(2,end) 23.504s infinite}
+    .progress-fill{fill:none;stroke:currentColor;stroke-opacity:.72;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw-line 10.0000s linear both}
+    .ready-cursor{fill:currentColor;opacity:0;animation:ready-blink 0.1915s steps(2,end) 10.0000s infinite}
     @keyframes ready-blink{0%,49%{opacity:.7}50%,100%{opacity:.08}}
     @media(prefers-reduced-motion:reduce){
       .word{opacity:1;transform:none;animation:none}
@@ -38,85 +38,85 @@
   <path class="line-track" d="M72 285H829.60"/>
   <path class="line-track" d="M72 323H935.20"/>
   <path class="line-track" d="M72 361H420.40"/>
-  <path class="line-progress" pathLength="1" d="M72 95H908.80" style="animation-delay:0.000s;animation-duration:2.682s"/>
-  <path class="line-progress" pathLength="1" d="M72 133H803.20" style="animation-delay:3.092s;animation-duration:2.313s"/>
-  <path class="line-progress" pathLength="1" d="M72 171H829.60" style="animation-delay:5.815s;animation-duration:2.289s"/>
-  <path class="line-progress" pathLength="1" d="M72 209H908.80" style="animation-delay:8.514s;animation-duration:3.003s"/>
-  <path class="line-progress" pathLength="1" d="M72 247H803.20" style="animation-delay:11.927s;animation-duration:2.409s"/>
-  <path class="line-progress" pathLength="1" d="M72 285H829.60" style="animation-delay:14.746s;animation-duration:2.610s"/>
-  <path class="line-progress" pathLength="1" d="M72 323H935.20" style="animation-delay:17.766s;animation-duration:3.846s"/>
-  <path class="line-progress" pathLength="1" d="M72 361H420.40" style="animation-delay:22.022s;animation-duration:1.482s"/>
+  <path class="line-progress" pathLength="1" d="M72 95H908.80" style="animation-delay:0.0000s;animation-duration:1.1411s"/>
+  <path class="line-progress" pathLength="1" d="M72 133H803.20" style="animation-delay:1.3155s;animation-duration:0.9841s"/>
+  <path class="line-progress" pathLength="1" d="M72 171H829.60" style="animation-delay:2.4740s;animation-duration:0.9739s"/>
+  <path class="line-progress" pathLength="1" d="M72 209H908.80" style="animation-delay:3.6224s;animation-duration:1.2777s"/>
+  <path class="line-progress" pathLength="1" d="M72 247H803.20" style="animation-delay:5.0745s;animation-duration:1.0249s"/>
+  <path class="line-progress" pathLength="1" d="M72 285H829.60" style="animation-delay:6.2738s;animation-duration:1.1104s"/>
+  <path class="line-progress" pathLength="1" d="M72 323H935.20" style="animation-delay:7.5587s;animation-duration:1.6363s"/>
+  <path class="line-progress" pathLength="1" d="M72 361H420.40" style="animation-delay:9.3695s;animation-duration:0.6305s"/>
   <g id="biography">
-    <text class="word from-left" x="72.00" y="84" style="animation-delay:0.000s;animation-duration:0.246s">I&apos;m</text>
-    <text class="word from-right" x="124.80" y="84" style="animation-delay:0.321s;animation-duration:0.222s">a</text>
-    <text class="word from-below" x="151.20" y="84" style="animation-delay:0.618s;animation-duration:0.222s">developer</text>
-    <text class="word from-left" x="283.20" y="84" style="animation-delay:0.915s;animation-duration:0.246s">and</text>
-    <text class="word from-right" x="336.00" y="84" style="animation-delay:1.236s;animation-duration:0.210s">computer</text>
-    <text class="word from-below" x="454.80" y="84" style="animation-delay:1.521s;animation-duration:0.234s">technology</text>
-    <text class="word from-left" x="600.00" y="84" style="animation-delay:1.830s;animation-duration:0.246s">student</text>
-    <text class="word from-right" x="705.60" y="84" style="animation-delay:2.151s;animation-duration:0.210s">from</text>
-    <text class="word from-below" x="771.60" y="84" style="animation-delay:2.436s;animation-duration:0.246s">Bangladesh.</text>
-    <text class="word from-left" x="72.00" y="122" style="animation-delay:3.092s;animation-duration:0.222s">I</text>
-    <text class="word from-right" x="98.40" y="122" style="animation-delay:3.389s;animation-duration:0.222s">enjoy</text>
-    <text class="word from-below" x="177.60" y="122" style="animation-delay:3.686s;animation-duration:0.210s">building</text>
-    <text class="word from-left" x="296.40" y="122" style="animation-delay:3.971s;animation-duration:0.222s">software,</text>
-    <text class="word from-right" x="428.40" y="122" style="animation-delay:4.268s;animation-duration:0.210s">creating</text>
-    <text class="word from-below" x="547.20" y="122" style="animation-delay:4.553s;animation-duration:0.246s">web</text>
-    <text class="word from-left" x="600.00" y="122" style="animation-delay:4.874s;animation-duration:0.210s">experiences,</text>
-    <text class="word from-right" x="771.60" y="122" style="animation-delay:5.159s;animation-duration:0.246s">and</text>
-    <text class="word from-below" x="72.00" y="160" style="animation-delay:5.815s;animation-duration:0.222s">experimenting</text>
-    <text class="word from-left" x="256.80" y="160" style="animation-delay:6.112s;animation-duration:0.210s">with</text>
-    <text class="word from-right" x="322.80" y="160" style="animation-delay:6.397s;animation-duration:0.222s">ideas</text>
-    <text class="word from-below" x="402.00" y="160" style="animation-delay:6.694s;animation-duration:0.210s">that</text>
-    <text class="word from-left" x="468.00" y="160" style="animation-delay:6.979s;animation-duration:0.210s">make</text>
-    <text class="word from-right" x="534.00" y="160" style="animation-delay:7.264s;animation-duration:0.234s">technology</text>
-    <text class="word from-below" x="679.20" y="160" style="animation-delay:7.573s;animation-duration:0.210s">more</text>
-    <text class="word from-left" x="745.20" y="160" style="animation-delay:7.858s;animation-duration:0.246s">useful.</text>
-    <text class="word from-right" x="72.00" y="198" style="animation-delay:8.514s;animation-duration:0.246s">I&apos;m</text>
-    <text class="word from-below" x="124.80" y="198" style="animation-delay:8.835s;animation-duration:0.234s">interested</text>
-    <text class="word from-left" x="270.00" y="198" style="animation-delay:9.144s;animation-duration:0.234s">in</text>
-    <text class="word from-right" x="309.60" y="198" style="animation-delay:9.453s;animation-duration:0.246s">how</text>
-    <text class="word from-below" x="362.40" y="198" style="animation-delay:9.774s;animation-duration:0.234s">things</text>
-    <text class="word from-left" x="454.80" y="198" style="animation-delay:10.083s;animation-duration:0.210s">work</text>
-    <text class="word from-right" x="520.80" y="198" style="animation-delay:10.368s;animation-duration:0.234s">at</text>
-    <text class="word from-below" x="560.40" y="198" style="animation-delay:10.677s;animation-duration:0.222s">every</text>
-    <text class="word from-left" x="639.60" y="198" style="animation-delay:10.974s;animation-duration:0.234s">level—from</text>
-    <text class="word from-right" x="784.80" y="198" style="animation-delay:11.283s;animation-duration:0.234s">thoughtful</text>
-    <text class="word from-below" x="72.00" y="236" style="animation-delay:11.927s;animation-duration:0.234s">interfaces</text>
-    <text class="word from-left" x="217.20" y="236" style="animation-delay:12.236s;animation-duration:0.246s">and</text>
-    <text class="word from-right" x="270.00" y="236" style="animation-delay:12.557s;animation-duration:0.222s">animation</text>
-    <text class="word from-below" x="402.00" y="236" style="animation-delay:12.854s;animation-duration:0.234s">to</text>
-    <text class="word from-left" x="441.60" y="236" style="animation-delay:13.163s;animation-duration:0.246s">the</text>
-    <text class="word from-right" x="494.40" y="236" style="animation-delay:13.484s;animation-duration:0.246s">systems</text>
-    <text class="word from-below" x="600.00" y="236" style="animation-delay:13.805s;animation-duration:0.234s">underneath</text>
-    <text class="word from-left" x="745.20" y="236" style="animation-delay:14.114s;animation-duration:0.222s">them.</text>
-    <text class="word from-right" x="72.00" y="274" style="animation-delay:14.746s;animation-duration:0.222s">I</text>
-    <text class="word from-below" x="98.40" y="274" style="animation-delay:15.043s;animation-duration:0.222s">learn</text>
-    <text class="word from-left" x="177.60" y="274" style="animation-delay:15.340s;animation-duration:0.234s">by</text>
-    <text class="word from-right" x="217.20" y="274" style="animation-delay:15.649s;animation-duration:0.222s">building,</text>
-    <text class="word from-below" x="349.20" y="274" style="animation-delay:15.946s;animation-duration:0.210s">testing,</text>
-    <text class="word from-left" x="468.00" y="274" style="animation-delay:16.231s;animation-duration:0.246s">and</text>
-    <text class="word from-right" x="520.80" y="274" style="animation-delay:16.552s;animation-duration:0.222s">improving</text>
-    <text class="word from-below" x="652.80" y="274" style="animation-delay:16.849s;animation-duration:0.210s">real</text>
-    <text class="word from-left" x="718.80" y="274" style="animation-delay:17.134s;animation-duration:0.222s">projects.</text>
-    <text class="word from-right" x="72.00" y="312" style="animation-delay:17.766s;animation-duration:0.210s">This</text>
-    <text class="word from-below" x="138.00" y="312" style="animation-delay:18.051s;animation-duration:0.234s">is</text>
-    <text class="word from-left" x="177.60" y="312" style="animation-delay:18.360s;animation-duration:0.222s">a</text>
-    <text class="word from-right" x="204.00" y="312" style="animation-delay:18.657s;animation-duration:0.222s">small</text>
-    <text class="word from-below" x="283.20" y="312" style="animation-delay:18.954s;animation-duration:0.222s">space</text>
-    <text class="word from-left" x="362.40" y="312" style="animation-delay:19.251s;animation-duration:0.234s">to</text>
-    <text class="word from-right" x="402.00" y="312" style="animation-delay:19.560s;animation-duration:0.222s">share</text>
-    <text class="word from-below" x="481.20" y="312" style="animation-delay:19.857s;animation-duration:0.210s">what</text>
-    <text class="word from-left" x="547.20" y="312" style="animation-delay:20.142s;animation-duration:0.246s">I&apos;m</text>
-    <text class="word from-right" x="600.00" y="312" style="animation-delay:20.463s;animation-duration:0.246s">making,</text>
-    <text class="word from-below" x="705.60" y="312" style="animation-delay:20.784s;animation-duration:0.210s">what</text>
-    <text class="word from-left" x="771.60" y="312" style="animation-delay:21.069s;animation-duration:0.246s">I&apos;m</text>
-    <text class="word from-right" x="824.40" y="312" style="animation-delay:21.390s;animation-duration:0.222s">learning,</text>
-    <text class="word from-below" x="72.00" y="350" style="animation-delay:22.022s;animation-duration:0.246s">and</text>
-    <text class="word from-left" x="124.80" y="350" style="animation-delay:22.343s;animation-duration:0.222s">where</text>
-    <text class="word from-right" x="204.00" y="350" style="animation-delay:22.640s;animation-duration:0.246s">I&apos;m</text>
-    <text class="word from-below" x="256.80" y="350" style="animation-delay:22.961s;animation-duration:0.246s">heading</text>
-    <text class="word from-left" x="362.40" y="350" style="animation-delay:23.282s;animation-duration:0.222s">next.</text>
+    <text class="word from-left" x="72.00" y="84" style="animation-delay:0.0000s;animation-duration:0.1047s">I&apos;m</text>
+    <text class="word from-right" x="124.80" y="84" style="animation-delay:0.1366s;animation-duration:0.0945s">a</text>
+    <text class="word from-below" x="151.20" y="84" style="animation-delay:0.2629s;animation-duration:0.0945s">developer</text>
+    <text class="word from-left" x="283.20" y="84" style="animation-delay:0.3893s;animation-duration:0.1047s">and</text>
+    <text class="word from-right" x="336.00" y="84" style="animation-delay:0.5259s;animation-duration:0.0893s">computer</text>
+    <text class="word from-below" x="454.80" y="84" style="animation-delay:0.6471s;animation-duration:0.0996s">technology</text>
+    <text class="word from-left" x="600.00" y="84" style="animation-delay:0.7786s;animation-duration:0.1047s">student</text>
+    <text class="word from-right" x="705.60" y="84" style="animation-delay:0.9152s;animation-duration:0.0893s">from</text>
+    <text class="word from-below" x="771.60" y="84" style="animation-delay:1.0364s;animation-duration:0.1047s">Bangladesh.</text>
+    <text class="word from-left" x="72.00" y="122" style="animation-delay:1.3155s;animation-duration:0.0945s">I</text>
+    <text class="word from-right" x="98.40" y="122" style="animation-delay:1.4419s;animation-duration:0.0945s">enjoy</text>
+    <text class="word from-below" x="177.60" y="122" style="animation-delay:1.5682s;animation-duration:0.0893s">building</text>
+    <text class="word from-left" x="296.40" y="122" style="animation-delay:1.6895s;animation-duration:0.0945s">software,</text>
+    <text class="word from-right" x="428.40" y="122" style="animation-delay:1.8159s;animation-duration:0.0893s">creating</text>
+    <text class="word from-below" x="547.20" y="122" style="animation-delay:1.9371s;animation-duration:0.1047s">web</text>
+    <text class="word from-left" x="600.00" y="122" style="animation-delay:2.0737s;animation-duration:0.0893s">experiences,</text>
+    <text class="word from-right" x="771.60" y="122" style="animation-delay:2.1949s;animation-duration:0.1047s">and</text>
+    <text class="word from-below" x="72.00" y="160" style="animation-delay:2.4740s;animation-duration:0.0945s">experimenting</text>
+    <text class="word from-left" x="256.80" y="160" style="animation-delay:2.6004s;animation-duration:0.0893s">with</text>
+    <text class="word from-right" x="322.80" y="160" style="animation-delay:2.7217s;animation-duration:0.0945s">ideas</text>
+    <text class="word from-below" x="402.00" y="160" style="animation-delay:2.8480s;animation-duration:0.0893s">that</text>
+    <text class="word from-left" x="468.00" y="160" style="animation-delay:2.9693s;animation-duration:0.0893s">make</text>
+    <text class="word from-right" x="534.00" y="160" style="animation-delay:3.0905s;animation-duration:0.0996s">technology</text>
+    <text class="word from-below" x="679.20" y="160" style="animation-delay:3.2220s;animation-duration:0.0893s">more</text>
+    <text class="word from-left" x="745.20" y="160" style="animation-delay:3.3433s;animation-duration:0.1047s">useful.</text>
+    <text class="word from-right" x="72.00" y="198" style="animation-delay:3.6224s;animation-duration:0.1047s">I&apos;m</text>
+    <text class="word from-below" x="124.80" y="198" style="animation-delay:3.7589s;animation-duration:0.0996s">interested</text>
+    <text class="word from-left" x="270.00" y="198" style="animation-delay:3.8904s;animation-duration:0.0996s">in</text>
+    <text class="word from-right" x="309.60" y="198" style="animation-delay:4.0219s;animation-duration:0.1047s">how</text>
+    <text class="word from-below" x="362.40" y="198" style="animation-delay:4.1584s;animation-duration:0.0996s">things</text>
+    <text class="word from-left" x="454.80" y="198" style="animation-delay:4.2899s;animation-duration:0.0893s">work</text>
+    <text class="word from-right" x="520.80" y="198" style="animation-delay:4.4112s;animation-duration:0.0996s">at</text>
+    <text class="word from-below" x="560.40" y="198" style="animation-delay:4.5426s;animation-duration:0.0945s">every</text>
+    <text class="word from-left" x="639.60" y="198" style="animation-delay:4.6690s;animation-duration:0.0996s">level—from</text>
+    <text class="word from-right" x="784.80" y="198" style="animation-delay:4.8005s;animation-duration:0.0996s">thoughtful</text>
+    <text class="word from-below" x="72.00" y="236" style="animation-delay:5.0745s;animation-duration:0.0996s">interfaces</text>
+    <text class="word from-left" x="217.20" y="236" style="animation-delay:5.2059s;animation-duration:0.1047s">and</text>
+    <text class="word from-right" x="270.00" y="236" style="animation-delay:5.3425s;animation-duration:0.0945s">animation</text>
+    <text class="word from-below" x="402.00" y="236" style="animation-delay:5.4689s;animation-duration:0.0996s">to</text>
+    <text class="word from-left" x="441.60" y="236" style="animation-delay:5.6003s;animation-duration:0.1047s">the</text>
+    <text class="word from-right" x="494.40" y="236" style="animation-delay:5.7369s;animation-duration:0.1047s">systems</text>
+    <text class="word from-below" x="600.00" y="236" style="animation-delay:5.8735s;animation-duration:0.0996s">underneath</text>
+    <text class="word from-left" x="745.20" y="236" style="animation-delay:6.0049s;animation-duration:0.0945s">them.</text>
+    <text class="word from-right" x="72.00" y="274" style="animation-delay:6.2738s;animation-duration:0.0945s">I</text>
+    <text class="word from-below" x="98.40" y="274" style="animation-delay:6.4002s;animation-duration:0.0945s">learn</text>
+    <text class="word from-left" x="177.60" y="274" style="animation-delay:6.5265s;animation-duration:0.0996s">by</text>
+    <text class="word from-right" x="217.20" y="274" style="animation-delay:6.6580s;animation-duration:0.0945s">building,</text>
+    <text class="word from-below" x="349.20" y="274" style="animation-delay:6.7844s;animation-duration:0.0893s">testing,</text>
+    <text class="word from-left" x="468.00" y="274" style="animation-delay:6.9056s;animation-duration:0.1047s">and</text>
+    <text class="word from-right" x="520.80" y="274" style="animation-delay:7.0422s;animation-duration:0.0945s">improving</text>
+    <text class="word from-below" x="652.80" y="274" style="animation-delay:7.1686s;animation-duration:0.0893s">real</text>
+    <text class="word from-left" x="718.80" y="274" style="animation-delay:7.2898s;animation-duration:0.0945s">projects.</text>
+    <text class="word from-right" x="72.00" y="312" style="animation-delay:7.5587s;animation-duration:0.0893s">This</text>
+    <text class="word from-below" x="138.00" y="312" style="animation-delay:7.6800s;animation-duration:0.0996s">is</text>
+    <text class="word from-left" x="177.60" y="312" style="animation-delay:7.8114s;animation-duration:0.0945s">a</text>
+    <text class="word from-right" x="204.00" y="312" style="animation-delay:7.9378s;animation-duration:0.0945s">small</text>
+    <text class="word from-below" x="283.20" y="312" style="animation-delay:8.0642s;animation-duration:0.0945s">space</text>
+    <text class="word from-left" x="362.40" y="312" style="animation-delay:8.1905s;animation-duration:0.0996s">to</text>
+    <text class="word from-right" x="402.00" y="312" style="animation-delay:8.3220s;animation-duration:0.0945s">share</text>
+    <text class="word from-below" x="481.20" y="312" style="animation-delay:8.4483s;animation-duration:0.0893s">what</text>
+    <text class="word from-left" x="547.20" y="312" style="animation-delay:8.5696s;animation-duration:0.1047s">I&apos;m</text>
+    <text class="word from-right" x="600.00" y="312" style="animation-delay:8.7062s;animation-duration:0.1047s">making,</text>
+    <text class="word from-below" x="705.60" y="312" style="animation-delay:8.8428s;animation-duration:0.0893s">what</text>
+    <text class="word from-left" x="771.60" y="312" style="animation-delay:8.9640s;animation-duration:0.1047s">I&apos;m</text>
+    <text class="word from-right" x="824.40" y="312" style="animation-delay:9.1006s;animation-duration:0.0945s">learning,</text>
+    <text class="word from-below" x="72.00" y="350" style="animation-delay:9.3695s;animation-duration:0.1047s">and</text>
+    <text class="word from-left" x="124.80" y="350" style="animation-delay:9.5060s;animation-duration:0.0945s">where</text>
+    <text class="word from-right" x="204.00" y="350" style="animation-delay:9.6324s;animation-duration:0.1047s">I&apos;m</text>
+    <text class="word from-below" x="256.80" y="350" style="animation-delay:9.7690s;animation-duration:0.1047s">heading</text>
+    <text class="word from-left" x="362.40" y="350" style="animation-delay:9.9055s;animation-duration:0.0945s">next.</text>
   </g>
   <path class="progress-track" d="M60 390H1140"/>
   <path class="progress-fill" pathLength="1" d="M60 390H1140"/>
