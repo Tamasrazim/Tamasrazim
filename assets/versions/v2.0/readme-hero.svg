@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Build What Matters — Monochrome Profile System 2.0</title>
+  <desc id="desc">A high-contrast editorial banner with oversized typography and a rotating geometric instrument made from concentric circles, a square, and fine calibration marks. Pure monochrome.</desc>
+  <defs>
+    <pattern id="micro-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#FFFFFF" stroke-opacity=".055" stroke-width=".7"/></pattern>
+    <clipPath id="frame"><rect width="1200" height="260" rx="12"/></clipPath>
+  </defs>
+  <style>
+    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:#F7F7F7}
+    .display{font-family:Inter,"Helvetica Neue",Arial,sans-serif;font-weight:750;letter-spacing:-2.6px;fill:#FFFFFF}
+    .fine{fill:none;stroke:#AFAFAF;stroke-width:1}
+    .orbit{transform-origin:976px 131px;animation:orbit 32s linear infinite}
+    .counter{transform-origin:976px 131px;animation:counter 24s linear infinite}
+    .core{animation:core 3.6s ease-in-out infinite}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @keyframes counter{to{transform:rotate(-360deg)}}
+    @keyframes core{0%,100%{opacity:.55}50%{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.orbit,.counter,.core{animation:none}}
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="260" fill="#0A0A0A"/>
+    <rect width="1200" height="260" fill="url(#micro-grid)"/>
+    <path d="M0 43H1200M0 219H1200" stroke="#FFFFFF" stroke-opacity=".16"/>
+    <path d="M32 0V260M748 0V260M1168 0V260" stroke="#FFFFFF" stroke-opacity=".12"/>
+    <text class="mono" x="38" y="27" font-size="10" letter-spacing="2.2" opacity=".75">TAMASRAZIM / PROFILE VISUAL SYSTEM</text>
+    <rect x="1095" y="13" width="67" height="23" rx="2" fill="#FFFFFF"/>
+    <text x="1128.5" y="28.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1" fill="#080808">02.0</text>
+    <text class="display" x="38" y="111" font-size="65">BUILD WHAT</text>
+    <text class="display" x="34" y="178" font-size="65">MATTERS.</text>
+    <text class="mono" x="40" y="201" font-size="10" letter-spacing="2" opacity=".8">SOFTWARE  /  INTERFACES  /  MOTION</text>
+    <path d="M38 234H700" stroke="#FFFFFF" stroke-opacity=".28"/>
+    <text class="mono" x="40" y="249" font-size="8.5" letter-spacing="1.6" opacity=".55">DESIGN 02.0  —  MONOCHROME EDITION</text>
+    <g transform="translate(0 0)">
+      <rect x="805" y="50" width="342" height="162" fill="#101010" stroke="#6F6F6F" stroke-width="1"/>
+      <path d="M821 131H1131M976 64V198" stroke="#545454" stroke-width="1"/>
+      <g class="orbit">
+        <circle cx="976" cy="131" r="68" fill="none" stroke="#E6E6E6" stroke-width="1.2"/>
+        <circle cx="976" cy="131" r="52" fill="none" stroke="#6E6E6E" stroke-width="1" stroke-dasharray="2 7"/>
+        <path d="M976 49V64M976 198V213M894 131H909M1043 131H1058" stroke="#FFFFFF" stroke-width="2"/>
+        <path d="M930 85L940 95M1012 167L1022 177M930 177L940 167M1012 95L1022 85" stroke="#A0A0A0" stroke-width="1.5"/>
+      </g>
+      <g class="counter">
+        <rect x="938" y="93" width="76" height="76" fill="none" stroke="#BDBDBD" stroke-width="1.2"/>
+        <rect x="950" y="105" width="52" height="52" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+        <path d="M938 93L950 105M1014 93L1002 105M938 169L950 157M1014 169L1002 157" stroke="#FFFFFF" stroke-width="1.4"/>
+      </g>
+      <g class="core">
+        <circle cx="976" cy="131" r="8" fill="#FFFFFF"/>
+        <circle cx="976" cy="131" r="3" fill="#0A0A0A"/>
+      </g>
+      <text class="mono" x="821" y="69" font-size="8" letter-spacing="1.6" opacity=".65">FIG. 02 / FORM STUDY</text>
+      <text class="mono" x="1131" y="197" font-size="8" text-anchor="end" letter-spacing="1.2" opacity=".65">ROTATION / 360°</text>
+    </g>
+  </g>
+</svg>

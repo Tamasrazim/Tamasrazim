@@ -1,7 +1,7 @@
 # About Me
 
 <div align="center">
-  <img src="./assets/readme-hero.svg" width="100%" alt="Monochrome editorial banner: Build What Matters, with a rotating geometric form and a Design 2.0 label." />
+  <img src="./assets/readme-hero.svg" width="100%" alt="Bright monochrome systems diagram with oversized Think in Systems typography and a connected input-to-verify route, Design 3.0." />
 </div>
 
 <table>
@@ -13,11 +13,11 @@
       <p>This is a small space to share what I&apos;m making, what I&apos;m learning, and where I&apos;m heading next.</p>
     </td>
     <td width="42%" valign="top">
-      <img src="./assets/profile-03.svg" width="100%" alt="Monochrome index of four focus areas: software, interfaces, motion, and systems." />
+      <img src="./assets/profile-03.svg" width="100%" alt="Black monochrome focus panel listing software, interfaces, motion, and systems along a vertical connected track." />
     </td>
   </tr>
 </table>
 
 <div align="center">
-  <img src="./assets/module-bench.svg" width="100%" alt="Monochrome waveform motion study with an animated scan bar." />
+  <img src="./assets/module-bench.svg" width="100%" alt="Bright monochrome practice-loop diagram linking observe, make, and refine with an animated marker." />
 </div>

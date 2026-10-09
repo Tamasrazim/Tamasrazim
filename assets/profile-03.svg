@@ -1,57 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="540" height="360" viewBox="0 0 540 360" role="img" aria-labelledby="title desc">
-  <title id="title">Focus Areas — Monochrome Profile System 2.0</title>
-  <desc id="desc">A strict black-and-white editorial grid cataloguing four interests: software, interfaces, motion, and systems. Each quadrant has a distinct minimal line symbol.</desc>
+  <title id="title">Areas of Practice — Profile Design 3.0</title>
+  <desc id="desc">A black panel with four white typographic entries connected by a continuous vertical track: software, interfaces, motion, and systems.</desc>
   <style>
-    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:#111111}
-    .sans{font-family:Inter,"Helvetica Neue",Arial,sans-serif;fill:#111111}
-    .tag{font-size:9px;letter-spacing:1.6px}
-    .num{font-size:10px;letter-spacing:1px;opacity:.62}
-    .label{font-size:18px;font-weight:680;letter-spacing:-.45px}
-    .cell{fill:#FFFFFF;stroke:#111111;stroke-opacity:.38;stroke-width:1}
-    .symbol{fill:none;stroke:#111111;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:miter}
-    .tick{animation:tick 2.8s steps(2,end) infinite}
-    @keyframes tick{0%,45%{opacity:.3}50%,100%{opacity:1}}
-    @media(prefers-reduced-motion:reduce){.tick{animation:none;opacity:1}}
+    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:#FFFFFF}
+    .sans{font-family:Inter,"Helvetica Neue",Arial,sans-serif;fill:#FFFFFF}
+    .tag{font-size:9px;letter-spacing:1.7px;opacity:.66}
+    .num{font-size:10px;letter-spacing:1px;opacity:.6}
+    .label{font-size:21px;font-weight:700;letter-spacing:-.45px}
+    .copy{font-size:10px;letter-spacing:.35px;opacity:.68}
+    .track{fill:none;stroke:#707070;stroke-width:1}
+    .signal{stroke-dasharray:8 158;animation:flow 4s linear infinite}
+    .node{fill:#FFFFFF;stroke:#111111;stroke-width:2}
+    @keyframes flow{from{stroke-dashoffset:166}to{stroke-dashoffset:0}}
+    @media(prefers-reduced-motion:reduce){.signal{animation:none;stroke-dashoffset:0}}
   </style>
-  <rect width="540" height="360" rx="10" fill="#FFFFFF"/>
-  <text class="mono tag" x="26" y="27">PROFILE SYSTEM / INDEX 04</text>
-  <text class="sans" x="24" y="67" font-size="29" font-weight="760" letter-spacing="-1.1">FOCUS AREAS.</text>
-  <text class="mono tag" x="511" y="62" text-anchor="end" opacity=".6">02.0</text>
-  <path d="M26 82H514" stroke="#111111" stroke-width="2"/>
-  <g transform="translate(26 100)">
-    <rect class="cell" width="235" height="98"/>
-    <text class="mono num" x="13" y="20">01 / SOFTWARE</text>
-    <text class="sans label" x="13" y="52">Make it work.</text>
-    <g class="symbol" transform="translate(180 36)"><rect x="0" y="0" width="34" height="27"/><path d="M0 7H34M7 0V27M17 7V27M27 7V27"/></g>
-    <path d="M13 78H222" stroke="#111111" stroke-opacity=".18"/>
-    <circle class="tick" cx="219" cy="13" r="2.5" fill="#111111"/>
+  <rect width="540" height="360" rx="10" fill="#111111"/>
+  <path d="M24 47H516M24 318H516" stroke="#FFFFFF" stroke-opacity=".22"/>
+  <text class="mono tag" x="26" y="28">AREAS OF PRACTICE / 03.0</text>
+  <text class="sans" x="24" y="79" font-size="28" font-weight="760" letter-spacing="-1.1">WHAT I MAKE.</text>
+  <g>
+    <path class="track" d="M53 111V288"/>
+    <path class="signal" d="M53 111V288" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <g transform="translate(0 0)">
+      <circle class="node" cx="53" cy="121" r="5"/>
+      <text class="mono num" x="77" y="117">01 / SOFTWARE</text>
+      <text class="sans label" x="77" y="140">Useful tools.</text>
+      <path d="M77 150H505" stroke="#FFFFFF" stroke-opacity=".15"/>
+    </g>
+    <g>
+      <circle class="node" cx="53" cy="177" r="5"/>
+      <text class="mono num" x="77" y="173">02 / INTERFACES</text>
+      <text class="sans label" x="77" y="196">Clear experiences.</text>
+      <path d="M77 206H505" stroke="#FFFFFF" stroke-opacity=".15"/>
+    </g>
+    <g>
+      <circle class="node" cx="53" cy="233" r="5"/>
+      <text class="mono num" x="77" y="229">03 / MOTION</text>
+      <text class="sans label" x="77" y="252">Purposeful movement.</text>
+      <path d="M77 262H505" stroke="#FFFFFF" stroke-opacity=".15"/>
+    </g>
+    <g>
+      <circle class="node" cx="53" cy="289" r="5"/>
+      <text class="mono num" x="77" y="285">04 / SYSTEMS</text>
+      <text class="sans label" x="77" y="308">Connected thinking.</text>
+    </g>
   </g>
-  <g transform="translate(279 100)">
-    <rect class="cell" width="235" height="98"/>
-    <text class="mono num" x="13" y="20">02 / INTERFACES</text>
-    <text class="sans label" x="13" y="52">Make it clear.</text>
-    <g class="symbol" transform="translate(181 34)"><path d="M0 0H32V30H0Z M0 8H32M8 8V30"/><path d="M12 14L18 20L12 26"/></g>
-    <path d="M13 78H222" stroke="#111111" stroke-opacity=".18"/>
-    <circle class="tick" cx="219" cy="13" r="2.5" fill="#111111" style="animation-delay:.6s"/>
-  </g>
-  <g transform="translate(26 211)">
-    <rect class="cell" width="235" height="98"/>
-    <text class="mono num" x="13" y="20">03 / MOTION</text>
-    <text class="sans label" x="13" y="52">Make it move.</text>
-    <g class="symbol" transform="translate(180 36)"><path d="M0 4H10M0 14H20M0 24H31"/><path d="M15 0L25 14L15 28"/></g>
-    <path d="M13 78H222" stroke="#111111" stroke-opacity=".18"/>
-    <circle class="tick" cx="219" cy="13" r="2.5" fill="#111111" style="animation-delay:1.2s"/>
-  </g>
-  <g transform="translate(279 211)">
-    <rect class="cell" width="235" height="98"/>
-    <text class="mono num" x="13" y="20">04 / SYSTEMS</text>
-    <text class="sans label" x="13" y="52">Make it connect.</text>
-    <g class="symbol" transform="translate(181 32)"><path d="M0 4H12V16H0ZM21 16H33V28H21ZM12 10H27V16"/><circle cx="6" cy="10" r="2" fill="#111111"/><circle cx="27" cy="22" r="2" fill="#111111"/></g>
-    <path d="M13 78H222" stroke="#111111" stroke-opacity=".18"/>
-    <circle class="tick" cx="219" cy="13" r="2.5" fill="#111111" style="animation-delay:1.8s"/>
-  </g>
-  <path d="M26 328H514" stroke="#111111" stroke-opacity=".28"/>
-  <text class="mono tag" x="26" y="346" opacity=".72">LEARN BY BUILDING / KEEP ITERATING</text>
-  <text class="mono tag" x="514" y="346" text-anchor="end" opacity=".72">V 02.0</text>
+  <text class="mono tag" x="26" y="341">LEARN BY BUILDING / IMPROVE THROUGH TESTING</text>
+  <text class="mono tag" x="514" y="341" text-anchor="end">03</text>
 </svg>
