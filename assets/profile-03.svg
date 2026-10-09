@@ -61,7 +61,7 @@
       <tspan x="414" dy="0">I enjoy building software,</tspan>
       <tspan x="414" dy="24">creating web experiences,</tspan>
       <tspan x="414" dy="24">and experimenting with ideas</tspan>
-      <tspan x="414" dy="24">that make technology useful.</tspan>
+      <tspan x="414" dy="24">that make technology more useful.</tspan>
     </text>
   </g>
   <g class="enter" style="--delay:.90s">
@@ -73,7 +73,7 @@
       <tspan x="810" dy="0">I'm interested in how things</tspan>
       <tspan x="810" dy="24">work at every level—from</tspan>
       <tspan x="810" dy="24">thoughtful interfaces and</tspan>
-      <tspan x="810" dy="24">animation to underlying systems.</tspan>
+      <tspan x="810" dy="24">animation to the systems underneath them.</tspan>
     </text>
   </g>
   <g class="enter" style="--delay:1.25s">
@@ -91,11 +91,11 @@
     <text class="mono label ink" x="845" y="334">IN PROGRESS</text>
     <text class="sans copy ink" x="810" y="367">
       <tspan x="810" dy="0">This is a small space to share</tspan>
-      <tspan x="810" dy="24">what I'm making and learning.</tspan>
+      <tspan x="810" dy="24">what I'm making, what I'm learning,</tspan>
     </text>
   </g>
   <path d="M390 445H1160" stroke="#31544A" stroke-opacity=".24"/>
-  <text class="sans copy ink enter" x="390" y="475" style="--delay:1.8s">This is a small space to share what I&apos;m making, what I&apos;m learning, and where I&apos;m heading next.</text>
+  <text class="sans copy ink enter" x="390" y="475" style="--delay:1.8s">and where I&apos;m heading next.</text>
   <text class="mono meta ink" x="390" y="533">PROFILE / BACKGROUND / METHOD</text>
   <text class="mono meta ink" x="1160" y="533" text-anchor="end">END OF NOTE</text>
 </svg>
