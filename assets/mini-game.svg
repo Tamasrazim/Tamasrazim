@@ -41,10 +41,10 @@
       .dashrail{fill:none;stroke:#dfe6f0;stroke-opacity:.34;stroke-width:1;stroke-dasharray:4 16;animation:dashflow .72s linear infinite}
       .speedline{fill:none;stroke:url(#beam);stroke-width:1.1;stroke-linecap:round;stroke-dasharray:3 38;animation:dashflow .56s linear infinite}
       .frame{fill:none;stroke:url(#frameStroke);stroke-width:1.25;transform-box:fill-box;transform-origin:center;animation:approach 1.48s linear infinite}
-      .frame:nth-of-type(2){animation-delay:-.30s}
-      .frame:nth-of-type(3){animation-delay:-.60s}
-      .frame:nth-of-type(4){animation-delay:-.90s}
-      .frame:nth-of-type(5){animation-delay:-1.20s}
+      .frame-2{animation-delay:-.30s}
+      .frame-3{animation-delay:-.60s}
+      .frame-4{animation-delay:-.90s}
+      .frame-5{animation-delay:-1.20s}
       .rung{fill:none;stroke:#dce4ef;stroke-opacity:.32;stroke-width:1;transform-box:fill-box;transform-origin:center;animation:rush 1.22s linear infinite}
       .rung:nth-of-type(2){animation-delay:-.15s}
       .rung:nth-of-type(3){animation-delay:-.30s}
@@ -98,10 +98,10 @@
     <path class="speedline" d="M600 96L470 260M600 96L730 260" style="animation-delay:-.11s"/>
 
     <!-- Repeated expanding frames cycle while fading out at each edge. -->
-    <rect class="frame" x="500" y="70" width="200" height="52" rx="9"/>
-    <rect class="frame" x="500" y="70" width="200" height="52" rx="9"/>
-    <rect class="frame" x="500" y="70" width="200" height="52" rx="9"/>
-    <rect class="frame" x="500" y="70" width="200" height="52" rx="9"/>
+    <rect class="frame frame-2" x="500" y="70" width="200" height="52" rx="9"/>
+    <rect class="frame frame-3" x="500" y="70" width="200" height="52" rx="9"/>
+    <rect class="frame frame-4" x="500" y="70" width="200" height="52" rx="9"/>
+    <rect class="frame frame-5" x="500" y="70" width="200" height="52" rx="9"/>
     <rect class="frame" x="500" y="70" width="200" height="52" rx="9"/>
 
     <!-- Crossbars rush from the horizon towards the viewer in staggered phases. -->
