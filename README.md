@@ -2,10 +2,6 @@
 
 <img src="./assets/minimal-motion.svg" width="100%" alt="Minimal animated geometric flower with orbiting points and vector trails" />
 
-I'm a developer and computer technology student from Bangladesh. I enjoy building software, creating web experiences, and experimenting with ideas that make technology more useful.
-
-I'm interested in how things work at every level—from thoughtful interfaces and animation to the systems underneath them. I learn by building, testing, and improving real projects.
-
-This is a small space to share what I'm making, what I'm learning, and where I'm heading next.
+<img src="./assets/type-runner.svg" width="100%" alt="Animated biography: each character runs into position while a tiny stick figure carries a letter along the track. The text describes my software projects, learning, and interests." />
 
 <img src="./assets/mini-game.svg" width="100%" alt="A fast seamless 3D-style tunnel runner animation with perspective rails and a small craft" />
