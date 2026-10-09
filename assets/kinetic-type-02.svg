@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Kinetic Type — Design No. 02: Signal Reveal</title>
+  <desc id="desc">Design No. 02 shows the biography in eight numbered lines. Every word starts at 20 percent opacity, then a clean horizontal scan uncovers it at full opacity, one word at a time and one line at a time. A thin line advances under each active line. The complete text reads: I&apos;m a developer and computer technology student from Bangladesh. I enjoy building software, creating web experiences, and experimenting with ideas that make technology more useful. I&apos;m interested in how things work at every level—from thoughtful interfaces and animation to the systems underneath them. I learn by building, testing, and improving real projects. This is a small space to share what I&apos;m making, what I&apos;m learning, and where I&apos;m heading next.</desc>
+  <defs>
+    <clipPath id="word-clip-01" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="136.00" y="59.00" width="0" height="30" style="--target:37.45px;--delay:0.0000s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-02" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="183.00" y="59.00" width="0" height="30" style="--target:13.95px;--delay:0.1290s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-03" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="206.50" y="59.00" width="0" height="30" style="--target:107.95px;--delay:0.2581s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-04" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="324.00" y="59.00" width="0" height="30" style="--target:37.45px;--delay:0.3871s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-05" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="371.00" y="59.00" width="0" height="30" style="--target:96.20px;--delay:0.5161s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-06" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="476.75" y="59.00" width="0" height="30" style="--target:119.70px;--delay:0.6452s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-07" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="606.00" y="59.00" width="0" height="30" style="--target:84.45px;--delay:0.7742s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-08" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="700.00" y="59.00" width="0" height="30" style="--target:49.20px;--delay:0.9032s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-09" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="758.75" y="59.00" width="0" height="30" style="--target:131.45px;--delay:1.0323s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-10" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="136.00" y="96.00" width="0" height="30" style="--target:13.95px;--delay:1.3073s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-11" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="159.50" y="96.00" width="0" height="30" style="--target:60.95px;--delay:1.4363s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-12" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="230.00" y="96.00" width="0" height="30" style="--target:96.20px;--delay:1.5653s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-13" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="335.75" y="96.00" width="0" height="30" style="--target:107.95px;--delay:1.6944s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-14" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="453.25" y="96.00" width="0" height="30" style="--target:96.20px;--delay:1.8234s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-15" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="559.00" y="96.00" width="0" height="30" style="--target:37.45px;--delay:1.9524s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-16" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="606.00" y="96.00" width="0" height="30" style="--target:143.20px;--delay:2.0815s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-17" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="758.75" y="96.00" width="0" height="30" style="--target:37.45px;--delay:2.2105s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-18" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="136.00" y="133.00" width="0" height="30" style="--target:154.95px;--delay:2.4855s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-19" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="300.50" y="133.00" width="0" height="30" style="--target:49.20px;--delay:2.6145s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-20" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="359.25" y="133.00" width="0" height="30" style="--target:60.95px;--delay:2.7435s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-21" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="429.75" y="133.00" width="0" height="30" style="--target:49.20px;--delay:2.8726s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-22" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="488.50" y="133.00" width="0" height="30" style="--target:49.20px;--delay:3.0016s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-23" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="547.25" y="133.00" width="0" height="30" style="--target:119.70px;--delay:3.1306s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-24" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="676.50" y="133.00" width="0" height="30" style="--target:49.20px;--delay:3.2597s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-25" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="735.25" y="133.00" width="0" height="30" style="--target:84.45px;--delay:3.3887s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-26" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="136.00" y="170.00" width="0" height="30" style="--target:37.45px;--delay:3.6637s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-27" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="183.00" y="170.00" width="0" height="30" style="--target:119.70px;--delay:3.7927s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-28" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="312.25" y="170.00" width="0" height="30" style="--target:25.70px;--delay:3.9218s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-29" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="347.50" y="170.00" width="0" height="30" style="--target:37.45px;--delay:4.0508s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-30" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="394.50" y="170.00" width="0" height="30" style="--target:72.70px;--delay:4.1798s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-31" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="476.75" y="170.00" width="0" height="30" style="--target:49.20px;--delay:4.3089s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-32" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="535.50" y="170.00" width="0" height="30" style="--target:25.70px;--delay:4.4379s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-33" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="570.75" y="170.00" width="0" height="30" style="--target:60.95px;--delay:4.5669s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-34" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="641.25" y="170.00" width="0" height="30" style="--target:119.70px;--delay:4.6960s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-35" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="770.50" y="170.00" width="0" height="30" style="--target:119.70px;--delay:4.8250s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-36" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="136.00" y="207.00" width="0" height="30" style="--target:119.70px;--delay:5.1000s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-37" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="265.25" y="207.00" width="0" height="30" style="--target:37.45px;--delay:5.2290s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-38" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="312.25" y="207.00" width="0" height="30" style="--target:107.95px;--delay:5.3581s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-39" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="429.75" y="207.00" width="0" height="30" style="--target:25.70px;--delay:5.4871s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-40" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="465.00" y="207.00" width="0" height="30" style="--target:37.45px;--delay:5.6161s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-41" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="512.00" y="207.00" width="0" height="30" style="--target:84.45px;--delay:5.7452s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-42" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="606.00" y="207.00" width="0" height="30" style="--target:119.70px;--delay:5.8742s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-43" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="735.25" y="207.00" width="0" height="30" style="--target:60.95px;--delay:6.0032s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-44" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="136.00" y="244.00" width="0" height="30" style="--target:13.95px;--delay:6.2782s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-45" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="159.50" y="244.00" width="0" height="30" style="--target:60.95px;--delay:6.4073s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-46" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="230.00" y="244.00" width="0" height="30" style="--target:25.70px;--delay:6.5363s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-47" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="265.25" y="244.00" width="0" height="30" style="--target:107.95px;--delay:6.6653s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-48" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="382.75" y="244.00" width="0" height="30" style="--target:96.20px;--delay:6.7944s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-49" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="488.50" y="244.00" width="0" height="30" style="--target:37.45px;--delay:6.9234s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-50" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="535.50" y="244.00" width="0" height="30" style="--target:107.95px;--delay:7.0524s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-51" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="653.00" y="244.00" width="0" height="30" style="--target:49.20px;--delay:7.1815s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-52" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="711.75" y="244.00" width="0" height="30" style="--target:107.95px;--delay:7.3105s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-53" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="136.00" y="281.00" width="0" height="30" style="--target:49.20px;--delay:7.5855s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-54" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="194.75" y="281.00" width="0" height="30" style="--target:25.70px;--delay:7.7145s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-55" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="230.00" y="281.00" width="0" height="30" style="--target:13.95px;--delay:7.8435s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-56" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="253.50" y="281.00" width="0" height="30" style="--target:60.95px;--delay:7.9726s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-57" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="324.00" y="281.00" width="0" height="30" style="--target:60.95px;--delay:8.1016s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-58" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="394.50" y="281.00" width="0" height="30" style="--target:25.70px;--delay:8.2306s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-59" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="429.75" y="281.00" width="0" height="30" style="--target:60.95px;--delay:8.3597s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-60" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="500.25" y="281.00" width="0" height="30" style="--target:49.20px;--delay:8.4887s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-61" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="559.00" y="281.00" width="0" height="30" style="--target:37.45px;--delay:8.6177s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-62" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="606.00" y="281.00" width="0" height="30" style="--target:84.45px;--delay:8.7468s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-63" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="700.00" y="281.00" width="0" height="30" style="--target:49.20px;--delay:8.8758s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-64" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="758.75" y="281.00" width="0" height="30" style="--target:37.45px;--delay:9.0048s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-65" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="805.75" y="281.00" width="0" height="30" style="--target:107.95px;--delay:9.1339s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-66" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="136.00" y="318.00" width="0" height="30" style="--target:37.45px;--delay:9.4089s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-67" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="183.00" y="318.00" width="0" height="30" style="--target:60.95px;--delay:9.5379s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-68" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="253.50" y="318.00" width="0" height="30" style="--target:37.45px;--delay:9.6669s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-69" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="300.50" y="318.00" width="0" height="30" style="--target:84.45px;--delay:9.7960s;--duration:0.0750s"/></clipPath>
+    <clipPath id="word-clip-70" clipPathUnits="userSpaceOnUse"><rect class="wipe" x="394.50" y="318.00" width="0" height="30" style="--target:60.95px;--delay:9.9250s;--duration:0.0750s"/></clipPath>
+  </defs>
+  <style>
+    .meta,.footer,.row-number{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:currentColor}
+    .meta{font-size:10px;letter-spacing:2.3px;opacity:.52}
+    .footer{font-size:10px;letter-spacing:1.7px;opacity:.48}
+    .frame{fill:none;stroke:currentColor;stroke-opacity:.15;stroke-width:1}
+    .spine{fill:none;stroke:currentColor;stroke-opacity:.18;stroke-width:1}
+    .row-number{font-size:11px;letter-spacing:1px;opacity:.35}
+    .row-node{fill:currentColor;opacity:.2;animation:activate-node .16s ease-out var(--delay) both}
+    @keyframes activate-node{from{opacity:.2}to{opacity:.8}}
+    .word-base,.word-reveal{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:20px;font-weight:450;letter-spacing:0}
+    .word-base{fill:currentColor;opacity:.2}
+    .word-reveal{fill:currentColor}
+    .wipe{width:0;animation:wipe-width var(--duration) linear var(--delay) both}
+    @keyframes wipe-width{from{width:0}to{width:var(--target)}}
+    .line-track{fill:none;stroke:currentColor;stroke-opacity:.08;stroke-width:1}
+    .line-progress{fill:none;stroke:currentColor;stroke-opacity:.54;stroke-width:1.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw-line var(--line-duration, 1s) linear both}
+    @keyframes draw-line{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+    .progress-track{fill:none;stroke:currentColor;stroke-opacity:.12;stroke-width:1.5}
+    .progress-fill{fill:none;stroke:currentColor;stroke-opacity:.66;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw-line 10s linear both}
+    @media(prefers-reduced-motion:reduce){
+      .wipe{width:var(--target);animation:none}
+      .line-progress,.progress-fill{stroke-dashoffset:0;animation:none}
+      .row-node{opacity:.8;animation:none}
+    }
+  </style>
+  <path class="frame" d="M58 32H1142M58 397H1142"/>
+  <text class="meta" x="60" y="21">KINETIC TYPE / DESIGN NO. 02</text>
+  <text class="meta" x="1140" y="21" text-anchor="end">SIGNAL REVEAL · 10.0 SEC</text>
+  <path class="spine" d="M100 64V356"/>
+  <path class="line-track" d="M136 91H888.00"/>
+  <path class="line-track" d="M136 128H794.00"/>
+  <path class="line-track" d="M136 165H817.50"/>
+  <path class="line-track" d="M136 202H888.00"/>
+  <path class="line-track" d="M136 239H794.00"/>
+  <path class="line-track" d="M136 276H817.50"/>
+  <path class="line-track" d="M136 313H911.50"/>
+  <path class="line-track" d="M136 350H453.25"/>
+  <path class="line-progress" pathLength="1" d="M136 91H888.00" style="animation-delay:0.0000s;animation-duration:1.1073s"/>
+  <path class="line-progress" pathLength="1" d="M136 128H794.00" style="animation-delay:1.3073s;animation-duration:0.9782s"/>
+  <path class="line-progress" pathLength="1" d="M136 165H817.50" style="animation-delay:2.4855s;animation-duration:0.9782s"/>
+  <path class="line-progress" pathLength="1" d="M136 202H888.00" style="animation-delay:3.6637s;animation-duration:1.2363s"/>
+  <path class="line-progress" pathLength="1" d="M136 239H794.00" style="animation-delay:5.1000s;animation-duration:0.9782s"/>
+  <path class="line-progress" pathLength="1" d="M136 276H817.50" style="animation-delay:6.2782s;animation-duration:1.1073s"/>
+  <path class="line-progress" pathLength="1" d="M136 313H911.50" style="animation-delay:7.5855s;animation-duration:1.6234s"/>
+  <path class="line-progress" pathLength="1" d="M136 350H453.25" style="animation-delay:9.4089s;animation-duration:0.5911s"/>
+  <text class="row-number" x="78" y="83" text-anchor="end">01</text>
+  <text class="row-number" x="78" y="120" text-anchor="end">02</text>
+  <text class="row-number" x="78" y="157" text-anchor="end">03</text>
+  <text class="row-number" x="78" y="194" text-anchor="end">04</text>
+  <text class="row-number" x="78" y="231" text-anchor="end">05</text>
+  <text class="row-number" x="78" y="268" text-anchor="end">06</text>
+  <text class="row-number" x="78" y="305" text-anchor="end">07</text>
+  <text class="row-number" x="78" y="342" text-anchor="end">08</text>
+  <circle class="row-node" cx="100" cy="77" r="2.4" style="--delay:0.0000s"/>
+  <circle class="row-node" cx="100" cy="114" r="2.4" style="--delay:1.3073s"/>
+  <circle class="row-node" cx="100" cy="151" r="2.4" style="--delay:2.4855s"/>
+  <circle class="row-node" cx="100" cy="188" r="2.4" style="--delay:3.6637s"/>
+  <circle class="row-node" cx="100" cy="225" r="2.4" style="--delay:5.1000s"/>
+  <circle class="row-node" cx="100" cy="262" r="2.4" style="--delay:6.2782s"/>
+  <circle class="row-node" cx="100" cy="299" r="2.4" style="--delay:7.5855s"/>
+  <circle class="row-node" cx="100" cy="336" r="2.4" style="--delay:9.4089s"/>
+  <g id="quiet-text"><text class="word-base" x="136.00" y="83">I&apos;m</text>
+    <text class="word-base" x="183.00" y="83">a</text>
+    <text class="word-base" x="206.50" y="83">developer</text>
+    <text class="word-base" x="324.00" y="83">and</text>
+    <text class="word-base" x="371.00" y="83">computer</text>
+    <text class="word-base" x="476.75" y="83">technology</text>
+    <text class="word-base" x="606.00" y="83">student</text>
+    <text class="word-base" x="700.00" y="83">from</text>
+    <text class="word-base" x="758.75" y="83">Bangladesh.</text>
+    <text class="word-base" x="136.00" y="120">I</text>
+    <text class="word-base" x="159.50" y="120">enjoy</text>
+    <text class="word-base" x="230.00" y="120">building</text>
+    <text class="word-base" x="335.75" y="120">software,</text>
+    <text class="word-base" x="453.25" y="120">creating</text>
+    <text class="word-base" x="559.00" y="120">web</text>
+    <text class="word-base" x="606.00" y="120">experiences,</text>
+    <text class="word-base" x="758.75" y="120">and</text>
+    <text class="word-base" x="136.00" y="157">experimenting</text>
+    <text class="word-base" x="300.50" y="157">with</text>
+    <text class="word-base" x="359.25" y="157">ideas</text>
+    <text class="word-base" x="429.75" y="157">that</text>
+    <text class="word-base" x="488.50" y="157">make</text>
+    <text class="word-base" x="547.25" y="157">technology</text>
+    <text class="word-base" x="676.50" y="157">more</text>
+    <text class="word-base" x="735.25" y="157">useful.</text>
+    <text class="word-base" x="136.00" y="194">I&apos;m</text>
+    <text class="word-base" x="183.00" y="194">interested</text>
+    <text class="word-base" x="312.25" y="194">in</text>
+    <text class="word-base" x="347.50" y="194">how</text>
+    <text class="word-base" x="394.50" y="194">things</text>
+    <text class="word-base" x="476.75" y="194">work</text>
+    <text class="word-base" x="535.50" y="194">at</text>
+    <text class="word-base" x="570.75" y="194">every</text>
+    <text class="word-base" x="641.25" y="194">level—from</text>
+    <text class="word-base" x="770.50" y="194">thoughtful</text>
+    <text class="word-base" x="136.00" y="231">interfaces</text>
+    <text class="word-base" x="265.25" y="231">and</text>
+    <text class="word-base" x="312.25" y="231">animation</text>
+    <text class="word-base" x="429.75" y="231">to</text>
+    <text class="word-base" x="465.00" y="231">the</text>
+    <text class="word-base" x="512.00" y="231">systems</text>
+    <text class="word-base" x="606.00" y="231">underneath</text>
+    <text class="word-base" x="735.25" y="231">them.</text>
+    <text class="word-base" x="136.00" y="268">I</text>
+    <text class="word-base" x="159.50" y="268">learn</text>
+    <text class="word-base" x="230.00" y="268">by</text>
+    <text class="word-base" x="265.25" y="268">building,</text>
+    <text class="word-base" x="382.75" y="268">testing,</text>
+    <text class="word-base" x="488.50" y="268">and</text>
+    <text class="word-base" x="535.50" y="268">improving</text>
+    <text class="word-base" x="653.00" y="268">real</text>
+    <text class="word-base" x="711.75" y="268">projects.</text>
+    <text class="word-base" x="136.00" y="305">This</text>
+    <text class="word-base" x="194.75" y="305">is</text>
+    <text class="word-base" x="230.00" y="305">a</text>
+    <text class="word-base" x="253.50" y="305">small</text>
+    <text class="word-base" x="324.00" y="305">space</text>
+    <text class="word-base" x="394.50" y="305">to</text>
+    <text class="word-base" x="429.75" y="305">share</text>
+    <text class="word-base" x="500.25" y="305">what</text>
+    <text class="word-base" x="559.00" y="305">I&apos;m</text>
+    <text class="word-base" x="606.00" y="305">making,</text>
+    <text class="word-base" x="700.00" y="305">what</text>
+    <text class="word-base" x="758.75" y="305">I&apos;m</text>
+    <text class="word-base" x="805.75" y="305">learning,</text>
+    <text class="word-base" x="136.00" y="342">and</text>
+    <text class="word-base" x="183.00" y="342">where</text>
+    <text class="word-base" x="253.50" y="342">I&apos;m</text>
+    <text class="word-base" x="300.50" y="342">heading</text>
+    <text class="word-base" x="394.50" y="342">next.</text></g>
+  <g id="scan-reveal"><text class="word-reveal" x="136.00" y="83" clip-path="url(#word-clip-01)">I&apos;m</text>
+    <text class="word-reveal" x="183.00" y="83" clip-path="url(#word-clip-02)">a</text>
+    <text class="word-reveal" x="206.50" y="83" clip-path="url(#word-clip-03)">developer</text>
+    <text class="word-reveal" x="324.00" y="83" clip-path="url(#word-clip-04)">and</text>
+    <text class="word-reveal" x="371.00" y="83" clip-path="url(#word-clip-05)">computer</text>
+    <text class="word-reveal" x="476.75" y="83" clip-path="url(#word-clip-06)">technology</text>
+    <text class="word-reveal" x="606.00" y="83" clip-path="url(#word-clip-07)">student</text>
+    <text class="word-reveal" x="700.00" y="83" clip-path="url(#word-clip-08)">from</text>
+    <text class="word-reveal" x="758.75" y="83" clip-path="url(#word-clip-09)">Bangladesh.</text>
+    <text class="word-reveal" x="136.00" y="120" clip-path="url(#word-clip-10)">I</text>
+    <text class="word-reveal" x="159.50" y="120" clip-path="url(#word-clip-11)">enjoy</text>
+    <text class="word-reveal" x="230.00" y="120" clip-path="url(#word-clip-12)">building</text>
+    <text class="word-reveal" x="335.75" y="120" clip-path="url(#word-clip-13)">software,</text>
+    <text class="word-reveal" x="453.25" y="120" clip-path="url(#word-clip-14)">creating</text>
+    <text class="word-reveal" x="559.00" y="120" clip-path="url(#word-clip-15)">web</text>
+    <text class="word-reveal" x="606.00" y="120" clip-path="url(#word-clip-16)">experiences,</text>
+    <text class="word-reveal" x="758.75" y="120" clip-path="url(#word-clip-17)">and</text>
+    <text class="word-reveal" x="136.00" y="157" clip-path="url(#word-clip-18)">experimenting</text>
+    <text class="word-reveal" x="300.50" y="157" clip-path="url(#word-clip-19)">with</text>
+    <text class="word-reveal" x="359.25" y="157" clip-path="url(#word-clip-20)">ideas</text>
+    <text class="word-reveal" x="429.75" y="157" clip-path="url(#word-clip-21)">that</text>
+    <text class="word-reveal" x="488.50" y="157" clip-path="url(#word-clip-22)">make</text>
+    <text class="word-reveal" x="547.25" y="157" clip-path="url(#word-clip-23)">technology</text>
+    <text class="word-reveal" x="676.50" y="157" clip-path="url(#word-clip-24)">more</text>
+    <text class="word-reveal" x="735.25" y="157" clip-path="url(#word-clip-25)">useful.</text>
+    <text class="word-reveal" x="136.00" y="194" clip-path="url(#word-clip-26)">I&apos;m</text>
+    <text class="word-reveal" x="183.00" y="194" clip-path="url(#word-clip-27)">interested</text>
+    <text class="word-reveal" x="312.25" y="194" clip-path="url(#word-clip-28)">in</text>
+    <text class="word-reveal" x="347.50" y="194" clip-path="url(#word-clip-29)">how</text>
+    <text class="word-reveal" x="394.50" y="194" clip-path="url(#word-clip-30)">things</text>
+    <text class="word-reveal" x="476.75" y="194" clip-path="url(#word-clip-31)">work</text>
+    <text class="word-reveal" x="535.50" y="194" clip-path="url(#word-clip-32)">at</text>
+    <text class="word-reveal" x="570.75" y="194" clip-path="url(#word-clip-33)">every</text>
+    <text class="word-reveal" x="641.25" y="194" clip-path="url(#word-clip-34)">level—from</text>
+    <text class="word-reveal" x="770.50" y="194" clip-path="url(#word-clip-35)">thoughtful</text>
+    <text class="word-reveal" x="136.00" y="231" clip-path="url(#word-clip-36)">interfaces</text>
+    <text class="word-reveal" x="265.25" y="231" clip-path="url(#word-clip-37)">and</text>
+    <text class="word-reveal" x="312.25" y="231" clip-path="url(#word-clip-38)">animation</text>
+    <text class="word-reveal" x="429.75" y="231" clip-path="url(#word-clip-39)">to</text>
+    <text class="word-reveal" x="465.00" y="231" clip-path="url(#word-clip-40)">the</text>
+    <text class="word-reveal" x="512.00" y="231" clip-path="url(#word-clip-41)">systems</text>
+    <text class="word-reveal" x="606.00" y="231" clip-path="url(#word-clip-42)">underneath</text>
+    <text class="word-reveal" x="735.25" y="231" clip-path="url(#word-clip-43)">them.</text>
+    <text class="word-reveal" x="136.00" y="268" clip-path="url(#word-clip-44)">I</text>
+    <text class="word-reveal" x="159.50" y="268" clip-path="url(#word-clip-45)">learn</text>
+    <text class="word-reveal" x="230.00" y="268" clip-path="url(#word-clip-46)">by</text>
+    <text class="word-reveal" x="265.25" y="268" clip-path="url(#word-clip-47)">building,</text>
+    <text class="word-reveal" x="382.75" y="268" clip-path="url(#word-clip-48)">testing,</text>
+    <text class="word-reveal" x="488.50" y="268" clip-path="url(#word-clip-49)">and</text>
+    <text class="word-reveal" x="535.50" y="268" clip-path="url(#word-clip-50)">improving</text>
+    <text class="word-reveal" x="653.00" y="268" clip-path="url(#word-clip-51)">real</text>
+    <text class="word-reveal" x="711.75" y="268" clip-path="url(#word-clip-52)">projects.</text>
+    <text class="word-reveal" x="136.00" y="305" clip-path="url(#word-clip-53)">This</text>
+    <text class="word-reveal" x="194.75" y="305" clip-path="url(#word-clip-54)">is</text>
+    <text class="word-reveal" x="230.00" y="305" clip-path="url(#word-clip-55)">a</text>
+    <text class="word-reveal" x="253.50" y="305" clip-path="url(#word-clip-56)">small</text>
+    <text class="word-reveal" x="324.00" y="305" clip-path="url(#word-clip-57)">space</text>
+    <text class="word-reveal" x="394.50" y="305" clip-path="url(#word-clip-58)">to</text>
+    <text class="word-reveal" x="429.75" y="305" clip-path="url(#word-clip-59)">share</text>
+    <text class="word-reveal" x="500.25" y="305" clip-path="url(#word-clip-60)">what</text>
+    <text class="word-reveal" x="559.00" y="305" clip-path="url(#word-clip-61)">I&apos;m</text>
+    <text class="word-reveal" x="606.00" y="305" clip-path="url(#word-clip-62)">making,</text>
+    <text class="word-reveal" x="700.00" y="305" clip-path="url(#word-clip-63)">what</text>
+    <text class="word-reveal" x="758.75" y="305" clip-path="url(#word-clip-64)">I&apos;m</text>
+    <text class="word-reveal" x="805.75" y="305" clip-path="url(#word-clip-65)">learning,</text>
+    <text class="word-reveal" x="136.00" y="342" clip-path="url(#word-clip-66)">and</text>
+    <text class="word-reveal" x="183.00" y="342" clip-path="url(#word-clip-67)">where</text>
+    <text class="word-reveal" x="253.50" y="342" clip-path="url(#word-clip-68)">I&apos;m</text>
+    <text class="word-reveal" x="300.50" y="342" clip-path="url(#word-clip-69)">heading</text>
+    <text class="word-reveal" x="394.50" y="342" clip-path="url(#word-clip-70)">next.</text></g>
+  <path class="progress-track" d="M60 380H1140"/>
+  <path class="progress-fill" pathLength="1" d="M60 380H1140"/>
+  <text class="footer" x="60" y="418">DESIGN 02 / SCAN-TO-SET</text>
+  <text class="footer" x="1140" y="418" text-anchor="end">70 WORDS · 8 LINES</text>
+</svg>
