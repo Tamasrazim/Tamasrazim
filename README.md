@@ -1,6 +1,6 @@
 # About Me
 
-<img src="./assets/minimal-motion.svg" width="100%" alt="Minimal abstract animation with softly moving curves and light" />
+<img src="./assets/minimal-motion.svg" width="100%" alt="Minimal animated geometric flower with orbiting points and vector trails" />
 
 I'm a developer and computer technology student from Bangladesh. I enjoy building software, creating web experiences, and experimenting with ideas that make technology more useful.
 

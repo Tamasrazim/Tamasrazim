@@ -1,71 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="136" viewBox="0 0 1200 136" role="img" aria-labelledby="title desc">
-  <title id="title">Quiet motion</title>
-  <desc id="desc">A minimal monochrome composition of fine flowing curves and softly moving light.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="244" viewBox="0 0 1200 244" role="img" aria-labelledby="title desc">
+  <title id="title">Kinetic Bloom</title>
+  <desc id="desc">A monochrome geometric flower slowly unfolding among fine orbital paths and moving points.</desc>
   <defs>
-    <linearGradient id="back" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#090a0c"/>
-      <stop offset=".52" stop-color="#111317"/>
-      <stop offset="1" stop-color="#08090b"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#070809"/>
+      <stop offset=".54" stop-color="#101216"/>
+      <stop offset="1" stop-color="#08090a"/>
     </linearGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#e6e9ef" stop-opacity="0"/>
-      <stop offset=".22" stop-color="#e6e9ef" stop-opacity=".20"/>
-      <stop offset=".76" stop-color="#e6e9ef" stop-opacity=".12"/>
-      <stop offset="1" stop-color="#e6e9ef" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="mist">
-      <stop stop-color="#dce3ef" stop-opacity=".20"/>
-      <stop offset=".45" stop-color="#aab5c8" stop-opacity=".06"/>
-      <stop offset="1" stop-color="#aab5c8" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="thread" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="trail" x1="0" y1="0" x2="1" y2="0">
       <stop stop-color="#e7ebf2" stop-opacity="0"/>
-      <stop offset=".48" stop-color="#f2f4f8" stop-opacity=".72"/>
+      <stop offset=".5" stop-color="#e7ebf2" stop-opacity=".65"/>
       <stop offset="1" stop-color="#e7ebf2" stop-opacity="0"/>
     </linearGradient>
-    <pattern id="grainGrid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#e7ebf2" stroke-opacity=".045" stroke-width=".6"/>
+    <radialGradient id="aura">
+      <stop stop-color="#cbd5e1" stop-opacity=".20"/>
+      <stop offset=".5" stop-color="#94a3b8" stop-opacity=".065"/>
+      <stop offset="1" stop-color="#94a3b8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#dfe5ef" stroke-opacity=".045" stroke-width=".7"/>
     </pattern>
-    <clipPath id="frame"><rect width="1200" height="136" rx="10"/></clipPath>
-    <filter id="blur"><feGaussianBlur stdDeviation="11"/></filter>
+    <clipPath id="frame"><rect width="1200" height="244" rx="12"/></clipPath>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <path id="outerPetal" d="M600 122C578 100 578 70 600 43C622 70 622 100 600 122Z"/>
+    <path id="innerPetal" d="M600 122C584 105 585 86 600 69C615 86 616 105 600 122Z"/>
+    <path id="orbitA" d="M418 122A182 52 0 1 1 782 122A182 52 0 1 1 418 122"/>
+    <path id="orbitB" d="M355 122A245 78 0 1 0 845 122A245 78 0 1 0 355 122"/>
     <style>
-      .curve{fill:none;stroke:#dfe4ee;stroke-width:1;stroke-opacity:.25}
-      .thread{fill:none;stroke:url(#thread);stroke-width:1.25;stroke-linecap:round;stroke-dasharray:150 1050;animation:flow 10s linear infinite}
-      .soft{transform-box:fill-box;transform-origin:center;animation:breathe 7s ease-in-out infinite}
-      .orbit{transform-origin:600px 68px;animation:turn 32s linear infinite}
-      .orbitSlow{transform-origin:600px 68px;animation:turnBack 46s linear infinite}
-      .glint{animation:glint 5.5s ease-in-out infinite}
-      @keyframes flow{to{stroke-dashoffset:-1200}}
-      @keyframes breathe{0%,100%{opacity:.32;transform:scale(.94)}50%{opacity:.8;transform:scale(1.06)}}
+      .fine{fill:none;stroke:#dfe5ef;stroke-opacity:.17;stroke-width:1}
+      .petal{fill:#dfe5ef;fill-opacity:.018;stroke:#e6ebf3;stroke-opacity:.42;stroke-width:1.05}
+      .orbit{fill:none;stroke:#cfd7e3;stroke-opacity:.16;stroke-width:.8}
+      .rail{fill:none;stroke:#cfd7e3;stroke-opacity:.14;stroke-width:.8}
+      .flow{fill:none;stroke:url(#trail);stroke-width:1.2;stroke-linecap:round;stroke-dasharray:26 54;animation:flow 11s linear infinite}
+      .outer-bloom{transform-origin:600px 122px;animation:turn 48s linear infinite}
+      .inner-bloom{transform-origin:600px 122px;animation:turnBack 35s linear infinite}
+      .orbit-a{transform-origin:600px 122px;animation:turn 31s linear infinite}
+      .orbit-b{transform-origin:600px 122px;animation:turnBack 43s linear infinite}
+      .breath{transform-box:fill-box;transform-origin:center;animation:breath 4.8s ease-in-out infinite}
+      .spark{animation:spark 3.6s ease-in-out var(--delay,0s) infinite}
+      .core-turn{transform-origin:600px 122px;animation:turn 13s linear infinite}
+      @keyframes flow{to{stroke-dashoffset:-800}}
       @keyframes turn{to{transform:rotate(360deg)}}
       @keyframes turnBack{to{transform:rotate(-360deg)}}
-      @keyframes glint{0%,100%{opacity:.18}50%{opacity:.72}}
-      @media(prefers-reduced-motion:reduce){.thread,.soft,.orbit,.orbitSlow,.glint{animation:none!important}.thread{stroke-dasharray:none;stroke-opacity:.24}.soft,.glint{opacity:.35}}
+      @keyframes breath{0%,100%{opacity:.28;transform:scale(.86)}50%{opacity:.88;transform:scale(1.18)}}
+      @keyframes spark{0%,100%{opacity:.13}48%{opacity:.78}58%{opacity:.34}}
+      @media(prefers-reduced-motion:reduce){
+        .flow,.outer-bloom,.inner-bloom,.orbit-a,.orbit-b,.breath,.spark,.core-turn{animation:none!important}
+        .flow{stroke-dasharray:none;stroke-opacity:.25}
+        .spark{opacity:.35}
+      }
     </style>
   </defs>
   <g clip-path="url(#frame)">
-    <rect width="1200" height="136" fill="url(#back)"/>
-    <rect width="1200" height="136" fill="url(#grainGrid)"/>
-    <rect width="1200" height="1" fill="url(#edge)"/>
-    <rect y="135" width="1200" height="1" fill="url(#edge)"/>
-    <ellipse class="soft" cx="600" cy="68" rx="300" ry="110" fill="url(#mist)" filter="url(#blur)"/>
-    <g class="orbit">
-      <ellipse class="curve" cx="600" cy="68" rx="188" ry="40" transform="rotate(-8 600 68)" stroke-dasharray="2 7"/>
-      <ellipse cx="600" cy="68" rx="144" ry="27" transform="rotate(12 600 68)" fill="none" stroke="#e5e9f0" stroke-opacity=".13"/>
-      <circle cx="787" cy="43" r="2.2" fill="#e9edf5" class="glint"/>
+    <rect width="1200" height="244" fill="url(#background)"/>
+    <rect width="1200" height="244" fill="url(#grid)"/>
+    <rect width="1200" height="1" fill="url(#trail)"/>
+    <rect y="243" width="1200" height="1" fill="url(#trail)"/>
+    <ellipse cx="600" cy="122" rx="305" ry="130" fill="url(#aura)"/>
+
+    <g class="side-field">
+      <path class="rail" d="M0 83C140 83 175 111 280 111S382 88 430 106"/>
+      <path class="rail" d="M0 160C137 160 185 138 278 138S375 161 430 143"/>
+      <path class="rail" d="M1200 83C1060 83 1025 111 920 111S818 88 770 106"/>
+      <path class="rail" d="M1200 160C1063 160 1015 138 922 138S825 161 770 143"/>
+      <path class="flow" d="M0 83C140 83 175 111 280 111S382 88 430 106"/>
+      <path class="flow" d="M1200 160C1063 160 1015 138 922 138S825 161 770 143" style="animation-delay:-4s"/>
+      <path class="fine" d="M80 122H390M810 122H1120" stroke-dasharray="1 8"/>
+      <g fill="#dce3ed">
+        <circle class="spark" cx="92" cy="83" r="1.5" style="--delay:-.8s"/>
+        <circle class="spark" cx="176" cy="100" r="2" style="--delay:-2.1s"/>
+        <circle class="spark" cx="280" cy="111" r="1.5" style="--delay:-1.3s"/>
+        <circle class="spark" cx="365" cy="98" r="1.2" style="--delay:-2.6s"/>
+        <circle class="spark" cx="1108" cy="160" r="1.5" style="--delay:-1.8s"/>
+        <circle class="spark" cx="1024" cy="143" r="2" style="--delay:-.4s"/>
+        <circle class="spark" cx="920" cy="138" r="1.5" style="--delay:-2.9s"/>
+        <circle class="spark" cx="835" cy="150" r="1.2" style="--delay:-1.1s"/>
+      </g>
+      <g stroke="#dfe5ef" stroke-opacity=".25" fill="none">
+        <path d="M104 73v20m-5-10h10M1090 150v20m-5-10h10"/>
+        <rect x="196" y="132" width="7" height="7" transform="rotate(45 199.5 135.5)"/>
+        <rect x="997" y="95" width="7" height="7" transform="rotate(45 1000.5 98.5)"/>
+      </g>
     </g>
-    <g class="orbitSlow">
-      <ellipse cx="600" cy="68" rx="245" ry="53" transform="rotate(-4 600 68)" fill="none" stroke="#e5e9f0" stroke-opacity=".08" stroke-dasharray="1 9"/>
-      <circle cx="357" cy="81" r="1.7" fill="#dce2ec" opacity=".6"/>
+
+    <g class="orbit-a">
+      <use href="#orbitA" class="orbit"/>
+      <circle cx="600" cy="70" r="2.6" fill="#edf1f7" class="breath" filter="url(#softGlow)"/>
+      <circle cx="600" cy="174" r="1.7" fill="#dfe5ef" opacity=".7"/>
+      <path d="M600 65l3 5-3 5-3-5Z" fill="#e7ebf2" opacity=".65"/>
     </g>
-    <path class="curve" d="M-20 93C120 24 235 126 373 67S609 19 745 70 1016 112 1220 42"/>
-    <path class="curve" d="M-20 105C120 36 235 138 373 79S609 31 745 82 1016 124 1220 54" stroke-opacity=".10"/>
-    <path class="thread" d="M-20 93C120 24 235 126 373 67S609 19 745 70 1016 112 1220 42"/>
-    <path d="M0 68H1200" fill="none" stroke="#edf0f5" stroke-opacity=".045" stroke-width=".7"/>
-    <circle cx="600" cy="68" r="2.3" fill="#f0f2f6" class="glint"/>
-    <circle cx="600" cy="68" r="9" fill="none" stroke="#e4e9f2" stroke-opacity=".17"/>
-    <circle cx="600" cy="68" r="24" fill="none" stroke="#e4e9f2" stroke-opacity=".075" stroke-dasharray="1 5"/>
-    <path d="M28 23h24M28 23v10M1172 23h-24M1172 23v10M28 113h24M28 113v-10M1172 113h-24M1172 113v-10" fill="none" stroke="#dfe4ed" stroke-opacity=".28" stroke-width=".8"/>
+    <g class="orbit-b">
+      <use href="#orbitB" class="orbit" stroke-dasharray="1 8"/>
+      <circle cx="845" cy="122" r="2" fill="#e7ebf2" class="spark" style="--delay:-1.4s"/>
+      <circle cx="355" cy="122" r="2" fill="#e7ebf2" class="spark" style="--delay:-2.4s"/>
+    </g>
+
+    <g class="outer-bloom">
+      <use href="#outerPetal" class="petal"/>
+      <use href="#outerPetal" class="petal" transform="rotate(32.727 600 122)"/>
+      <use href="#outerPetal" class="petal" transform="rotate(65.454 600 122)"/>
+      <use href="#outerPetal" class="petal" transform="rotate(98.181 600 122)"/>
+      <use href="#outerPetal" class="petal" transform="rotate(130.908 600 122)"/>
+      <use href="#outerPetal" class="petal" transform="rotate(163.635 600 122)"/>
+      <use href="#outerPetal" class="petal" transform="rotate(196.362 600 122)"/>
+      <use href="#outerPetal" class="petal" transform="rotate(229.089 600 122)"/>
+      <use href="#outerPetal" class="petal" transform="rotate(261.816 600 122)"/>
+      <use href="#outerPetal" class="petal" transform="rotate(294.543 600 122)"/>
+      <use href="#outerPetal" class="petal" transform="rotate(327.270 600 122)"/>
+    </g>
+
+    <g class="inner-bloom">
+      <use href="#innerPetal" class="petal" style="stroke-opacity:.65"/>
+      <use href="#innerPetal" class="petal" transform="rotate(51.428 600 122)" style="stroke-opacity:.65"/>
+      <use href="#innerPetal" class="petal" transform="rotate(102.856 600 122)" style="stroke-opacity:.65"/>
+      <use href="#innerPetal" class="petal" transform="rotate(154.284 600 122)" style="stroke-opacity:.65"/>
+      <use href="#innerPetal" class="petal" transform="rotate(205.712 600 122)" style="stroke-opacity:.65"/>
+      <use href="#innerPetal" class="petal" transform="rotate(257.140 600 122)" style="stroke-opacity:.65"/>
+      <use href="#innerPetal" class="petal" transform="rotate(308.568 600 122)" style="stroke-opacity:.65"/>
+    </g>
+
+    <g class="core-turn">
+      <circle cx="600" cy="122" r="13" fill="none" stroke="#e4eaf3" stroke-opacity=".36"/>
+      <circle cx="600" cy="122" r="7" fill="#e4eaf3" fill-opacity=".08" stroke="#e4eaf3" stroke-opacity=".7"/>
+      <path d="M600 115l7 7-7 7-7-7Z" fill="#eef2f8" fill-opacity=".72" filter="url(#softGlow)"/>
+      <path d="M600 101v-7m0 56v-7m-14-14h-7m49 0h-7" stroke="#e4eaf3" stroke-opacity=".5"/>
+    </g>
+
+    <g fill="#e8edf5">
+      <circle class="spark" cx="524" cy="73" r="1.4" style="--delay:-.2s"/>
+      <circle class="spark" cx="682" cy="94" r="1.2" style="--delay:-1.6s"/>
+      <circle class="spark" cx="555" cy="180" r="1.5" style="--delay:-2.8s"/>
+      <circle class="spark" cx="650" cy="166" r="1.2" style="--delay:-.9s"/>
+      <circle class="spark" cx="600" cy="29" r="1.5" style="--delay:-2.3s"/>
+      <circle class="spark" cx="600" cy="215" r="1.5" style="--delay:-1.2s"/>
+    </g>
+    <path d="M24 22h28M24 22v10M1176 22h-28M1176 22v10M24 222h28M24 222v-10M1176 222h-28M1176 222v-10" fill="none" stroke="#dfe5ef" stroke-opacity=".2" stroke-width=".8"/>
   </g>
 </svg>
