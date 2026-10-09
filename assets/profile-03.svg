@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">About Me — Design No. 03: Editorial Profile</title>
+  <desc id="desc">A restrained, professional editorial layout. The biography fades in by section and by line, using a 20 percent opacity starting point. Text: I&apos;m a developer and computer technology student from Bangladesh. I enjoy building software, creating web experiences, and experimenting with ideas that make technology more useful. I&apos;m interested in how things work at every level—from thoughtful interfaces and animation to the systems underneath them. I learn by building, testing, and improving real projects. This is a small space to share what I&apos;m making, what I&apos;m learning, and where I&apos;m heading next.</desc>
+  <style>
+    .meta,.index,.label,.footer{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:currentColor}
+    .meta{font-size:10px;letter-spacing:2.2px;opacity:.5}
+    .index{font-size:11px;letter-spacing:1px;opacity:.48}
+    .label{font-size:10px;letter-spacing:1.8px;opacity:.55}
+    .body{font-family:Inter,"Segoe UI",Arial,Helvetica,sans-serif;font-size:19px;font-weight:400;letter-spacing:-.15px;fill:currentColor}
+    .hairline{fill:none;stroke:currentColor;stroke-width:1}
+    .header-rule{stroke-opacity:.22}
+    .separator{stroke-opacity:.11}
+    .spine{stroke-opacity:.14}
+    .reveal{opacity:.2;animation:reveal-opacity .36s ease-out var(--delay) both}
+    @keyframes reveal-opacity{from{opacity:.2}to{opacity:1}}
+    .footer{font-size:10px;letter-spacing:1.7px;opacity:.4}
+    @media(prefers-reduced-motion:reduce){.reveal{opacity:1;animation:none}}
+  </style>
+  <path class="hairline header-rule" d="M60 42H1140"/>
+  <text class="meta" x="60" y="26">ABOUT ME</text>
+  <text class="meta" x="1140" y="26" text-anchor="end">DESIGN NO. 03 / EDITORIAL PROFILE</text>
+  <path class="hairline spine" d="M120 62V403"/>
+
+  <path class="hairline separator" d="M150 112H1140M150 191H1140M150 270H1140M150 335H1140M150 411H1140"/>
+
+  <g class="reveal" style="--delay:.10s">
+    <text class="index" x="92" y="73" text-anchor="end">01</text>
+    <text class="label" x="154" y="73">BACKGROUND</text>
+    <text class="body" x="154" y="98">I&apos;m a developer and computer technology student from Bangladesh.</text>
+  </g>
+
+  <g class="reveal" style="--delay:1.02s">
+    <text class="index" x="92" y="129" text-anchor="end">02</text>
+    <text class="label" x="154" y="129">BUILDING</text>
+    <text class="body" x="154" y="154">I enjoy building software, creating web experiences, and</text>
+  </g>
+  <text class="body reveal" x="154" y="178" style="--delay:1.24s">experimenting with ideas that make technology more useful.</text>
+
+  <g class="reveal" style="--delay:2.08s">
+    <text class="index" x="92" y="208" text-anchor="end">03</text>
+    <text class="label" x="154" y="208">SYSTEMS &amp; DESIGN</text>
+    <text class="body" x="154" y="233">I&apos;m interested in how things work at every level—from</text>
+  </g>
+  <text class="body reveal" x="154" y="257" style="--delay:2.30s">thoughtful interfaces and animation to the systems underneath them.</text>
+
+  <g class="reveal" style="--delay:3.14s">
+    <text class="index" x="92" y="287" text-anchor="end">04</text>
+    <text class="label" x="154" y="287">APPROACH</text>
+    <text class="body" x="154" y="312">I learn by building, testing, and improving real projects.</text>
+  </g>
+
+  <g class="reveal" style="--delay:4.02s">
+    <text class="index" x="92" y="352" text-anchor="end">05</text>
+    <text class="label" x="154" y="352">WHAT'S NEXT</text>
+    <text class="body" x="154" y="377">This is a small space to share what I&apos;m making, what I&apos;m learning,</text>
+  </g>
+  <text class="body reveal" x="154" y="401" style="--delay:4.24s">and where I&apos;m heading next.</text>
+
+  <text class="footer" x="60" y="445">PROFILE / SHORT BIOGRAPHY</text>
+  <text class="footer" x="1140" y="445" text-anchor="end">03 — 05 SECTIONS</text>
+</svg>
