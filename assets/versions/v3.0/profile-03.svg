@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="360" viewBox="0 0 540 360" role="img" aria-labelledby="title desc">
+  <title id="title">Areas of Practice — Profile Design 3.0</title>
+  <desc id="desc">A black panel with four white typographic entries connected by a continuous vertical track: software, interfaces, motion, and systems.</desc>
+  <style>
+    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:#FFFFFF}
+    .sans{font-family:Inter,"Helvetica Neue",Arial,sans-serif;fill:#FFFFFF}
+    .tag{font-size:9px;letter-spacing:1.7px;opacity:.66}
+    .num{font-size:10px;letter-spacing:1px;opacity:.6}
+    .label{font-size:21px;font-weight:700;letter-spacing:-.45px}
+    .copy{font-size:10px;letter-spacing:.35px;opacity:.68}
+    .track{fill:none;stroke:#707070;stroke-width:1}
+    .signal{stroke-dasharray:8 158;animation:flow 4s linear infinite}
+    .node{fill:#FFFFFF;stroke:#111111;stroke-width:2}
+    @keyframes flow{from{stroke-dashoffset:166}to{stroke-dashoffset:0}}
+    @media(prefers-reduced-motion:reduce){.signal{animation:none;stroke-dashoffset:0}}
+  </style>
+  <rect width="540" height="360" rx="10" fill="#111111"/>
+  <path d="M24 47H516M24 318H516" stroke="#FFFFFF" stroke-opacity=".22"/>
+  <text class="mono tag" x="26" y="28">AREAS OF PRACTICE / 03.0</text>
+  <text class="sans" x="24" y="79" font-size="28" font-weight="760" letter-spacing="-1.1">WHAT I MAKE.</text>
+  <g>
+    <path class="track" d="M53 111V288"/>
+    <path class="signal" d="M53 111V288" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <g transform="translate(0 0)">
+      <circle class="node" cx="53" cy="121" r="5"/>
+      <text class="mono num" x="77" y="117">01 / SOFTWARE</text>
+      <text class="sans label" x="77" y="140">Useful tools.</text>
+      <path d="M77 150H505" stroke="#FFFFFF" stroke-opacity=".15"/>
+    </g>
+    <g>
+      <circle class="node" cx="53" cy="177" r="5"/>
+      <text class="mono num" x="77" y="173">02 / INTERFACES</text>
+      <text class="sans label" x="77" y="196">Clear experiences.</text>
+      <path d="M77 206H505" stroke="#FFFFFF" stroke-opacity=".15"/>
+    </g>
+    <g>
+      <circle class="node" cx="53" cy="233" r="5"/>
+      <text class="mono num" x="77" y="229">03 / MOTION</text>
+      <text class="sans label" x="77" y="252">Purposeful movement.</text>
+      <path d="M77 262H505" stroke="#FFFFFF" stroke-opacity=".15"/>
+    </g>
+    <g>
+      <circle class="node" cx="53" cy="289" r="5"/>
+      <text class="mono num" x="77" y="285">04 / SYSTEMS</text>
+      <text class="sans label" x="77" y="308">Connected thinking.</text>
+    </g>
+  </g>
+  <text class="mono tag" x="26" y="341">LEARN BY BUILDING / IMPROVE THROUGH TESTING</text>
+  <text class="mono tag" x="514" y="341" text-anchor="end">03</text>
+</svg>

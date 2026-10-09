@@ -1,48 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
-  <title id="title">The Practice Loop — Motion Study 3.0</title>
-  <desc id="desc">A white industrial-design footer with three large stages—observe, make, refine—linked by an animated black traveling marker along a thin horizontal line.</desc>
-  <defs>
-    <pattern id="paper" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M18 0H0V18" fill="none" stroke="#111111" stroke-opacity=".045" stroke-width=".6"/></pattern>
-    <clipPath id="frame"><rect width="1200" height="220" rx="10"/></clipPath>
-  </defs>
+  <title id="title">Keep Making — Monochrome Design 4.0</title>
+  <desc id="desc">A black typographic closing panel with large white text and a horizontally moving strip of repeated process words. The layout is poster-like rather than diagrammatic.</desc>
+  <defs><clipPath id="frame"><rect width="1200" height="220" rx="8"/></clipPath></defs>
   <style>
-    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:#111111}
-    .head{font-family:Inter,"Helvetica Neue",Arial,sans-serif;font-weight:760;letter-spacing:-1.5px;fill:#111111}
-    .track{fill:none;stroke:#777777;stroke-width:1.2}
-    .marker{animation:travel 6s cubic-bezier(.55,0,.45,1) infinite}
-    .tick{animation:tick 2.6s steps(2,end) infinite}
-    @keyframes travel{0%{transform:translateX(0)}33%{transform:translateX(360px)}66%{transform:translateX(720px)}100%{transform:translateX(0)}}
-    @keyframes tick{0%,45%{opacity:.3}50%,100%{opacity:1}}
-    @media(prefers-reduced-motion:reduce){.marker,.tick{animation:none}.marker{transform:translateX(360px)}.tick{opacity:1}}
+    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:#FFFFFF}
+    .display{font-family:Inter,"Helvetica Neue",Arial,sans-serif;font-weight:800;letter-spacing:-2px;fill:#FFFFFF}
+    .marquee{animation:marquee 18s linear infinite}
+    .cursor{animation:cursor 1.5s steps(2,end) infinite}
+    @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-600px)}}
+    @keyframes cursor{0%,49%{opacity:1}50%,100%{opacity:.15}}
+    @media(prefers-reduced-motion:reduce){.marquee,.cursor{animation:none}.marquee{transform:translateX(-120px)}.cursor{opacity:1}}
   </style>
   <g clip-path="url(#frame)">
-    <rect width="1200" height="220" fill="#FFFFFF"/>
-    <rect width="1200" height="220" fill="url(#paper)"/>
-    <path d="M0 33H1200M0 190H1200" stroke="#111111" stroke-opacity=".18"/>
-    <text class="mono" x="34" y="23" font-size="8.5" letter-spacing="2">FIELD NOTES / THE PRACTICE LOOP</text>
-    <text class="head" x="31" y="77" font-size="35">MAKE. TEST. REFINE.</text>
-    <text class="mono" x="34" y="98" font-size="9.5" letter-spacing="1.15" opacity=".62">PROGRESS IS A REPEATABLE PROCESS.</text>
-    <path class="track" d="M65 143H1124"/>
-    <path d="M65 136V150M425 136V150M785 136V150M1124 136V150" stroke="#111111" stroke-width="1.5"/>
-    <g class="marker">
-      <rect x="57" y="135" width="16" height="16" fill="#111111"/>
-      <rect x="62" y="140" width="6" height="6" fill="#FFFFFF"/>
+    <rect width="1200" height="220" fill="#111111"/>
+    <path d="M0 36H1200M0 181H1200" stroke="#FFFFFF" stroke-opacity=".22"/>
+    <text class="mono" x="34" y="25" font-size="8.5" letter-spacing="2">FIELD NOTE / 04.0</text>
+    <text class="display" x="30" y="103" font-size="52">KEEP MAKING.</text>
+    <text class="mono" x="34" y="128" font-size="10" letter-spacing="1.5" opacity=".65">CURIOSITY IS THE START. ITERATION IS THE METHOD.</text>
+    <rect class="cursor" x="402" y="74" width="5" height="36" fill="#FFFFFF"/>
+    <g class="marquee">
+      <text class="mono" x="34" y="164" font-size="12" letter-spacing="2.1">OBSERVE   /   EXPERIMENT   /   BUILD   /   IMPROVE   /   SHARE   /</text>
+      <text class="mono" x="634" y="164" font-size="12" letter-spacing="2.1">OBSERVE   /   EXPERIMENT   /   BUILD   /   IMPROVE   /   SHARE   /</text>
+      <text class="mono" x="1234" y="164" font-size="12" letter-spacing="2.1">OBSERVE   /   EXPERIMENT   /   BUILD   /   IMPROVE   /   SHARE   /</text>
     </g>
-    <g class="tick">
-      <circle cx="65" cy="143" r="4" fill="#111111"/>
-      <circle cx="425" cy="143" r="4" fill="#111111"/>
-      <circle cx="785" cy="143" r="4" fill="#111111"/>
-      <circle cx="1124" cy="143" r="4" fill="#111111"/>
-    </g>
-    <g class="mono">
-      <text x="65" y="169" font-size="10" letter-spacing="1.4">01 / OBSERVE</text>
-      <text x="425" y="169" font-size="10" letter-spacing="1.4">02 / MAKE</text>
-      <text x="785" y="169" font-size="10" letter-spacing="1.4">03 / REFINE</text>
-      <text x="1124" y="169" text-anchor="end" font-size="10" letter-spacing="1.4">REPEAT</text>
-    </g>
-    <path d="M34 203H1166" stroke="#111111" stroke-opacity=".22"/>
-    <text class="mono" x="34" y="215" font-size="8" letter-spacing="1.45" opacity=".6">MONOCHROME DESIGN SYSTEM / 03.0</text>
-    <text class="mono" x="1166" y="215" text-anchor="end" font-size="8" letter-spacing="1.45" opacity=".6">BUILT WITH INTENT</text>
+    <text class="mono" x="34" y="203" font-size="8.5" letter-spacing="1.6" opacity=".5">BLACK / WHITE / NOTHING UNNECESSARY</text>
+    <text class="mono" x="1165" y="203" text-anchor="end" font-size="8.5" letter-spacing="1.6" opacity=".5">TAMASRAZIM — 04</text>
   </g>
 </svg>
