@@ -1,143 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="244" viewBox="0 0 1200 244" role="img" aria-labelledby="title desc">
-  <title id="title">Kinetic Bloom</title>
-  <desc id="desc">A monochrome geometric flower slowly unfolding among fine orbital paths and moving points.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+  <title id="title">Ideas into Systems</title>
+  <desc id="desc">A clean, warm-toned technical diagram showing a path from an idea through a model to a working system, with a moving signal tracing the connections.</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#070809"/>
-      <stop offset=".54" stop-color="#101216"/>
-      <stop offset="1" stop-color="#08090a"/>
-    </linearGradient>
-    <linearGradient id="trail" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#e7ebf2" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#e7ebf2" stop-opacity=".65"/>
-      <stop offset="1" stop-color="#e7ebf2" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="aura">
-      <stop stop-color="#cbd5e1" stop-opacity=".20"/>
-      <stop offset=".5" stop-color="#94a3b8" stop-opacity=".065"/>
-      <stop offset="1" stop-color="#94a3b8" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M30 0H0V30" fill="none" stroke="#dfe5ef" stroke-opacity=".045" stroke-width=".7"/>
+    <pattern id="paper-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#24433C" stroke-opacity=".065" stroke-width=".75"/>
     </pattern>
-    <clipPath id="frame"><rect width="1200" height="244" rx="12"/></clipPath>
-    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <path id="outerPetal" d="M600 122C578 100 578 70 600 43C622 70 622 100 600 122Z"/>
-    <path id="innerPetal" d="M600 122C584 105 585 86 600 69C615 86 616 105 600 122Z"/>
-    <path id="orbitA" d="M418 122A182 52 0 1 1 782 122A182 52 0 1 1 418 122"/>
-    <path id="orbitB" d="M355 122A245 78 0 1 0 845 122A245 78 0 1 0 355 122"/>
-    <style>
-      .fine{fill:none;stroke:#dfe5ef;stroke-opacity:.17;stroke-width:1}
-      .petal{fill:#dfe5ef;fill-opacity:.018;stroke:#e6ebf3;stroke-opacity:.42;stroke-width:1.05}
-      .orbit{fill:none;stroke:#cfd7e3;stroke-opacity:.16;stroke-width:.8}
-      .rail{fill:none;stroke:#cfd7e3;stroke-opacity:.14;stroke-width:.8}
-      .flow{fill:none;stroke:url(#trail);stroke-width:1.2;stroke-linecap:round;stroke-dasharray:26 54;animation:flow 11s linear infinite}
-      .outer-bloom{transform-origin:600px 122px;animation:turn 48s linear infinite}
-      .inner-bloom{transform-origin:600px 122px;animation:turnBack 35s linear infinite}
-      .orbit-a{transform-origin:600px 122px;animation:turn 31s linear infinite}
-      .orbit-b{transform-origin:600px 122px;animation:turnBack 43s linear infinite}
-      .breath{transform-box:fill-box;transform-origin:center;animation:breath 4.8s ease-in-out infinite}
-      .spark{animation:spark 3.6s ease-in-out var(--delay,0s) infinite}
-      .core-turn{transform-origin:600px 122px;animation:turn 13s linear infinite}
-      @keyframes flow{to{stroke-dashoffset:-800}}
-      @keyframes turn{to{transform:rotate(360deg)}}
-      @keyframes turnBack{to{transform:rotate(-360deg)}}
-      @keyframes breath{0%,100%{opacity:.28;transform:scale(.86)}50%{opacity:.88;transform:scale(1.18)}}
-      @keyframes spark{0%,100%{opacity:.13}48%{opacity:.78}58%{opacity:.34}}
-      @media(prefers-reduced-motion:reduce){
-        .flow,.outer-bloom,.inner-bloom,.orbit-a,.orbit-b,.breath,.spark,.core-turn{animation:none!important}
-        .flow{stroke-dasharray:none;stroke-opacity:.25}
-        .spark{opacity:.35}
-      }
-    </style>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F5F3EB"/>
+      <stop offset="1" stop-color="#E9EDE4"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#E16E50" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#E16E50"/>
+      <stop offset="1" stop-color="#E16E50" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="hero-clip"><rect width="1200" height="230" rx="14"/></clipPath>
   </defs>
-  <g clip-path="url(#frame)">
-    <rect width="1200" height="244" fill="url(#background)"/>
-    <rect width="1200" height="244" fill="url(#grid)"/>
-    <rect width="1200" height="1" fill="url(#trail)"/>
-    <rect y="243" width="1200" height="1" fill="url(#trail)"/>
-    <ellipse cx="600" cy="122" rx="305" ry="130" fill="url(#aura)"/>
-
-    <g class="side-field">
-      <path class="rail" d="M0 83C140 83 175 111 280 111S382 88 430 106"/>
-      <path class="rail" d="M0 160C137 160 185 138 278 138S375 161 430 143"/>
-      <path class="rail" d="M1200 83C1060 83 1025 111 920 111S818 88 770 106"/>
-      <path class="rail" d="M1200 160C1063 160 1015 138 922 138S825 161 770 143"/>
-      <path class="flow" d="M0 83C140 83 175 111 280 111S382 88 430 106"/>
-      <path class="flow" d="M1200 160C1063 160 1015 138 922 138S825 161 770 143" style="animation-delay:-4s"/>
-      <path class="fine" d="M80 122H390M810 122H1120" stroke-dasharray="1 8"/>
-      <g fill="#dce3ed">
-        <circle class="spark" cx="92" cy="83" r="1.5" style="--delay:-.8s"/>
-        <circle class="spark" cx="176" cy="100" r="2" style="--delay:-2.1s"/>
-        <circle class="spark" cx="280" cy="111" r="1.5" style="--delay:-1.3s"/>
-        <circle class="spark" cx="365" cy="98" r="1.2" style="--delay:-2.6s"/>
-        <circle class="spark" cx="1108" cy="160" r="1.5" style="--delay:-1.8s"/>
-        <circle class="spark" cx="1024" cy="143" r="2" style="--delay:-.4s"/>
-        <circle class="spark" cx="920" cy="138" r="1.5" style="--delay:-2.9s"/>
-        <circle class="spark" cx="835" cy="150" r="1.2" style="--delay:-1.1s"/>
+  <g clip-path="url(#hero-clip)">
+    <rect width="1200" height="230" fill="url(#surface)"/>
+    <rect width="1200" height="230" fill="url(#paper-grid)"/>
+    <rect x="0" y="0" width="10" height="230" fill="#E16E50"/>
+    <text x="54" y="39" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="2.5" fill="#31544A" opacity=".7">NOTES ON MAKING</text>
+    <text x="54" y="101" font-family="Inter,'Segoe UI',Arial,sans-serif" font-size="45" font-weight="600" letter-spacing="-1.7" fill="#173A32">Ideas into systems.</text>
+    <text x="56" y="133" font-family="Inter,'Segoe UI',Arial,sans-serif" font-size="15" fill="#31544A" opacity=".82">Understand the parts. Build the whole.</text>
+    <path d="M56 164H440" stroke="#31544A" stroke-opacity=".25" stroke-width="1"/>
+    <text x="56" y="190" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1.8" fill="#31544A" opacity=".65">THINK</text>
+    <path d="M107 186H151" stroke="#31544A" stroke-opacity=".35"/>
+    <text x="164" y="190" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1.8" fill="#31544A" opacity=".65">BUILD</text>
+    <path d="M211 186H255" stroke="#31544A" stroke-opacity=".35"/>
+    <text x="268" y="190" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1.8" fill="#31544A" opacity=".65">REFINE</text>
+    <g transform="translate(530 20)">
+      <rect x="0" y="0" width="610" height="190" rx="9" fill="#F8F7F1" fill-opacity=".63" stroke="#31544A" stroke-opacity=".19"/>
+      <g stroke="#31544A" stroke-opacity=".10">
+        <path d="M30 32H580M30 64H580M30 96H580M30 128H580M30 160H580"/>
+        <path d="M62 18V172M126 18V172M190 18V172M254 18V172M318 18V172M382 18V172M446 18V172M510 18V172M574 18V172"/>
       </g>
-      <g stroke="#dfe5ef" stroke-opacity=".25" fill="none">
-        <path d="M104 73v20m-5-10h10M1090 150v20m-5-10h10"/>
-        <rect x="196" y="132" width="7" height="7" transform="rotate(45 199.5 135.5)"/>
-        <rect x="997" y="95" width="7" height="7" transform="rotate(45 1000.5 98.5)"/>
+      <path d="M54 111H151L192 76H294L344 111H441L477 61H554" fill="none" stroke="#31544A" stroke-opacity=".72" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M54 111H151L192 76H294L344 111H441L477 61H554" fill="none" stroke="url(#signal)" stroke-width="7" stroke-linecap="round" stroke-dasharray="48 520">
+        <animate attributeName="stroke-dashoffset" values="568;0" dur="4.8s" repeatCount="indefinite"/>
+      </path>
+      <g fill="#F8F7F1" stroke="#31544A" stroke-width="1.5">
+        <rect x="42" y="99" width="24" height="24" rx="4"/>
+        <circle cx="192" cy="76" r="7"/>
+        <rect x="284" y="66" width="20" height="20" rx="3"/>
+        <circle cx="441" cy="111" r="7"/>
+        <rect x="544" y="51" width="20" height="20" rx="3"/>
+      </g>
+      <g fill="#E16E50">
+        <circle cx="54" cy="111" r="3"/>
+        <circle cx="192" cy="76" r="2.2"/>
+        <circle cx="441" cy="111" r="2.2"/>
+        <circle cx="554" cy="61" r="2.2"/>
+      </g>
+      <g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#31544A" opacity=".7" letter-spacing="1.3">
+        <text x="40" y="146">INPUT</text><text x="171" y="55">MODEL</text><text x="314" y="146">TEST</text><text x="517" y="92">OUTPUT</text>
       </g>
     </g>
-
-    <g class="orbit-a">
-      <use href="#orbitA" class="orbit"/>
-      <circle cx="600" cy="70" r="2.6" fill="#edf1f7" class="breath" filter="url(#softGlow)"/>
-      <circle cx="600" cy="174" r="1.7" fill="#dfe5ef" opacity=".7"/>
-      <path d="M600 65l3 5-3 5-3-5Z" fill="#e7ebf2" opacity=".65"/>
-    </g>
-    <g class="orbit-b">
-      <use href="#orbitB" class="orbit" stroke-dasharray="1 8"/>
-      <circle cx="845" cy="122" r="2" fill="#e7ebf2" class="spark" style="--delay:-1.4s"/>
-      <circle cx="355" cy="122" r="2" fill="#e7ebf2" class="spark" style="--delay:-2.4s"/>
-    </g>
-
-    <g class="outer-bloom">
-      <use href="#outerPetal" class="petal"/>
-      <use href="#outerPetal" class="petal" transform="rotate(32.727 600 122)"/>
-      <use href="#outerPetal" class="petal" transform="rotate(65.454 600 122)"/>
-      <use href="#outerPetal" class="petal" transform="rotate(98.181 600 122)"/>
-      <use href="#outerPetal" class="petal" transform="rotate(130.908 600 122)"/>
-      <use href="#outerPetal" class="petal" transform="rotate(163.635 600 122)"/>
-      <use href="#outerPetal" class="petal" transform="rotate(196.362 600 122)"/>
-      <use href="#outerPetal" class="petal" transform="rotate(229.089 600 122)"/>
-      <use href="#outerPetal" class="petal" transform="rotate(261.816 600 122)"/>
-      <use href="#outerPetal" class="petal" transform="rotate(294.543 600 122)"/>
-      <use href="#outerPetal" class="petal" transform="rotate(327.270 600 122)"/>
-    </g>
-
-    <g class="inner-bloom">
-      <use href="#innerPetal" class="petal" style="stroke-opacity:.65"/>
-      <use href="#innerPetal" class="petal" transform="rotate(51.428 600 122)" style="stroke-opacity:.65"/>
-      <use href="#innerPetal" class="petal" transform="rotate(102.856 600 122)" style="stroke-opacity:.65"/>
-      <use href="#innerPetal" class="petal" transform="rotate(154.284 600 122)" style="stroke-opacity:.65"/>
-      <use href="#innerPetal" class="petal" transform="rotate(205.712 600 122)" style="stroke-opacity:.65"/>
-      <use href="#innerPetal" class="petal" transform="rotate(257.140 600 122)" style="stroke-opacity:.65"/>
-      <use href="#innerPetal" class="petal" transform="rotate(308.568 600 122)" style="stroke-opacity:.65"/>
-    </g>
-
-    <g class="core-turn">
-      <circle cx="600" cy="122" r="13" fill="none" stroke="#e4eaf3" stroke-opacity=".36"/>
-      <circle cx="600" cy="122" r="7" fill="#e4eaf3" fill-opacity=".08" stroke="#e4eaf3" stroke-opacity=".7"/>
-      <path d="M600 115l7 7-7 7-7-7Z" fill="#eef2f8" fill-opacity=".72" filter="url(#softGlow)"/>
-      <path d="M600 101v-7m0 56v-7m-14-14h-7m49 0h-7" stroke="#e4eaf3" stroke-opacity=".5"/>
-    </g>
-
-    <g fill="#e8edf5">
-      <circle class="spark" cx="524" cy="73" r="1.4" style="--delay:-.2s"/>
-      <circle class="spark" cx="682" cy="94" r="1.2" style="--delay:-1.6s"/>
-      <circle class="spark" cx="555" cy="180" r="1.5" style="--delay:-2.8s"/>
-      <circle class="spark" cx="650" cy="166" r="1.2" style="--delay:-.9s"/>
-      <circle class="spark" cx="600" cy="29" r="1.5" style="--delay:-2.3s"/>
-      <circle class="spark" cx="600" cy="215" r="1.5" style="--delay:-1.2s"/>
-    </g>
-    <path d="M24 22h28M24 22v10M1176 22h-28M1176 22v10M24 222h28M24 222v-10M1176 222h-28M1176 222v-10" fill="none" stroke="#dfe5ef" stroke-opacity=".2" stroke-width=".8"/>
   </g>
 </svg>

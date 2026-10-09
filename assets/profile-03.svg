@@ -1,70 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
-  <title id="title">About Me — Design No. 03: Modular Profile</title>
-  <desc id="desc">A clean, modular profile layout with an oversized introduction, a restrained three-column information grid, and a closing line. Text fades from 20 percent to full opacity without sliding or bouncing. I'm a developer and computer technology student from Bangladesh. I enjoy building software, creating web experiences, and experimenting with ideas that make technology more useful. I'm interested in how things work at every level—from thoughtful interfaces and animation to the systems underneath them. I learn by building, testing, and improving real projects. This is a small space to share what I'm making, what I'm learning, and where I'm heading next.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" role="img" aria-labelledby="title desc">
+  <title id="title">About Me — Profile No. 03</title>
+  <desc id="desc">I&apos;m a developer and computer technology student from Bangladesh. I enjoy building software, creating web experiences, and experimenting with ideas that make technology more useful. I&apos;m interested in how things work at every level—from thoughtful interfaces and animation to the systems underneath them. I learn by building, testing, and improving real projects. This is a small space to share what I&apos;m making, what I&apos;m learning, and where I&apos;m heading next.</desc>
   <style>
     .mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;fill:currentColor}
     .sans{font-family:Inter,"Segoe UI",Arial,Helvetica,sans-serif;fill:currentColor}
-    .meta{font-size:10px;letter-spacing:2.2px;opacity:.48}
-    .headline{font-size:48px;font-weight:520;letter-spacing:-2.1px}
-    .subhead{font-size:20px;font-weight:400;letter-spacing:-.35px;opacity:.82}
-    .label{font-size:10px;letter-spacing:1.7px;opacity:.5}
-    .copy{font-size:17px;font-weight:400;letter-spacing:-.15px}
-    .number{font-size:11px;letter-spacing:1px;opacity:.4}
-    .watermark{font-family:Inter,"Segoe UI",Arial,Helvetica,sans-serif;font-size:142px;font-weight:600;letter-spacing:-10px;fill:none;stroke:currentColor;stroke-width:1.2;stroke-opacity:.12}
-    .rule{fill:none;stroke:currentColor;stroke-width:1}
-    .rule-top{stroke-opacity:.22}
-    .rule-soft{stroke-opacity:.12}
-    .fade{opacity:.2;animation:arrive .38s ease-out var(--delay) both}
-    @keyframes arrive{from{opacity:.2}to{opacity:1}}
-    .foot{font-size:10px;letter-spacing:1.5px;opacity:.42}
-    @media(prefers-reduced-motion:reduce){.fade{opacity:1;animation:none}}
+    .meta{font-size:10px;letter-spacing:2px;opacity:.55}
+    .big{font-size:47px;font-weight:600;letter-spacing:-1.8px}
+    .lead{font-size:22px;font-weight:420;letter-spacing:-.35px}
+    .copy{font-size:16px;font-weight:400;letter-spacing:-.1px}
+    .label{font-size:10px;letter-spacing:1.6px;opacity:.6}
+    .count{font-size:11px;letter-spacing:.8px;opacity:.55}
+    .surface{fill:#F5F3EB}
+    .ink{fill:#173A32}
+    .accent{fill:#E16E50}
+    .line{fill:none;stroke:currentColor;stroke-width:1}
+    .soft-line{stroke-opacity:.15}
+    .intro{fill:#173A32}
+    .intro-text{fill:#F5F3EB}
+    .intro-muted{fill:#C3D3C6}
+    .card{fill:#FBFAF5;stroke:#31544A;stroke-opacity:.17;stroke-width:1}
+    .enter{opacity:.2;animation:opacity-in .34s ease-out var(--delay) both}
+    @keyframes opacity-in{from{opacity:.2}to{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.enter{opacity:1;animation:none}}
   </style>
-
-  <path class="rule rule-top" d="M60 43H1140"/>
-  <text class="mono meta" x="60" y="27">ABOUT ME</text>
-  <text class="mono meta" x="1140" y="27" text-anchor="end">PROFILE / 03</text>
-
-  <g class="fade" style="--delay:.05s">
-    <text class="sans headline" x="60" y="111">I'm a developer</text>
-    <text class="sans subhead" x="62" y="151">and computer technology student</text>
-    <text class="sans subhead" x="62" y="178">from Bangladesh.</text>
+  <rect class="surface" width="1200" height="570" rx="14"/>
+  <rect class="intro" x="0" y="0" width="350" height="570" rx="14"/>
+  <rect x="330" y="0" width="20" height="570" fill="#173A32"/>
+  <text class="mono meta intro-text" x="38" y="39">PROFILE / 03</text>
+  <path d="M38 56H310" stroke="#F5F3EB" stroke-opacity=".22"/>
+  <g class="enter" style="--delay:.08s">
+    <text class="sans big intro-text" x="38" y="135">Build.</text>
+    <text class="sans big intro-text" x="38" y="191">Understand.</text>
+    <text class="sans big intro-text" x="38" y="247">Improve.</text>
   </g>
-  <text class="sans watermark fade" x="1136" y="169" text-anchor="end" style="--delay:.25s">03</text>
-
-  <path class="rule rule-soft" d="M60 207H1140M60 398H1140M430 230V376M800 230V376"/>
-
-  <g class="fade" style="--delay:.48s">
-    <text class="mono number" x="60" y="234">01</text>
-    <text class="mono label" x="92" y="234">BUILD</text>
-    <text class="sans copy" x="60" y="269">I enjoy building software,</text>
-    <text class="sans copy fade" x="60" y="296" style="--delay:.60s">creating web experiences, and</text>
-    <text class="sans copy fade" x="60" y="323" style="--delay:.72s">experimenting with ideas that</text>
-    <text class="sans copy fade" x="60" y="350" style="--delay:.84s">make technology more useful.</text>
+  <text class="mono label intro-muted" x="38" y="310">A PRACTICAL LOOP</text>
+  <g transform="translate(38 339)" stroke="#C3D3C6" stroke-opacity=".74" fill="none">
+    <path d="M0 14H272" stroke-width="1"/>
+    <path d="M0 14V49H75V14M100 14V49H175V14M200 14V49H272V14" stroke-opacity=".32"/>
+    <circle cx="38" cy="14" r="4" fill="#E16E50" stroke="none"/>
+    <circle cx="137" cy="14" r="4" fill="#E16E50" stroke="none"/>
+    <circle cx="236" cy="14" r="4" fill="#E16E50" stroke="none"/>
+    <path d="M32 44L38 38L44 44M131 44L137 38L143 44M230 44L236 38L242 44" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
+  <text class="mono label intro-muted" x="38" y="427">LEARN BY MAKING</text>
+  <path d="M38 448H310" stroke="#F5F3EB" stroke-opacity=".2"/>
+  <text class="sans" x="38" y="482" font-size="14" fill="#F5F3EB" opacity=".78">Software / Interfaces / Systems</text>
+  <text class="mono meta intro-muted" x="38" y="535">FIELD NOTES · 2026</text>
 
-  <g class="fade" style="--delay:.96s">
-    <text class="mono number" x="466" y="234">02</text>
-    <text class="mono label" x="498" y="234">UNDERSTAND</text>
-    <text class="sans copy" x="466" y="269">I'm interested in how things</text>
-    <text class="sans copy fade" x="466" y="296" style="--delay:1.08s">work at every level—from</text>
-    <text class="sans copy fade" x="466" y="323" style="--delay:1.20s">thoughtful interfaces and</text>
-    <text class="sans copy fade" x="466" y="350" style="--delay:1.32s">animation to the systems</text>
-    <text class="sans copy fade" x="466" y="377" style="--delay:1.44s">underneath them.</text>
+  <text class="mono meta ink" x="390" y="40">01 / BACKGROUND</text>
+  <text class="sans lead ink" x="390" y="79">I&apos;m a developer and computer technology student from Bangladesh.</text>
+  <path d="M390 102H1160" stroke="#31544A" stroke-opacity=".24"/>
+
+  <g class="enter" style="--delay:.55s">
+    <rect class="card" x="390" y="125" width="374" height="164" rx="8"/>
+    <text class="mono count ink" x="414" y="151">02</text>
+    <text class="mono label ink" x="449" y="151">MAKING</text>
+    <rect x="414" y="164" width="32" height="3" rx="1.5" fill="#E16E50"/>
+    <text class="sans copy ink" x="414" y="194">
+      <tspan x="414" dy="0">I enjoy building software,</tspan>
+      <tspan x="414" dy="24">creating web experiences,</tspan>
+      <tspan x="414" dy="24">and experimenting with ideas</tspan>
+      <tspan x="414" dy="24">that make technology useful.</tspan>
+    </text>
   </g>
-
-  <g class="fade" style="--delay:1.56s">
-    <text class="mono number" x="836" y="234">03</text>
-    <text class="mono label" x="868" y="234">IMPROVE</text>
-    <text class="sans copy" x="836" y="269">I learn by building, testing,</text>
-    <text class="sans copy fade" x="836" y="296" style="--delay:1.68s">and improving real projects.</text>
+  <g class="enter" style="--delay:.90s">
+    <rect class="card" x="786" y="125" width="374" height="164" rx="8"/>
+    <text class="mono count ink" x="810" y="151">03</text>
+    <text class="mono label ink" x="845" y="151">SYSTEMS &amp; DESIGN</text>
+    <rect x="810" y="164" width="32" height="3" rx="1.5" fill="#E16E50"/>
+    <text class="sans copy ink" x="810" y="194">
+      <tspan x="810" dy="0">I'm interested in how things</tspan>
+      <tspan x="810" dy="24">work at every level—from</tspan>
+      <tspan x="810" dy="24">thoughtful interfaces and</tspan>
+      <tspan x="810" dy="24">animation to underlying systems.</tspan>
+    </text>
   </g>
-
-  <g class="fade" style="--delay:1.92s">
-    <text class="mono label" x="60" y="432">CURRENTLY EXPLORING</text>
-    <text class="sans copy" x="60" y="460">This is a small space to share what I'm making, what I'm learning,</text>
-    <text class="sans copy fade" x="60" y="484" style="--delay:2.04s">and where I'm heading next.</text>
+  <g class="enter" style="--delay:1.25s">
+    <rect class="card" x="390" y="307" width="374" height="112" rx="8"/>
+    <text class="mono count ink" x="414" y="334">04</text>
+    <text class="mono label ink" x="449" y="334">APPROACH</text>
+    <text class="sans copy ink" x="414" y="367">
+      <tspan x="414" dy="0">I learn by building, testing,</tspan>
+      <tspan x="414" dy="24">and improving real projects.</tspan>
+    </text>
   </g>
-
-  <text class="mono foot" x="1140" y="460" text-anchor="end">SOFTWARE / WEB / SYSTEMS</text>
+  <g class="enter" style="--delay:1.55s">
+    <rect class="card" x="786" y="307" width="374" height="112" rx="8"/>
+    <text class="mono count ink" x="810" y="334">05</text>
+    <text class="mono label ink" x="845" y="334">IN PROGRESS</text>
+    <text class="sans copy ink" x="810" y="367">
+      <tspan x="810" dy="0">This is a small space to share</tspan>
+      <tspan x="810" dy="24">what I'm making and learning.</tspan>
+    </text>
+  </g>
+  <path d="M390 445H1160" stroke="#31544A" stroke-opacity=".24"/>
+  <text class="sans copy ink enter" x="390" y="475" style="--delay:1.8s">This is a small space to share what I&apos;m making, what I&apos;m learning, and where I&apos;m heading next.</text>
+  <text class="mono meta ink" x="390" y="533">PROFILE / BACKGROUND / METHOD</text>
+  <text class="mono meta ink" x="1160" y="533" text-anchor="end">END OF NOTE</text>
 </svg>
