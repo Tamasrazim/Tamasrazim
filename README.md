@@ -3,7 +3,7 @@
 <div align="center">
   <img src="./assets/readme-hero.svg" width="100%" alt="Monochrome banner about building and refining software systems." />
   <br />
-  <strong>Software Engineer · Computer Technology Student · Bangladesh</strong>
+  <strong>Software Engineer · Computer Technology Student</strong>
   <br />
   <a href="https://tamasrazim.github.io/">Website</a> ·
   <a href="https://tamasrazim.github.io/projects/">Projects</a> ·
@@ -36,9 +36,6 @@ I’m interested in how an idea becomes a working system: its interface, underly
 | [KYNESTRA](https://tamasrazim.github.io/projects/kynestra/) | Modular Windows desktop software with a Rust-backed core, local project data, and creative-tool modules. | Alpha foundation; not described as a stable v1.0 release. |
 | [BNC AgroCare](https://tamasrazim.github.io/projects/bncagrocare/) | Agricultural product catalogue and a separate representative invoice workflow. | Catalogue and invoice workspace are separate routes. |
 | [Repo Token Meter](https://tamasrazim.github.io/projects/repo-token-meter/) | Browser tool for inspecting repository files, sizes, estimates, and commit growth. | Text/token counts are estimates, not exact model-tokenizer results. |
-| [MailScope](https://tamasrazim.github.io/projects/mail-scope/) | Browser-based email input and DNS-record inspection with portable notes. | DNS results do not guarantee email delivery or domain security. |
-| [Spiral Mic](https://tamasrazim.github.io/projects/spiral-mic/) | Microphone and audio-processing experiment with a browser interface and native companion source. | The browser experience and native companion source are distinct. |
-| [Prism Web Icons](https://tamasrazim.github.io/projects/prism-web-icons/) | Collection of 100 geometric web/interface icons with SVG output and metadata tools. | Review output quality and usage rights before publishing. |
 
 See the [full project directory](https://tamasrazim.github.io/projects/) for more context, links, and project-specific status notes.
 
