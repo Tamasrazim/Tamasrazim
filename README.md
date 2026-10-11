@@ -29,6 +29,7 @@ I’m interested in how an idea becomes a working system: its interface, underly
 | [TRILYVA](https://tamasrazim.github.io/projects/trilyva/) | Browser-based workspace for procedural animation, frame timing, and render experiments. | Browser and encoder capabilities affect export support. |
 | [NEO](https://tamasrazim.github.io/projects/neo/) | Native Windows x64 first-person puzzle game built around 100 deterministic floors and persistent progression. | See the project page for the current Windows build. |
 | [TUNRUN](https://tamasrazim.github.io/projects/tunrun/) | Native C++20 procedural 3D tunnel-flight game. | In development; the project page separates prototype systems from planned features. |
+| [WEBEDYTS](https://tamasrazim.github.io/projects/webedyts/) | Native desktop visual editor for local website files and folders, with import, editing, and export workflows. | Cross-platform CI builds pass; manual end-to-end verification and release packaging still remain. |
 | [CODE → SVG](https://tamasrazim.github.io/projects/code-to-svg/) | Browser-based procedural vector creation and SVG export. | Check exported files in the target design application. |
 | [CODE → EPS](https://tamasrazim.github.io/projects/code-to-eps/) | Vector-to-EPS workflow with validation and batch-oriented tools. | Compatibility depends on artwork and the target application. |
 | [Format Forge](https://tamasrazim.github.io/projects/format-forge/) | Browser-first file intake and conversion workflows for supported formats. | Conversion coverage depends on format and browser support. |
