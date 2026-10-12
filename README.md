@@ -16,6 +16,8 @@ I use **Tamasrazim** online. I build software and creative tools across native W
 
 I’m interested in how an idea becomes a working system: its interface, underlying logic, inputs, saved state, output, and the limits that need testing. I learn by building, testing, and improving real projects.
 
+I also treat edge cases as part of the feature: imported paths should resolve consistently, invalid geometry edits should not corrupt a scene, and reusable game seeds should behave predictably. I prefer small regression checks and clear notes over claiming a feature works without verification.
+
 **Not everything here is finished.** Some projects are usable now, some are experiments, and others are still in development. The project pages describe their current state and known constraints; I try not to present planned features as completed work.
 
 <div align="center">
