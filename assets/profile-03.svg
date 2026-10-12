@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- What this image draws: Draws the profile identity artwork used as one of the README's visual cards. -->
 <svg xmlns="http://www.w3.org/2000/svg" width="540" height="360" viewBox="0 0 540 360" role="img" aria-labelledby="title desc">
   <title id="title">Design No. 03 — Working Method</title>
   <desc id="desc">Three working principles: build, understand, improve, arranged as a modular column on white paper.</desc>

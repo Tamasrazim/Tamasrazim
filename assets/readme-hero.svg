@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- What this image draws: Draws the main hero graphic at the top of the profile README. -->
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
   <title id="title">Ideas into Systems</title>
   <desc id="desc">A monochrome technical banner. A connected route passes through input, model, test, and output, representing a practical approach to software and systems.</desc>
